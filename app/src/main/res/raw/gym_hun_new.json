@@ -1,0 +1,4334 @@
+{
+  "gym_list": [
+    {
+      "id": 1,
+      "title": "Strong Man's GYM - Krisztimesz Fitness [Csongrád]",
+      "address1": "Magyarország 6640 Csongrád",
+      "address2": "Fõ utca 59.",
+      "address": "Magyarország 6640 Csongrád Fõ utca 59.",
+      "latitude": "46,711532",
+      "longitude": "20,137396",
+      "info": "Telefon: 704218821 Nyitvatartás: H-V: 8:00-21:00"
+    },
+    {
+      "id": 2,
+      "title": "A Fitness Blaha [Budapest VII. ker.]",
+      "address1": "Magyarország 1074 Budapest",
+      "address2": "Rákóczi út 60.",
+      "address": "Magyarország 1074 Budapest Rákóczi út 60.",
+      "latitude": "47,4979889",
+      "longitude": "19,072923",
+      "info": "Telefon: +3617858655 Nyitvatartás: Hétfõ - Péntek 06:00 22:00 Szombat -Vasárnap 08:00 20:00"
+    },
+    {
+      "id": 3,
+      "title": "A Fitness Újbuda [Budapest XI. ker.]",
+      "address1": "Magyarország 1119 Budapest",
+      "address2": "Nándorfejérvári út 40/a",
+      "address": "Magyarország 1119 Budapest Nándorfejérvári út 40/a",
+      "latitude": "47,4616839",
+      "longitude": "19,0457648",
+      "info": "Telefon: 06 1/ 610-6058 Nyitvatartás: Hétf? - Péntek 06:00 22:00 Szombat - Vasárnap 08:00 20:00"
+    },
+    {
+      "id": 4,
+      "title": "A-fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1116 Budapest",
+      "address2": "Nándorfejérvári út 40.",
+      "address": "Magyarország 1116 Budapest Nándorfejérvári út 40.",
+      "latitude": "47,4616839",
+      "longitude": "19,0457648",
+      "info": "Telefon: +3616106058 Nyitvatartás: Hétfõ -Péntek: 06:00 22:00 Szombat -Vasárnap: 08:00 20:00"
+    },
+    {
+      "id": 5,
+      "title": "A1 Magma Fitness - Wellness [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Balatoni út 17.",
+      "address": "Magyarország 8000 Székesfehérvár Balatoni út 17.",
+      "latitude": "47,1846385",
+      "longitude": "18,4096148",
+      "info": "Telefon: +3622505844 Nyitvatartás: H-P: 6:30 - 22:30 Sz-V: 8:00 - 20:00"
+    },
+    {
+      "id": 6,
+      "title": "ABS Sportcentrum [Budaörs]",
+      "address1": "Magyarország 2040 Budaörs",
+      "address2": "Szabadság út 299.",
+      "address": "Magyarország 2040 Budaörs Szabadság út 299.",
+      "latitude": "47,4600492",
+      "longitude": "18,9281652",
+      "info": "Telefon: +3623445072 Nyitvatartás: H-P: 7:00 - 23:00 Sz-V: 8:00 - 23:00"
+    },
+    {
+      "id": 7,
+      "title": "Ádám stúdió [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Gyula út 58.",
+      "address": "Magyarország 1039 Budapest Gyula út 58.",
+      "latitude": "47,5883006",
+      "longitude": "19,062344",
+      "info": "Telefon: (1) 240-0174 Nyitvatartás:"
+    },
+    {
+      "id": 8,
+      "title": "Aero fitness [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Dolgozók u. 1/a",
+      "address": "Magyarország 9700 Szombathely Dolgozók u. 1/a",
+      "latitude": "47,2395985",
+      "longitude": "16,59362",
+      "info": "Telefon: +36(20) 947 777 Nyitvatartás: H-P 6:30-22:00 SZO-V 9:00-21:00"
+    },
+    {
+      "id": 9,
+      "title": "Aerofitness Club [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Dolgozók u. 1/a",
+      "address": "Magyarország 9700 Szombathely Dolgozók u. 1/a",
+      "latitude": "47,2395985",
+      "longitude": "16,59362",
+      "info": "Telefon: +36209477774 Nyitvatartás: H-P: 6:30-22:00 SZO-V: 9:00-21:00"
+    },
+    {
+      "id": 10,
+      "title": "Ágnes Fitness [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1188 Budapest",
+      "address2": "Kisfaludy u. 56.",
+      "address": "Magyarország 1188 Budapest Kisfaludy u. 56.",
+      "latitude": "47,4099413",
+      "longitude": "19,191036",
+      "info": "Telefon: +3612902176 Nyitvatartás: Hétfõ: 7-21 óráig Kedd: 8-21 óráig Szerda: 8-21 óráig Csütörtök: 7-21 óráig Péntek: 8-21 óráig Szombat: 8-16 óráig Vasárnap: 8-13 óráig"
+    },
+    {
+      "id": 11,
+      "title": "Agria Fitt [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Maczky Valér Utca 2. 2. emelet",
+      "address": "Magyarország 3300 Eger Maczky Valér Utca 2. 2. emelet",
+      "latitude": "47,9034419",
+      "longitude": "20,3743186",
+      "info": "Telefon: +36706723790 Nyitvatartás:"
+    },
+    {
+      "id": 12,
+      "title": "Aktív Fitness Club [Monor]",
+      "address1": "Magyarország 2200 Monor",
+      "address2": "Németh Ágoston u. 2/c",
+      "address": "Magyarország 2200 Monor Németh Ágoston u. 2/c",
+      "latitude": "47,3516482",
+      "longitude": "19,444053",
+      "info": "Telefon: +3629415915 Nyitvatartás: H-P:08.00-21.00 Szombat:09.00-16.00"
+    },
+    {
+      "id": 13,
+      "title": "Aktív Fitness Club [Monor]",
+      "address1": "Magyarország 2200 Monor",
+      "address2": "Németh Ágoston utca 2/c",
+      "address": "Magyarország 2200 Monor Németh Ágoston utca 2/c",
+      "latitude": "47,3516482",
+      "longitude": "19,444053",
+      "info": "Telefon: +3629415915 Nyitvatartás: H-P: 8:00-21:00 Sz: 9:00-16:00 V: Zárva"
+    },
+    {
+      "id": 14,
+      "title": "Aktív Sport és Szabadidõközpont [Debrecen]",
+      "address1": "Magyarország 4027 Debrecen",
+      "address2": "Füredi út 27.",
+      "address": "Magyarország 4027 Debrecen Füredi út 27.",
+      "latitude": "47,5414997",
+      "longitude": "21,6193857",
+      "info": "Telefon: +3652745620 Nyitvatartás: H-P: 6:00 - 22:00 Sz: 8:00 - 20:00 Vas: 8:00 - 21:00"
+    },
+    {
+      "id": 15,
+      "title": "Aktív Squash Club [Budapest XI. ker.]",
+      "address1": "Magyarország Budapest",
+      "address2": "Tábornok u. 7.",
+      "address": "Magyarország Budapest Tábornok u. 7.",
+      "latitude": "47,5018209",
+      "longitude": "19,1100008",
+      "info": "Telefon: +36703713335 Nyitvatartás: H-P: 7:00 - 23:00 Sz-V: 9:00 - 23:00"
+    },
+    {
+      "id": 16,
+      "title": "Amazon Nõi Fitness [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Széchényi u. 9-11.",
+      "address": "Magyarország 8000 Székesfehérvár Széchényi u. 9-11.",
+      "latitude": "47,1849987",
+      "longitude": "18,4144237",
+      "info": "Telefon: +36203265484 Nyitvatartás: H-P: 7:00 – 21:00 Sz-V: 8:00 - 14:00"
+    },
+    {
+      "id": 17,
+      "title": "Andi Fitness / Andrea Mozgásstúdió [Budapest V. ker.]",
+      "address1": "Magyarország 1054 Budapest",
+      "address2": "Hold u. 29.",
+      "address": "Magyarország 1054 Budapest Hold u. 29.",
+      "latitude": "47,5073034",
+      "longitude": "19,0520448",
+      "info": "Telefon: +3613110740 Nyitvatartás: hétköznap: 6–21 hétvégén: 9–14"
+    },
+    {
+      "id": 18,
+      "title": "Aquamarin fitness [Hévíz]",
+      "address1": "Magyarország 8380 Hévíz",
+      "address2": "Honvéd u. 14",
+      "address": "Magyarország 8380 Hévíz Honvéd u. 14",
+      "latitude": "46,7887721",
+      "longitude": "17,1835937",
+      "info": "Nyitvatartás: H-P: 6:00-22:00 SZ-V: 8:00-22:00"
+    },
+    {
+      "id": 19,
+      "title": "Aranyhegy GYM [Esztergom]",
+      "address1": "Magyarország 2500 Esztergom",
+      "address2": "Irinyi u. 1",
+      "address": "Magyarország 2500 Esztergom Irinyi u. 1",
+      "latitude": "47,795147",
+      "longitude": "18,744738",
+      "info": "Telefon: +36(70) 230 305 Nyitvatartás: hétfõ: 6:00 – 21:00 kedd: 6:00 – 21:00 szerda 6:00 – 21:00 csütörtök: 6:00 – 21:00 péntek: 6:00 – 21:00 szombat: 9:00 – 15:00 vasárnap: 9:00 – 15:0"
+    },
+    {
+      "id": 20,
+      "title": "Arena Fitness Center [Budapest XIII. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Váci út 178. (Duna Plaza Parkolóház V. emelet)",
+      "address": "Magyarország 1138 Budapest Váci út 178. (Duna Plaza Parkolóház V. emelet)",
+      "latitude": "47,549376",
+      "longitude": "19,072893",
+      "info": "Telefon: +3612394356 Nyitvatartás: hétfõ-péntek: 6-23 hétvégén: 8-22"
+    },
+    {
+      "id": 21,
+      "title": "Arnold Gym [Budapest III. ker.]",
+      "address1": "Magyarország 1037 Budapest",
+      "address2": "Szépvölgyi út 15.",
+      "address": "Magyarország 1037 Budapest Szépvölgyi út 15.",
+      "latitude": "47,5278368",
+      "longitude": "19,0361436",
+      "info": "Telefon: +3612504259 Nyitvatartás: Hétfõ-Csütörtök: 6:00 – 23:00 Péntek: 6:00 – 22:00 Szombat-Vasárnap: 8:00 - 22:00"
+    },
+    {
+      "id": 22,
+      "title": "ASO GYM Aerobic és fitness center [Izsák]",
+      "address1": "Magyarország 6070 Izsák",
+      "address2": "Kossuth Lajos utca 119.",
+      "address": "Magyarország 6070 Izsák Kossuth Lajos utca 119.",
+      "latitude": "46,811705",
+      "longitude": "19,3441275",
+      "info": "Telefon: +36 30 451 4202 Nyitvatartás: Hétfõtõl-péntekig 06:00 - 21:00Szombaton 8:00 – 20:00 Vasárnap ZÁRVA"
+    },
+    {
+      "id": 23,
+      "title": "AST Testkultúra Szalon [Budapest XV. ker.]",
+      "address1": "Magyarország 1154 Budapest",
+      "address2": "Árendás köz 4-6.",
+      "address": "Magyarország 1154 Budapest Árendás köz 4-6.",
+      "latitude": "47,5414622",
+      "longitude": "19,1452434",
+      "info": "Telefon: +3614162697 Nyitvatartás: H-P: 7-22 Sz-V: 10-18"
+    },
+    {
+      "id": 24,
+      "title": "Astoria Fitness Center [Budapest V. ker.]",
+      "address1": "Magyarország 1052 Budapest",
+      "address2": "Károly krt. 4.",
+      "address": "Magyarország 1052 Budapest Károly krt. 4.",
+      "latitude": "47,494528",
+      "longitude": "19,059437",
+      "info": "Telefon: +3613170452 Nyitvatartás: Hétfõ - Péntek: 6:30 - 23:00 Szombat-Vasárnap: 9:30 - 21:00"
+    },
+    {
+      "id": 25,
+      "title": "Atlant Sportklub [Budapest II. ker.]",
+      "address1": "Magyarország 1027 Budapest",
+      "address2": "Frankel Leó u. 7.",
+      "address": "Magyarország 1027 Budapest Frankel Leó u. 7.",
+      "latitude": "47,5136256",
+      "longitude": "19,0378395",
+      "info": "Telefon: +3617934528 Nyitvatartás: H-P 07-22Szo-V 09-20"
+    },
+    {
+      "id": 26,
+      "title": "Atlantisz -ATTE [Budapest XIII. ker.]",
+      "address1": "Magyarország 1136 Budapest",
+      "address2": "Pannónia u. 2.",
+      "address": "Magyarország 1136 Budapest Pannónia u. 2.",
+      "latitude": "47,5126256",
+      "longitude": "19,0508988",
+      "info": "Telefon: +3617948722 Nyitvatartás: H-P: 7:00 - 21:00 Sz-V: 10:00 - 14:00"
+    },
+    {
+      "id": 27,
+      "title": "Atlas Body&Fitness Edzõterem [Makó]",
+      "address1": "Magyarország 6900 Makó",
+      "address2": "Kossuth u. 15.",
+      "address": "Magyarország 6900 Makó Kossuth u. 15.",
+      "latitude": "46,2214662",
+      "longitude": "20,4779146",
+      "info": "Telefon: +3662218017 Nyitvatartás: H - P : 8:00 - 21:00 Szo : 9:00 - 12:00"
+    },
+    {
+      "id": 28,
+      "title": "Atlas Fitness [Miskolc]",
+      "address1": "Magyarország 3534 Miskolc",
+      "address2": "Hunfalvy Pál utca 1-2.",
+      "address": "Magyarország 3534 Miskolc Hunfalvy Pál utca 1-2.",
+      "latitude": "48,100718",
+      "longitude": "20,703643",
+      "info": "Telefon: +36305956130 Nyitvatartás: H-P: 8-21 Sz: 9-14 V: 9-13"
+    },
+    {
+      "id": 29,
+      "title": "Atlas Fitness Center [Gyula]",
+      "address1": "Magyarország 5700 Gyula",
+      "address2": "Leiningen utca 2.",
+      "address": "Magyarország 5700 Gyula Leiningen utca 2.",
+      "latitude": "46,65086",
+      "longitude": "21,263388",
+      "info": "Telefon: +3666361997 Nyitvatartás: Hétfõ-Péntek: 7 - 21 Szombat-Vasárnap: 15 - 19"
+    },
+    {
+      "id": 30,
+      "title": "Atlas GYM Body&fitness Club [Nagyatád]",
+      "address1": "Magyarország 7500 Nagyatád",
+      "address2": "Gyár ut 19.",
+      "address": "Magyarország 7500 Nagyatád Gyár ut 19.",
+      "latitude": "46,2221768",
+      "longitude": "17,3600277",
+      "info": "Telefon: 06304155542 Nyitvatartás: H-P 09-21 SZ -09-18 Vasárnap 15- 19"
+    },
+    {
+      "id": 31,
+      "title": "B-fit Fitness Központ [Szolnok]",
+      "address1": "Magyarország 5000 Szolnok",
+      "address2": "Baross út 41. A épület",
+      "address": "Magyarország 5000 Szolnok Baross út 41. A épület",
+      "latitude": "47,1779507",
+      "longitude": "20,1814878",
+      "info": "Telefon: +36303703022 Nyitvatartás: Hétfõ-péntek: 6.00-22.00 Szombat: 8.00-20.00 Vasárnap: Zárva"
+    },
+    {
+      "id": 32,
+      "title": "B4 Fitness wellness [Budapest XIII. ker.]",
+      "address1": "Magyarország 1134 Budapest",
+      "address2": "Dózsa György út 128-130.",
+      "address": "Magyarország 1134 Budapest Dózsa György út 128-130.",
+      "latitude": "47,52009",
+      "longitude": "19,069932",
+      "info": "Telefon: +3630 586 98 92 Nyitvatartás: Hétfõ – csütörtök: 06:00 – 23:00 Péntek: 06:00 – 22:00 Szombat – vasárnap: 08:00 – 22:00"
+    },
+    {
+      "id": 33,
+      "title": "Bajza Utcai Fitness Központ [Békéscsaba]",
+      "address1": "Magyarország 5600 Békéscsaba",
+      "address2": "Bajza utca 15.",
+      "address": "Magyarország 5600 Békéscsaba Bajza utca 15.",
+      "latitude": "46,677914",
+      "longitude": "21,1052198",
+      "info": "Telefon: 66/326-605 Nyitvatartás: -hétfõtõl péntekig : 9:00-21:00 -szombat : 14:00-21:00 -vasárnap : 14:00-9:30"
+    },
+    {
+      "id": 34,
+      "title": "Bakos Fitness [Budapest XXII. ker.]",
+      "address1": "Magyarország 1222 Budapest",
+      "address2": "Borkõ utca 12.",
+      "address": "Magyarország 1222 Budapest Borkõ utca 12.",
+      "latitude": "47,4159765",
+      "longitude": "19,035103",
+      "info": "Telefon: +3617928842 Nyitvatartás: H-P: 7:00 - 22:00 Sz: 10:00 - 18:00"
+    },
+    {
+      "id": 35,
+      "title": "Balance Sport Egyesület [Budapest IX. ker.]",
+      "address1": "Magyarország 1092 Budapest",
+      "address2": "Ferenc krt. 28.",
+      "address": "Magyarország 1092 Budapest Ferenc krt. 28.",
+      "latitude": "47,4837412",
+      "longitude": "19,0688529",
+      "info": "Telefon: +3612185051 Nyitvatartás: Hétfõ-Péntek: 6-22Szombat-Vasárnap: 10-18"
+    },
+    {
+      "id": 36,
+      "title": "Baross Egészségközpont [Budapest XVI. ker.]",
+      "address1": "Magyarország 1165 Budapest",
+      "address2": "Baross Gábor u. 40.",
+      "address": "Magyarország 1165 Budapest Baross Gábor u. 40.",
+      "latitude": "47,5162678",
+      "longitude": "19,1896922",
+      "info": "Telefon: +36202676183 Nyitvatartás: Hétköznap: 07:00-21:00 Szombaton: 08:00-16:00"
+    },
+    {
+      "id": 37,
+      "title": "BB Gym [Miskolc]",
+      "address1": "Magyarország 3526 Miskolc",
+      "address2": "Szeles út 71",
+      "address": "Magyarország 3526 Miskolc Szeles út 71",
+      "latitude": "48,1079859",
+      "longitude": "20,7962724",
+      "info": "Telefon: +36305257424 Nyitvatartás: Hétfõ - Péntek: 05:00-23:00 Szombat-Vasárnap: 7:00 - 21:00"
+    },
+    {
+      "id": 38,
+      "title": "BEAC-ELTE Sporttelep [Budapest XI. ker.]",
+      "address1": "Magyarország 1117 Budapest",
+      "address2": "Bogdánfy u. 10/B.",
+      "address": "Magyarország 1117 Budapest Bogdánfy u. 10/B.",
+      "latitude": "47,4737942",
+      "longitude": "19,0572238",
+      "info": "Telefon: +3612090617 Nyitvatartás: Hétfõ: 8:30-16:30 Kedd: 8:30-16:30 Szerda: 8:30-16:30 Csütörtök: 8:30-16:30 Péntek: 8:30-16:30 (januárban 8:30-12:00)"
+    },
+    {
+      "id": 39,
+      "title": "Belvárosi Fitness Club [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Horváth D. utca 6.",
+      "address": "Magyarország 6000 Kecskemét Horváth D. utca 6.",
+      "latitude": "46,9035269",
+      "longitude": "19,692948",
+      "info": "Telefon: (76) 320-180 Nyitvatartás:"
+    },
+    {
+      "id": 40,
+      "title": "Best Fitness [Sopron]",
+      "address1": "Magyarország 9400 Sopron",
+      "address2": "Vándor Sándor u. 5.",
+      "address": "Magyarország 9400 Sopron Vándor Sándor u. 5.",
+      "latitude": "47,690266",
+      "longitude": "16,566954",
+      "info": "Telefon: +36 99 323 154 Nyitvatartás: Hétfõ-péntek: 7.00-22.00 Szombat: 8.00-20.00 Vasárnap: 9.00-18.00"
+    },
+    {
+      "id": 41,
+      "title": "Bibarc Tünde Fitness House [Szeged]",
+      "address1": "Magyarország 6724 Szeged",
+      "address2": "Kossuth Lajos út. 52. sz.",
+      "address": "Magyarország 6724 Szeged Kossuth Lajos út. 52. sz.",
+      "latitude": "46.2610653",
+      "longitude": "20.1357168",
+      "info": "Telefon: +36305525252 Nyitvatartás: Órarend!"
+    },
+    {
+      "id": 42,
+      "title": "BIG DOG Fitness [Lenti]",
+      "address1": "Magyarország 8960 Lenti",
+      "address2": "Zrínyi Miklós Utca 6",
+      "address": "Magyarország 8960 Lenti Zrínyi Miklós Utca 6",
+      "latitude": "46,6247507",
+      "longitude": "16,5408397",
+      "info": "Telefon: +36707044372 Nyitvatartás: H-P: 9:00 – 22:00 Szo: 12:00 – 20:00 V: 15:00 – 20:00"
+    },
+    {
+      "id": 43,
+      "title": "Bliss&Body fitness és wellness [Budapest VI. ker.]",
+      "address1": "Magyarország 1066 Budapest",
+      "address2": "Ó utca 43-49.",
+      "address": "Magyarország 1066 Budapest Ó utca 43-49.",
+      "latitude": "47,5055015",
+      "longitude": "19,0601987",
+      "info": "Telefon: +36 1 269 0668 Nyitvatartás: Hétfõ-péntek: 6.30 – 22.00 Szombat -vasárnap: 8.00 – 20.00"
+    },
+    {
+      "id": 44,
+      "title": "Bodybuilding & Fitness Shop - Pest [~Fitnessboltok]",
+      "address1": "Magyarország 1139 Budapest",
+      "address2": "Forgách utca 19.",
+      "address": "Magyarország 1139 Budapest Forgách utca 19.",
+      "latitude": "47,5385683",
+      "longitude": "19,07507",
+      "info": "Telefon: +36-20-900-0864 Nyitvatartás: H-P: 9:00-18:00"
+    },
+    {
+      "id": 45,
+      "title": "Bodybuilding & Fitness Shop - Szeged [~Fitnessboltok]",
+      "address1": "Magyarország 6722 Szeged",
+      "address2": "Mérey u. 17.",
+      "address": "Magyarország 6722 Szeged Mérey u. 17.",
+      "latitude": "46,2572016",
+      "longitude": "20,1424578",
+      "info": "Telefon: +36 62 451 690 Nyitvatartás: H-P: 8-20 Sz: 9-13"
+    },
+    {
+      "id": 46,
+      "title": "BODYFIT [Gyula]",
+      "address1": "Magyarország 5700 Gyula",
+      "address2": "Rákóczi utca 27",
+      "address": "Magyarország 5700 Gyula Rákóczi utca 27",
+      "latitude": "46,6375523",
+      "longitude": "21,2739895",
+      "info": "Telefon: 06 30 3818812 Nyitvatartás: Hétfõtõl-péntekig 09:00-21:00 Szombat-vasárnap 09:13:00"
+    },
+    {
+      "id": 47,
+      "title": "Bokréta Fitness [Budapest IX. ker.]",
+      "address1": "Magyarország 1094 Budapest",
+      "address2": "Bokréta út 3.",
+      "address": "Magyarország 1094 Budapest Bokréta út 3.",
+      "latitude": "47,479424",
+      "longitude": "19,073339",
+      "info": "Telefon: +36709679623 Nyitvatartás: H-P: 7-12 és 15-22 Sz: 9-13 V: 15-21"
+    },
+    {
+      "id": 48,
+      "title": "Boss Body Club [Füzesgyarmat]",
+      "address1": "Magyarország 5525 Füzesgyarmat",
+      "address2": "Kossuth utca 6",
+      "address": "Magyarország 5525 Füzesgyarmat Kossuth utca 6",
+      "latitude": "47,107066",
+      "longitude": "21,211401",
+      "info": "Telefon: (30) 201 6081 Nyitvatartás: H-P 07.00-tól 12.00-ig majd 14.00-20.00-ig Szo-Vas 14.00-18.00"
+    },
+    {
+      "id": 49,
+      "title": "Botond Fitness Club [Mosonmagyaróvár]",
+      "address1": "Magyarország 9200 Mosonmagyaróvár",
+      "address2": "Kálnoki u. 11.",
+      "address": "Magyarország 9200 Mosonmagyaróvár Kálnoki u. 11.",
+      "latitude": "47,8798458",
+      "longitude": "17,2799411",
+      "info": "Telefon: +36 70 521 6800 Nyitvatartás: Hétfõ 06:00 - 22:00 Kedd 06:00 - 22:00 Szerda 06:00 - 22:00 Csütörtök 06:00 - 22:00 Péntek 06:00 - 22:00 Szombat 07:00 - 18:00 Vasárnap 07:00 - 18:00"
+    },
+    {
+      "id": 50,
+      "title": "Botond SC [Kisvárda]",
+      "address1": "Magyarország 4600 Kisvárda",
+      "address2": "Virágh Ferenc u. 93.",
+      "address": "Magyarország 4600 Kisvárda Virágh Ferenc u. 93.",
+      "latitude": "48,2148619",
+      "longitude": "22,07722",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 51,
+      "title": "Boxvilág Ökölvívóképzõ SE [Szeged]",
+      "address1": "Magyarország 6728 Szeged",
+      "address2": "Napos út 16.",
+      "address": "Magyarország 6728 Szeged Napos út 16.",
+      "latitude": "46,2725011",
+      "longitude": "20,1226622",
+      "info": "Telefon: 20/5166-314 Nyitvatartás:"
+    },
+    {
+      "id": 52,
+      "title": "Brill Fitnesss [Budapest XIII. ker.]",
+      "address1": "Magyarország 1132 Budapest",
+      "address2": "Váci út 28.",
+      "address": "Magyarország 1132 Budapest Váci út 28.",
+      "latitude": "47,5148469",
+      "longitude": "19,0587561",
+      "info": "Telefon: +3613296652 Nyitvatartás: hétfõ- péntek: 06:00- 22:00 szombat- vasárnap: 8:30-19:00"
+    },
+    {
+      "id": 53,
+      "title": "BSK Crossfight [Budapest III. ker.]",
+      "address1": "Magyarország 1033 Budapest",
+      "address2": "Szentendrei út 89-95.",
+      "address": "Magyarország 1033 Budapest Szentendrei út 89-95.",
+      "latitude": "47,5559448",
+      "longitude": "19,0483725",
+      "info": "Telefon: +36 20 849 5127 Nyitvatartás: H-P 6:00 – 22:00 Sz 8:00 – 16:00 V:8:00 – 14:00"
+    },
+    {
+      "id": 54,
+      "title": "Buda Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1111 Budapest",
+      "address2": "Bercsényi u. 12.",
+      "address": "Magyarország 1111 Budapest Bercsényi u. 12.",
+      "latitude": "47,477714",
+      "longitude": "19,051178",
+      "info": "Telefon: +36 1 209-8177 Nyitvatartás: Hétfõ-Péntek: 6:00-22:00 Szombat-Vasárnap: 9:00-17:00"
+    },
+    {
+      "id": 55,
+      "title": "Buda Fitness Campona [Budapest XI. ker.]",
+      "address1": "Magyarország 1111 Budapest",
+      "address2": "Bercsényi U. 12",
+      "address": "Magyarország 1111 Budapest Bercsényi U. 12",
+      "latitude": "47,477714",
+      "longitude": "19,051178",
+      "info": "Telefon: +3612098177 Nyitvatartás: H-P: 7-22 Szo-Vas: 9-20 óráig."
+    },
+    {
+      "id": 56,
+      "title": "Budakalászi Sportcsarnok [Budakalász]",
+      "address1": "Magyarország 2011 Budakalász",
+      "address2": "Omszki Park 1.",
+      "address": "Magyarország 2011 Budakalász Omszki Park 1.",
+      "latitude": "47,612538",
+      "longitude": "19,060951",
+      "info": "Telefon: +3626540424 Nyitvatartás:"
+    },
+    {
+      "id": 57,
+      "title": "Budapesti Ch'ang stílusú Shalokin Kung Fu iskola [Budapest XIV. ker.]",
+      "address1": "Magyarország 1149 Budapest",
+      "address2": "Pillangó park 3-5.",
+      "address": "Magyarország 1149 Budapest Pillangó park 3-5.",
+      "latitude": "47,503617",
+      "longitude": "19,122265",
+      "info": "Telefon: +3670/456-4425 Nyitvatartás: Felnõtt edzések Hétfõ: 17:00-18:30 Szerda: 18:00-19:30 Péntek: 18:00-19:30 Gyerek edzések Hétfõ: 17:00-18:00 Péntek: 18:00-19:00"
+    },
+    {
+      "id": 58,
+      "title": "Bumeráng fitness [Debrecen]",
+      "address1": "Magyarország 4031 Debrecen",
+      "address2": "Szoboszlói út 50.",
+      "address": "Magyarország 4031 Debrecen Szoboszlói út 50.",
+      "latitude": "47,5160122",
+      "longitude": "21,6081057",
+      "info": "Telefon: +3652429194"
+    },
+    {
+      "id": 59,
+      "title": "Carbon Sportközpont [Komló]",
+      "address1": "Magyarország 7300 Komló",
+      "address2": "Kossuth Lajos u. 21.",
+      "address": "Magyarország 7300 Komló Kossuth Lajos u. 21.",
+      "latitude": "46,189964",
+      "longitude": "18,2701509",
+      "info": "Telefon: +36205495590"
+    },
+    {
+      "id": 60,
+      "title": "Center gym [Kiskunfélegyháza]",
+      "address1": "Magyarország 6100 Kiskunfélegyháza",
+      "address2": "Kossuth L.u. 16.",
+      "address": "Magyarország 6100 Kiskunfélegyháza Kossuth L.u. 16.",
+      "latitude": "46,7099474",
+      "longitude": "19,8430297",
+      "info": "Telefon: +36703278708 Nyitvatartás: H-P: 7:30 - 21:00 Sz-V: 4:00 - 20:00"
+    },
+    {
+      "id": 61,
+      "title": "Central Gym [Budapest V. ker.]",
+      "address1": "Magyarország 1054 Budapest",
+      "address2": "Kálmán Imre utca 15.",
+      "address": "Magyarország 1054 Budapest Kálmán Imre utca 15.",
+      "latitude": "47,5067164",
+      "longitude": "19,0526819",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 62,
+      "title": "Chili fitness [Debrecen]",
+      "address1": "Magyarország 4030 Debrecen",
+      "address2": "Vágóhíd u. 3/B",
+      "address": "Magyarország 4030 Debrecen Vágóhíd u. 3/B",
+      "latitude": "47,5228651",
+      "longitude": "21,6463879",
+      "info": "Telefon: 0652 / 541-153. Nyitvatartás: Hétfõtõl szombatig 6-23 Vasárnap 7-22 Ünnepnap 7-22"
+    },
+    {
+      "id": 63,
+      "title": "Chili Fitness 2 [Budapest XI. ker.]",
+      "address1": "Magyarország 1119 Budapest",
+      "address2": "Etele út 57.",
+      "address": "Magyarország 1119 Budapest Etele út 57.",
+      "latitude": "47,4641571",
+      "longitude": "19,0308072",
+      "info": "Telefon: +36 70 948 4890 Nyitvatartás: 0-24"
+    },
+    {
+      "id": 64,
+      "title": "Chili Fitness 4 [Budapest XXI. ker.]",
+      "address1": "Magyarország 1214 Budapest",
+      "address2": "Kossuth Lajos utca 117",
+      "address": "Magyarország 1214 Budapest Kossuth Lajos utca 117",
+      "latitude": "47,4207008",
+      "longitude": "19,0672035",
+      "info": "Telefon: +36707730505 Nyitvatartás: 6-23"
+    },
+    {
+      "id": 65,
+      "title": "Chili Fittness 3 [Budapest XIII. ker.]",
+      "address1": "Magyarország 1135 Budapest",
+      "address2": "Szegedi út 56",
+      "address": "Magyarország 1135 Budapest Szegedi út 56",
+      "latitude": "47,5270547",
+      "longitude": "19,0860705",
+      "info": "Telefon: +36703447929 Nyitvatartás: H-V: 6:00 - 23:00"
+    },
+    {
+      "id": 66,
+      "title": "City - Fitness Stúdió [Szeged]",
+      "address1": "Magyarország 6723 Szeged",
+      "address2": "Budapesti körút 5.",
+      "address": "Magyarország 6723 Szeged Budapesti körút 5.",
+      "latitude": "46,268048",
+      "longitude": "20,167131",
+      "info": "Telefon: +36 (62) 491-93 Nyitvatartás: HÉTKÖZNAP 7:00-22:00 SZOMBAT: 8:00-19:00 VASÁRNAP: 9:00-17:00"
+    },
+    {
+      "id": 67,
+      "title": "City Fitness Tiszaújváros [Tiszaújváros]",
+      "address1": "Magyarország 3580 Tiszaújváros",
+      "address2": "Bethlen Gábor út 5.",
+      "address": "Magyarország 3580 Tiszaújváros Bethlen Gábor út 5.",
+      "latitude": "47,931238",
+      "longitude": "21,0368706",
+      "info": "Telefon: +36(49) 499 268 Nyitvatartás: H-P: 6-22 Szo-V: 10-20"
+    },
+    {
+      "id": 68,
+      "title": "City Fittness [Szerencs]",
+      "address1": "Magyarország 3900 Szerencs",
+      "address2": "Gyár u.",
+      "address": "Magyarország 3900 Szerencs Gyár u.",
+      "latitude": "48,1569255",
+      "longitude": "21,2020732",
+      "info": "Nyitvatartás: H-P: 6-22 Sz-V: 10-20"
+    },
+    {
+      "id": 69,
+      "title": "City Squash és Fitness Club [Budapest II. ker.]",
+      "address1": "Magyarország 1022 Budapest",
+      "address2": "Marczibányi tér 13.",
+      "address": "Magyarország 1022 Budapest Marczibányi tér 13.",
+      "latitude": "47,512218",
+      "longitude": "19,0223143",
+      "info": "Telefon: +3613360408 Nyitvatartás: H-P: 7:00 - 23:00 Sz-V: 8:00 - 22:00"
+    },
+    {
+      "id": 70,
+      "title": "Claudia Konditerem [Cegléd]",
+      "address1": "Magyarország 2700 Cegléd",
+      "address2": "Mizsei út - Várkonyi István utca sarok",
+      "address": "Magyarország 2700 Cegléd Mizsei út - Várkonyi István utca sarok",
+      "latitude": "47,1643518",
+      "longitude": "19,7818451",
+      "info": "Telefon: +3653322282 Nyitvatartás:"
+    },
+    {
+      "id": 71,
+      "title": "Club Korona [Budapest II. ker.]",
+      "address1": "Magyarország 1025 Budapest",
+      "address2": "Törökvészi út 87-91. (Rózsadomb Center VI. emelet)",
+      "address": "Magyarország 1025 Budapest Törökvészi út 87-91. (Rózsadomb Center VI. emelet)",
+      "latitude": "47,5291012",
+      "longitude": "19,005216",
+      "info": "Telefon: +3613458493 Nyitvatartás: Hétköznap: 6.00-22.00 Hétvégén: 8.00-20.00"
+    },
+    {
+      "id": 72,
+      "title": "Colonia Fitness [Veszprém]",
+      "address1": "Magyarország 8200 Veszprém",
+      "address2": "Láhner György u. 4",
+      "address": "Magyarország 8200 Veszprém Láhner György u. 4",
+      "latitude": "47,1172702",
+      "longitude": "17,9146152",
+      "info": "Telefon: 06-88/785-540 Nyitvatartás:"
+    },
+    {
+      "id": 73,
+      "title": "Colosseum Fitness [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Szolnoki út 10.",
+      "address": "Magyarország 6000 Kecskemét Szolnoki út 10.",
+      "latitude": "46,9118476",
+      "longitude": "19,7067944",
+      "info": "Telefon: +3676320928 Nyitvatartás: Hétfõtõl - Péntekig 6-22 óráig Szombat - Vasárnap 8-19 óráig."
+    },
+    {
+      "id": 74,
+      "title": "Colosseum Fitness és Aerobik [Gyõr]",
+      "address1": "Magyarország 9023 Gyõr",
+      "address2": "Budai u. 2-6.",
+      "address": "Magyarország 9023 Gyõr Budai u. 2-6.",
+      "latitude": "47,689818",
+      "longitude": "17,647601",
+      "info": "Telefon: +36709419231 Nyitvatartás: H-P: 7-22 Sz-V: 10-19"
+    },
+    {
+      "id": 75,
+      "title": "Colosseum Gym [Battonya]",
+      "address1": "Magyarország 5830 Battonya",
+      "address2": "Puskin u. 75",
+      "address": "Magyarország 5830 Battonya Puskin u. 75",
+      "latitude": "46,287707",
+      "longitude": "21,022764",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 76,
+      "title": "Corner Fitness [Budapest XIV. ker.]",
+      "address1": "Magyarország 1147 Budapest",
+      "address2": "Erzsébet királyné útja 61",
+      "address": "Magyarország 1147 Budapest Erzsébet királyné útja 61",
+      "latitude": "47,5260058",
+      "longitude": "19,1048483",
+      "info": "Telefon: 363-1046 Nyitvatartás: Hétfõtõl-péntekig 7:00-22:00 szombat-vasárnap 8:00-19:00"
+    },
+    {
+      "id": 77,
+      "title": "Corpus Fitness Stúdió [Debrecen]",
+      "address1": "Magyarország 4032 Debrecen",
+      "address2": "Oláh Gábor u. 5. (Sport Hotel)",
+      "address": "Magyarország 4032 Debrecen Oláh Gábor u. 5. (Sport Hotel)",
+      "latitude": "47,54945",
+      "longitude": "21,63621",
+      "info": "Telefon: +3652450450 Nyitvatartás: Hétfõ-Péntek: 6:00 am - 22:00 Szombat-Vasárnap: 8:00 - 20:00"
+    },
+    {
+      "id": 78,
+      "title": "CosmoSport [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Gugásvölgyi út 4",
+      "address": "Magyarország 8000 Székesfehérvár Gugásvölgyi út 4",
+      "latitude": "47,2046547",
+      "longitude": "18,4304716",
+      "info": "Telefon: +36 22 788 967 Nyitvatartás: Hétfõ – Péntek: 06:30 – 22:00 Szombat – Vasárnap: 08:00 – 20:00"
+    },
+    {
+      "id": 79,
+      "title": "Cross Team Eger [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Mátyás Király 55.",
+      "address": "Magyarország 3300 Eger Mátyás Király 55.",
+      "latitude": "47,8832461",
+      "longitude": "20,381458",
+      "info": "Telefon: +36(30) 249 964 Nyitvatartás: 9-16 Open gym elõtte utánna csoportos edzések"
+    },
+    {
+      "id": 80,
+      "title": "Cross-Sport [Debrecen]",
+      "address1": "Magyarország 4025 Debrecen",
+      "address2": "Iskola utca 2.",
+      "address": "Magyarország 4025 Debrecen Iskola utca 2.",
+      "latitude": "47,525177",
+      "longitude": "21,6245223",
+      "info": "Telefon: +36 30 410 7098 Nyitvatartás: HÉTFÕ SZERDA        PÉNTEK: 06:00-10:00 és 15:30-22:00 KEDD        CSÜTÖRTÖK: 15:30-22:00 SZOMBAT: 13:00-17:30 VASÁRNAP: 15.30-17.:30"
+    },
+    {
+      "id": 81,
+      "title": "CrossFit B'Bros [Budapest XIV. ker.]",
+      "address1": "Magyarország 1142 Budapest",
+      "address2": "Zichy Géza utca 12.",
+      "address": "Magyarország 1142 Budapest Zichy Géza utca 12.",
+      "latitude": "47,509452",
+      "longitude": "19,0914727",
+      "info": "Telefon: +36303319395 Nyitvatartás: Hétfõtõl péntekig:6:00- 21:00 Szombat: 9:00 - 14:00"
+    },
+    {
+      "id": 82,
+      "title": "CrossFit Debrecen [Debrecen]",
+      "address1": "Magyarország 4034 Debrecen",
+      "address2": "Kolónia utca 1/A",
+      "address": "Magyarország 4034 Debrecen Kolónia utca 1/A",
+      "latitude": "47,5281989",
+      "longitude": "21,6456199",
+      "info": "Telefon: +3620 374 3012 Nyitvatartás: Szombat: 9:30-11:30 Hétfõ - Péntek: 08:00-20:00 Vasárnap 9:30-11:30"
+    },
+    {
+      "id": 83,
+      "title": "Crossfit Gemmeopolis [Gyöngyös]",
+      "address1": "Magyarország 3200 Gyöngyös",
+      "address2": "Kenyérgyár út 9.",
+      "address": "Magyarország 3200 Gyöngyös Kenyérgyár út 9.",
+      "latitude": "47,7667591",
+      "longitude": "19,9204503",
+      "info": "Telefon: +36202798811 Nyitvatartás:"
+    },
+    {
+      "id": 84,
+      "title": "CrossFit Tesseract [Budapest XIII. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Váci út 168 Reno udvar O épület",
+      "address": "Magyarország 1138 Budapest Váci út 168 Reno udvar O épület",
+      "latitude": "47,5457785",
+      "longitude": "19,0697283",
+      "info": "Telefon: +36 30 4807071 Nyitvatartás: H-P: 6:00-21:00 Sz: 10:00:14:00 V: Zárva"
+    },
+    {
+      "id": 85,
+      "title": "CrossFit Watt [Gyõr]",
+      "address1": "Magyarország 9023 Gyõr",
+      "address2": "Mészáros Lõrinc u. 11.",
+      "address": "Magyarország 9023 Gyõr Mészáros Lõrinc u. 11.",
+      "latitude": "47,6834596",
+      "longitude": "17,6537247",
+      "info": "Nyitvatartás: H-P: 17:30-21:00 Sz: 10:00-12:00 V: ZÁRVA"
+    },
+    {
+      "id": 86,
+      "title": "Csúcsforma Személyi Edzõ Stúdió [Szeged]",
+      "address1": "Magyarország 6725 Szeged",
+      "address2": "Boldogasszony sgt. 22.",
+      "address": "Magyarország 6725 Szeged Boldogasszony sgt. 22.",
+      "latitude": "46,2444349",
+      "longitude": "20,1448424",
+      "info": "Telefon: 70/636-5753 Nyitvatartás:"
+    },
+    {
+      "id": 87,
+      "title": "Cutler Fehérvár [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Balatoni út 2.",
+      "address": "Magyarország 8000 Székesfehérvár Balatoni út 2.",
+      "latitude": "47,1857017",
+      "longitude": "18,4133216",
+      "info": "Telefon: +36304082991 Nyitvatartás: H-V: 6:00 - 24:00"
+    },
+    {
+      "id": 88,
+      "title": "Cutler Fitness [Miskolc]",
+      "address1": "Magyarország 3525 Miskolc",
+      "address2": "Régiposta u. 9",
+      "address": "Magyarország 3525 Miskolc Régiposta u. 9",
+      "latitude": "48,1047661",
+      "longitude": "20,7875509",
+      "info": "Telefon: +36706251441 Nyitvatartás: H-P: 5:30 – 23:30 Szo-V: 7:00 – 21:00"
+    },
+    {
+      "id": 89,
+      "title": "Cutler Fitness Gyõr [Gyõr]",
+      "address1": "Magyarország 9027 Gyõr",
+      "address2": "Nagysándor József utca 31",
+      "address": "Magyarország 9027 Gyõr Nagysándor József utca 31",
+      "latitude": "47,6931246",
+      "longitude": "17,6605384",
+      "info": "Telefon: +36304362292 Nyitvatartás: H-V: 6:00 – 24:00"
+    },
+    {
+      "id": 90,
+      "title": "Cutler Gold Budapest [Budapest IX. ker.]",
+      "address1": "Magyarország 1097 Budapest",
+      "address2": "Könyves Kálmán körút 12-14",
+      "address": "Magyarország 1097 Budapest Könyves Kálmán körút 12-14",
+      "latitude": "47,4703266",
+      "longitude": "19,0837914",
+      "info": "Telefon: +36309976421 Nyitvatartás: Hétköznap: 00:00 – 24:00 Hétvégén: 00:00 – 24:00"
+    },
+    {
+      "id": 91,
+      "title": "Cutler Gym [Debrecen]",
+      "address1": "Magyarország 4032 Debrecen",
+      "address2": "Ötvenhatosok tere 6/a Délibáb Áruház 1. Emelet",
+      "address": "Magyarország 4032 Debrecen Ötvenhatosok tere 6/a Délibáb Áruház 1. Emelet",
+      "latitude": "47,5477539",
+      "longitude": "21,6107742",
+      "info": "Telefon: +36 (52) 955 66 Nyitvatartás: H-P 6:00-24:00 Sz-V 10:00-:22:00"
+    },
+    {
+      "id": 92,
+      "title": "Cutler Gym [Kaposvár]",
+      "address1": "Magyarország 7400 Kaposvár",
+      "address2": "Szent Imre u. 1",
+      "address": "Magyarország 7400 Kaposvár Szent Imre u. 1",
+      "latitude": "46,3594445",
+      "longitude": "17,7936658",
+      "info": "Nyitvatartás: Hétfõtõl Péntekig: 6:00 - 22:30 Szombat Vasárnap: 8:00 - 20:00"
+    },
+    {
+      "id": 93,
+      "title": "Cutler GYM [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Kálvin tér 10-12",
+      "address": "Magyarország 6000 Kecskemét Kálvin tér 10-12",
+      "latitude": "46,9069096",
+      "longitude": "19,6944919",
+      "info": "Telefon: +36704269938 Nyitvatartás: hétfõ-péntek 6:00 – 22:00 szombat-vasárnap 8:00 - 22:00"
+    },
+    {
+      "id": 94,
+      "title": "Cutler Gym & Fitness [Pécs]",
+      "address1": "Magyarország 7632 Pécs",
+      "address2": "Megyeri út 76.",
+      "address": "Magyarország 7632 Pécs Megyeri út 76.",
+      "latitude": "46,0496914",
+      "longitude": "18,2121427",
+      "info": "Telefon: +36 72 786 554 Nyitvatartás: Hétfõ - Péntek 05:30 - 23:30 Szombat - Vasárnap 05:30 - 23:30"
+    },
+    {
+      "id": 95,
+      "title": "Cutler Gym 2 [Hajdúböszörmény]",
+      "address1": "Magyarország 4220 Hajdúböszörmény",
+      "address2": "Baltazár Dezsõ utca 27",
+      "address": "Magyarország 4220 Hajdúböszörmény Baltazár Dezsõ utca 27",
+      "latitude": "47,6674108",
+      "longitude": "21,5120627",
+      "info": "Nyitvatartás: H-V: 5:00 - 22:00"
+    },
+    {
+      "id": 96,
+      "title": "Cutler Gym Mosonmagyaróvár (Móvár) [Mosonmagyaróvár]",
+      "address1": "Magyarország 9200 Mosonmagyaróvár",
+      "address2": "Szent István király út 17.",
+      "address": "Magyarország 9200 Mosonmagyaróvár Szent István király út 17.",
+      "latitude": "47,8699086",
+      "longitude": "17,2704287",
+      "info": "Telefon: +3670 570 3643 Nyitvatartás: H-P: 6:00 - 23:45 Sz-V: 6:00 - 20:00"
+    },
+    {
+      "id": 97,
+      "title": "Cutler Gym Nyíregyháza [Nyíregyháza]",
+      "address1": "Magyarország 4400 Nyíregyháza",
+      "address2": "Vay Ádám krt. 20",
+      "address": "Magyarország 4400 Nyíregyháza Vay Ádám krt. 20",
+      "latitude": "47,9581292",
+      "longitude": "21,7204966",
+      "info": "Telefon: +36702034749 Nyitvatartás: H-P: 6:00 – 23:00 Szo: 8:00 – 21:00 V: 9:00 – 21:00"
+    },
+    {
+      "id": 98,
+      "title": "Cutler Gym Sopron [Sopron]",
+      "address1": "Magyarország 9400 Sopron",
+      "address2": "Lackner Kristóf u 35",
+      "address": "Magyarország 9400 Sopron Lackner Kristóf u 35",
+      "latitude": "47,6914402",
+      "longitude": "16,5822424",
+      "info": "Telefon: +36202841732 Nyitvatartás: H-Vas: 6:00 - 22:00"
+    },
+    {
+      "id": 99,
+      "title": "D Fitness központ [Nyíregyhéza]",
+      "address1": "Magyarország 4400 Nyíregyhéza",
+      "address2": "Kállói ut 12.sz.",
+      "address": "Magyarország 4400 Nyíregyhéza Kállói ut 12.sz.",
+      "latitude": "47,947603",
+      "longitude": "21,7327367",
+      "info": "Telefon: +36-42/400-040 Nyitvatartás: Hétfõ - Péntek: 06:00 - 22:00 Szombat: 08:00 - 20:00 Vasárnap: 09:00 - 20:00"
+    },
+    {
+      "id": 100,
+      "title": "Dallos Fitness [Gyõr]",
+      "address1": "Magyarország 9022 Gyõr",
+      "address2": "Móricz Zsigmond rakpart C épület I. emelet 1. ajtó",
+      "address": "Magyarország 9022 Gyõr Móricz Zsigmond rakpart C épület I. emelet 1. ajtó",
+      "latitude": "47,6920506",
+      "longitude": "17,6383638",
+      "info": "Telefon: +36209813690 Nyitvatartás:"
+    },
+    {
+      "id": 101,
+      "title": "Danubius Premier Fitness [Budapest V. ker.]",
+      "address1": "Magyarország 1051 Budapest",
+      "address2": "Szent István tér 11.",
+      "address": "Magyarország 1051 Budapest Szent István tér 11.",
+      "latitude": "47,5011373",
+      "longitude": "19,0527874",
+      "info": "Nyitvatartás: H-V: 6:30 - 22:00"
+    },
+    {
+      "id": 102,
+      "title": "Delta Fitness [Debrecen]",
+      "address1": "Magyarország 4026 Debrecen",
+      "address2": "Hunyadi János utca 10.",
+      "address": "Magyarország 4026 Debrecen Hunyadi János utca 10.",
+      "latitude": "47,5352482",
+      "longitude": "21,6230561",
+      "info": "Telefon: +36(20)346-3682 Nyitvatartás: Hétfõ - Péntek 6:00 - 22:00 Szombat - Vasárnap 9:00 - 20:00"
+    },
+    {
+      "id": 103,
+      "title": "Deme Gym [Szentlõrinc]",
+      "address1": "Magyarország 7940 Szentlõrinc",
+      "address2": "Erzsébet u.61",
+      "address": "Magyarország 7940 Szentlõrinc Erzsébet u.61",
+      "latitude": "46,034537",
+      "longitude": "17,985119",
+      "info": "Nyitvatartás: h-p:8-20 sz:10-17 v:zárva."
+    },
+    {
+      "id": 104,
+      "title": "Detroit Fitness [Esztergom]",
+      "address1": "Magyarország 2500 Esztergom",
+      "address2": "Táti út 28",
+      "address": "Magyarország 2500 Esztergom Táti út 28",
+      "latitude": "47,7808737",
+      "longitude": "18,7349826",
+      "info": "Telefon: +36309765433 Nyitvatartás: H-P: 8:00 – 20:00 Sz-V: 9:00 - 12:00"
+    },
+    {
+      "id": 105,
+      "title": "Diamond Gym Fitness [Törökszentmiklós]",
+      "address1": "Magyarország 5200 Törökszentmiklós",
+      "address2": "Alatkai út 3",
+      "address": "Magyarország 5200 Törökszentmiklós Alatkai út 3",
+      "latitude": "47,179471",
+      "longitude": "20,399681",
+      "info": "Nyitvatartás: H-P: 8:00 am - 10:00 pm Sz-V: 10:00 am - 8:00 pm"
+    },
+    {
+      "id": 106,
+      "title": "Diamond Wellness [Érd]",
+      "address1": "Magyarország 2030 Érd",
+      "address2": "Favágó u. 107.",
+      "address": "Magyarország 2030 Érd Favágó u. 107.",
+      "latitude": "47,4200329",
+      "longitude": "18,860624",
+      "info": "Telefon: +36 23 520 072 Nyitvatartás: H-Cs: 7:00 am - 10:00 pm P: 7:00 am - 9:00 pm Sz: 9:00 am - 3:00 pm"
+    },
+    {
+      "id": 107,
+      "title": "Dinamic Sportcentrum [Tatabánya]",
+      "address1": "Magyarország 2800 Tatabánya",
+      "address2": "Mártírok útja 44/a",
+      "address": "Magyarország 2800 Tatabánya Mártírok útja 44/a",
+      "latitude": "47,580327",
+      "longitude": "18,4032668",
+      "info": "Telefon: +3634301444 Nyitvatartás: H-P: 6:30 – 22:00 Szo-V: 8:30 – 18:00 Ünnepnapokon: 8:30 - 18:00"
+    },
+    {
+      "id": 108,
+      "title": "Dominator Gym [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Szent István tér 5.",
+      "address": "Magyarország 1042 Budapest Szent István tér 5.",
+      "latitude": "47,5614232",
+      "longitude": "19,0884505",
+      "info": "Telefon: +3617943989 Nyitvatartás: H-P: 6:00 - 24:00 Sz: 6:00 - 22:00 V: 8:00 - 22:00"
+    },
+    {
+      "id": 109,
+      "title": "DUNA Sportcentrum [Komárom]",
+      "address1": "Magyarország 2900 Komárom",
+      "address2": "Klapka György út 1-3",
+      "address": "Magyarország 2900 Komárom Klapka György út 1-3",
+      "latitude": "47,7434135",
+      "longitude": "18,118704",
+      "info": "Nyitvatartás: H-P: 6:30 – 21:00 Szo: 9:00 – 21:00 V: 9:00 – 17:00"
+    },
+    {
+      "id": 110,
+      "title": "Egressy Fitness [Budapest XIV. ker.]",
+      "address1": "Magyarország 1149 Budapest",
+      "address2": "Egressy út 23-25.",
+      "address": "Magyarország 1149 Budapest Egressy út 23-25.",
+      "latitude": "47,5079876",
+      "longitude": "19,108229",
+      "info": "Nyitvatartás: HÉTFÕ -PÉNTEK 06:00 - 22:00 SZOMBAT -VASÁRNAP 08:00 - 20:00"
+    },
+    {
+      "id": 111,
+      "title": "Élet-forma Fitnesz [Sárospatak]",
+      "address1": "Magyarország 3950 Sárospatak",
+      "address2": "Erdélyi út. 3-5.",
+      "address": "Magyarország 3950 Sárospatak Erdélyi út. 3-5.",
+      "latitude": "48,318829",
+      "longitude": "21,5653107",
+      "info": "Telefon: +36302852983 Nyitvatartás: Hétfõtõl – péntekig: 8:00 – 12:00 óráig 13:30 – 20:00 óráig Szombaton: 9:00 – 12:00 óráig"
+    },
+    {
+      "id": 112,
+      "title": "Elite Gym [Ráckeve]",
+      "address1": "Magyarország 2300 Ráckeve",
+      "address2": "Dömsödi út 34",
+      "address": "Magyarország 2300 Ráckeve Dömsödi út 34",
+      "latitude": "47,155328",
+      "longitude": "18,9555015",
+      "info": "Nyitvatartás: Hétfõ - Péntek : 7:00 - 11:00Szombat: 8:00 - 20:00 Vasárnap: 9:00 - 15:00"
+    },
+    {
+      "id": 113,
+      "title": "Emotion Fitness [Veszprém]",
+      "address1": "Magyarország 8200 Veszprém",
+      "address2": "Török Ignác út 3.",
+      "address": "Magyarország 8200 Veszprém Török Ignác út 3.",
+      "latitude": "47,11324",
+      "longitude": "17,9164363",
+      "info": "Telefon: +36 88 781 257 Nyitvatartás: H-P: 6:00-21:00 Sz: 8:00-16:00 V: Zárva"
+    },
+    {
+      "id": 114,
+      "title": "Energia Fitnesz [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1182 Budapest",
+      "address2": "Ráday Gedeon út 27.",
+      "address": "Magyarország 1182 Budapest Ráday Gedeon út 27.",
+      "latitude": "47,4454974",
+      "longitude": "19,190895",
+      "info": "Telefon: +36 1 291 1122 Nyitvatartás: Hétfõ-péntek: 6.00-22.00 Szombat-vasárnap: 8.00-18.00"
+    },
+    {
+      "id": 115,
+      "title": "Energie Fitness [Celldömölk]",
+      "address1": "Magyarország 9500 Celldömölk",
+      "address2": "Építõk utja 1",
+      "address": "Magyarország 9500 Celldömölk Építõk utja 1",
+      "latitude": "47,2487344",
+      "longitude": "17,1512829",
+      "info": "Nyitvatartás: 9:00 - 12:00"
+    },
+    {
+      "id": 116,
+      "title": "Energy Fitness [Mosonmagyaróvár]",
+      "address1": "Magyarország 9200 Mosonmagyaróvár",
+      "address2": "Magyar u. 38.",
+      "address": "Magyarország 9200 Mosonmagyaróvár Magyar u. 38.",
+      "latitude": "47,8751803",
+      "longitude": "17,2698499",
+      "info": "Telefon: +36205997449 Nyitvatartás: H-P: 7:00 - 22:00 Sz: 8:00 - 17:00 V: 8:00 - 12:00"
+    },
+    {
+      "id": 117,
+      "title": "Energy Fitness [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "11-es Huszár út 118",
+      "address": "Magyarország 9700 Szombathely 11-es Huszár út 118",
+      "latitude": "47,245426",
+      "longitude": "16,619972",
+      "info": "Telefon: +3694325093 Nyitvatartás: H-P: 6:30 am - 10:00 pm Sz: 8:30 am - 8:00 pm V: 2:00 pm - 8:00 pm"
+    },
+    {
+      "id": 118,
+      "title": "EnerGym [Debrecen]",
+      "address1": "Magyarország 4032 Debrecen",
+      "address2": "Egyetem tér 1.",
+      "address": "Magyarország 4032 Debrecen Egyetem tér 1.",
+      "latitude": "47,5540468",
+      "longitude": "21,6215226",
+      "info": "Telefon: +36-20-366-3579 Nyitvatartás: Hétfõ-Péntek: 14:30 - 22:00 Szombat/Vasárnap: 16:00-20:00"
+    },
+    {
+      "id": 119,
+      "title": "Energym [Debrecen]",
+      "address1": "Magyarország 4032 Debrecen",
+      "address2": "Füredi út 76.",
+      "address": "Magyarország 4032 Debrecen Füredi út 76.",
+      "latitude": "47,5416855",
+      "longitude": "21,607139",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 120,
+      "title": "Erzsébetterem [Budapest XX. ker.]",
+      "address1": "Magyarország 1204 Budapest",
+      "address2": "Törökflóris utca 84.",
+      "address": "Magyarország 1204 Budapest Törökflóris utca 84.",
+      "latitude": "47,4381204",
+      "longitude": "19,1068747",
+      "info": "Telefon: +36203797190 Nyitvatartás: Hé - Pé: 7:00 - 21:00 Szom: 8:00 - 13:00"
+    },
+    {
+      "id": 121,
+      "title": "Erzsébetvárosi SE [Budapest VII. ker.]",
+      "address1": "Magyarország Budapest",
+      "address2": "Százház u 9-23.",
+      "address": "Magyarország Budapest  Százház u 9-23.",
+      "latitude": "47,502622",
+      "longitude": "19,0876905",
+      "info": "Telefon: 351-7460 Nyitvatartás:"
+    },
+    {
+      "id": 122,
+      "title": "ESO Body Fitness & Spinning Terem [Budapest XIX. ker.]",
+      "address1": "Magyarország 1193 Budapest",
+      "address2": "Vas Gereben u. 4.",
+      "address": "Magyarország 1193 Budapest Vas Gereben u. 4.",
+      "latitude": "47,4504668",
+      "longitude": "19,1548991",
+      "info": "Telefon: +3612808682 Nyitvatartás: H-P: 7:00 - 22:00 Sz: 8:00 - 15:00 V: 8:00 - 12:00"
+    },
+    {
+      "id": 123,
+      "title": "EuroGym Fitness [Budapest IV. ker.]",
+      "address1": "Magyarország 1045 Budapest",
+      "address2": "Pozsonyi u. 4/F",
+      "address": "Magyarország 1045 Budapest  Pozsonyi u. 4/F",
+      "latitude": "47,5536079",
+      "longitude": "19,089756",
+      "info": "Telefon: 1/399-0145 Nyitvatartás: Hétköznap: 7-22 Hétvégén: 7-20"
+    },
+    {
+      "id": 124,
+      "title": "Everybody Fitness [Sopron]",
+      "address1": "Magyarország 9400 Sopron",
+      "address2": "Pap rét 27",
+      "address": "Magyarország 9400 Sopron Pap rét 27",
+      "latitude": "47,6827332",
+      "longitude": "16,596479",
+      "info": "Telefon: +3620333111 Nyitvatartás: Péntekig: 07:30 - 22:00 Szombat:09:00 - 18:00 Vasárnap: 09:00 - 13:00"
+    },
+    {
+      "id": 125,
+      "title": "Exxxtreme Fitness [Csömör]",
+      "address1": "Magyarország 2141 Csömör",
+      "address2": "Rákóczi u. 30.",
+      "address": "Magyarország 2141 Csömör  Rákóczi u. 30.",
+      "latitude": "47,552889",
+      "longitude": "19,223218",
+      "info": "Telefon: +36 70 433 1400 Nyitvatartás: Hétfõtõl péntekig: 07:00 - 22:00 Hétvégén: 08:00 - 18:00"
+    },
+    {
+      "id": 126,
+      "title": "F&M fitness and more [Budapest XII. ker.]",
+      "address1": "Magyarország 1123 Budapest",
+      "address2": "Csörsz u. 14-16.",
+      "address": "Magyarország 1123 Budapest Csörsz u. 14-16.",
+      "latitude": "47,489833",
+      "longitude": "19,0221834",
+      "info": "Telefon: +36703770463 Nyitvatartás: Hétfõ-péntek: 6.00 - 22.00 Szombat-vasárnap: 8.00 - 20.00"
+    },
+    {
+      "id": 127,
+      "title": "F3 Fitness Központ [Pécs]",
+      "address1": "Magyarország 7621 Pécs",
+      "address2": "Munkácsy u. 33.",
+      "address": "Magyarország 7621 Pécs  Munkácsy u. 33.",
+      "latitude": "46,0754932",
+      "longitude": "18,2334788",
+      "info": "Telefon: +3672517333 Nyitvatartás: H-V: 6-24"
+    },
+    {
+      "id": 128,
+      "title": "F3 The Hard Line [Pécs]",
+      "address1": "Magyarország 7621 Pécs",
+      "address2": "Széchenyi tér (bejárat az Apáca u.2. felõl)",
+      "address": "Magyarország 7621 Pécs Széchenyi tér (bejárat az Apáca u.2. felõl)",
+      "latitude": "46,076083",
+      "longitude": "18,227209",
+      "info": "Nyitvatartás: Hétfõ-Péntek: 06-22 Szombat-Vasárnap: 08-20"
+    },
+    {
+      "id": 129,
+      "title": "Família Fitness [Budapest II. ker.]",
+      "address1": "Magyarország 1027 Budapest",
+      "address2": "Fõ utca 80.",
+      "address": "Magyarország 1027 Budapest  Fõ utca 80.",
+      "latitude": "47,510367",
+      "longitude": "19,0382749",
+      "info": "Telefon: +3612149204 Nyitvatartás: H-P: 7:00 - 22:00 Sz-V: 9:30 - 18:00"
+    },
+    {
+      "id": 130,
+      "title": "Farkas Body&Fitness [Szigetszentmiklós]",
+      "address1": "Magyarország 2310 Szigetszentmiklós",
+      "address2": "Gyári út 45.",
+      "address": "Magyarország 2310 Szigetszentmiklós Gyári út 45.",
+      "latitude": "47,3348347",
+      "longitude": "19,0054359",
+      "info": "Telefon: +36203818585 Nyitvatartás: H - P : 07.00 - 22.00 Szombat - 09.00-19.00 Vasárnap : 09.00 - 19.00"
+    },
+    {
+      "id": 131,
+      "title": "Fáy Kondi & Fitness [Zirc]",
+      "address1": "Magyarország 8420 Zirc",
+      "address2": "Fáy András utca 27",
+      "address": "Magyarország 8420 Zirc  Fáy András utca 27",
+      "latitude": "47,2659828",
+      "longitude": "17,8751726",
+      "info": "Telefon: +36304918353 Nyitvatartás: H-V: 4:00 pm - 8:00 pm"
+    },
+    {
+      "id": 132,
+      "title": "Fedora Fitnes Center [Dunaújváros]",
+      "address1": "Magyarország 2400 Dunaújváros",
+      "address2": "Táncsics Mihály utca 6/a",
+      "address": "Magyarország 2400 Dunaújváros Táncsics Mihály utca 6/a",
+      "latitude": "46,9635314",
+      "longitude": "18,9332088",
+      "info": "Telefon: +3625400825 Nyitvatartás: H-P:07.00-21.00 Sz-V:09.00-14.00."
+    },
+    {
+      "id": 133,
+      "title": "Feeling Center Wellness és Spa Központ [Szeged]",
+      "address1": "Magyarország 6724 Szeged",
+      "address2": "Pulcz utca 33.",
+      "address": "Magyarország 6724 Szeged Pulcz utca 33.",
+      "latitude": "46,2622996",
+      "longitude": "20,1330658",
+      "info": "Telefon: +3662656093 Nyitvatartás: H:09:00 - 20:00 K:09:00 - 20:00 Sz:09:00 - 20:00 Cs:09:00 - 20:00 P:09:00 - 20:00"
+    },
+    {
+      "id": 134,
+      "title": "Feeling Fitness & Body [Túrkeve]",
+      "address1": "Magyarország 5420 Túrkeve",
+      "address2": "Kinizsi utca 47",
+      "address": "Magyarország 5420 Túrkeve Kinizsi utca 47",
+      "latitude": "47,111318",
+      "longitude": "20,732397",
+      "info": "Nyitvatartás: H-P: 8:00-21:00 Szo-V: 9:00-20:00"
+    },
+    {
+      "id": 135,
+      "title": "Fehér Hajó Panzió * Aqua-Fit Club [Gyõr]",
+      "address1": "Magyarország 9025 Gyõr",
+      "address2": "Kiss Ernõ u. 4.",
+      "address": "Magyarország 9025 Gyõr Kiss Ernõ u. 4.",
+      "latitude": "47,688536",
+      "longitude": "17,624334",
+      "info": "Telefon: +36 96/317-608 Nyitvatartás:"
+    },
+    {
+      "id": 136,
+      "title": "FI-SU Csepel SC Fitness [Budapest XXI. ker.]",
+      "address1": "Magyarország 1212 Budapest",
+      "address2": "Béke tér 1. (Csepeli Sport Club)",
+      "address": "Magyarország 1212 Budapest Béke tér 1. (Csepeli Sport Club)",
+      "latitude": "47,4182974",
+      "longitude": "19,0700589",
+      "info": "Telefon: +3614270209 Nyitvatartás:"
+    },
+    {
+      "id": 137,
+      "title": "Filo Fitness & Focicsarnok [Nyíregyháza]",
+      "address1": "Magyarország 4400 Nyíregyháza",
+      "address2": "Lapály u.2-4.",
+      "address": "Magyarország 4400 Nyíregyháza  Lapály u.2-4.",
+      "latitude": "47,9433025",
+      "longitude": "21,732253",
+      "info": "Telefon: +36707737294 Nyitvatartás: Hétfõ - Csütörtök: 7:00 – 22:00 Péntek: 07:00 – 24:00"
+    },
+    {
+      "id": 138,
+      "title": "Fit Club Zugló [Budapest XIV. ker.]",
+      "address1": "Magyarország 1145 Budapest",
+      "address2": "Szugló utca 57.",
+      "address": "Magyarország 1145 Budapest  Szugló utca 57.",
+      "latitude": "47,514722",
+      "longitude": "19,112588",
+      "info": "Telefon: +36703777083 Nyitvatartás:"
+    },
+    {
+      "id": 139,
+      "title": "Fit Factory [Budapest IX. ker.]",
+      "address1": "Magyarország 1097 Budapest",
+      "address2": "Koppány utca 2-4.",
+      "address": "Magyarország 1097 Budapest  Koppány utca 2-4.",
+      "latitude": "47,4665026",
+      "longitude": "19,0819388",
+      "info": "Telefon: +36702536330 Nyitvatartás: Hétfõtõl - péntekig: 06-21:30-ig Szombat: 09-19-ig Vasárnap: 9-16 -ig"
+    },
+    {
+      "id": 140,
+      "title": "Fit Forma Stúdió Újpest [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Király utca 13",
+      "address": "Magyarország 1042 Budapest  Király utca 13",
+      "latitude": "47,56198",
+      "longitude": "19,09359",
+      "info": "Telefon: +361370124 Nyitvatartás: Nyári idõszak (06.15-09.30-ig): H - P : 7-22 óráig Szo - V : 7- 14 óráig Téli idõszak: 10.01-06.15. H - P : 7-22 óráig Szo - V : 7-18 óráig"
+    },
+    {
+      "id": 141,
+      "title": "Fit World Fitness [Szeged]",
+      "address1": "Magyarország 6720 Szeged",
+      "address2": "Dózsa Gy. u. 12",
+      "address": "Magyarország 6720 Szeged Dózsa Gy. u. 12",
+      "latitude": "46,255692",
+      "longitude": "20,1537308",
+      "info": "Telefon: +36704149900 Nyitvatartás: H-P: 6.00 - 22.00 Sz: 7.00 - 19.00 V: 9.00 - 19.00"
+    },
+    {
+      "id": 142,
+      "title": "Fit-Life Fitness - A testformáért kulturáltan! [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Frank Tivadar utca 5. I. emelet 111.",
+      "address": "Magyarország 3300 Eger Frank Tivadar utca 5. I. emelet 111.",
+      "latitude": "47,899582",
+      "longitude": "20,383014",
+      "info": "Telefon: +3636 518 597 Nyitvatartás:"
+    },
+    {
+      "id": 144,
+      "title": "Fitness 2000 [Budapest XX. ker.]",
+      "address1": "Magyarország 1203 Budapest",
+      "address2": "Serény u. 2.",
+      "address": "Magyarország 1203 Budapest  Serény u. 2.",
+      "latitude": "47,4356136",
+      "longitude": "19,0943692",
+      "info": "Telefon: +3612837865 Nyitvatartás: Hétfõ – Péntek: 6:00 – 22:00 Szombat: 8:00 – 20:00 Vasárnap: 10:00 – 20:00"
+    },
+    {
+      "id": 145,
+      "title": "Fitness 5 and Gym Sallai [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1184 Budapest",
+      "address2": "Cziffra György u. 15/b (Sallai Center)",
+      "address": "Magyarország 1184 Budapest  Cziffra György u. 15/b (Sallai Center)",
+      "latitude": "47,4331213",
+      "longitude": "19,1778336",
+      "info": "Telefon: +36 20 594 94"
+    },
+    {
+      "id": 146,
+      "title": "Fitness Aréna Kaposvár [Kaposvár]",
+      "address1": "Magyarország 7400 Kaposvár",
+      "address2": "Dombóvári u. 1.",
+      "address": "Magyarország 7400 Kaposvár  Dombóvári u. 1.",
+      "latitude": "46,3627716",
+      "longitude": "17,8161586",
+      "info": "Telefon: +3630/ 2670-111 Nyitvatartás: Hétfõ-Péntek: 8 - 21 Szombat: 9 - 19 Vasárnap: Zárva"
+    },
+    {
+      "id": 147,
+      "title": "Fitness Barlang [Balassagyarmat]",
+      "address1": "Magyarország 2660 Balassagyarmat",
+      "address2": "Rákóczi út 22.",
+      "address": "Magyarország 2660 Balassagyarmat  Rákóczi út 22.",
+      "latitude": "48,078185",
+      "longitude": "19,2926189",
+      "info": "Telefon: 35/500-535 Nyitvatartás: hétfõtöl-péntekig: 7.00-22.00-ig.szombaton: 7.00-20.00-ig"
+    },
+    {
+      "id": 148,
+      "title": "Fitness Energy [Budapest X. ker.]",
+      "address1": "Magyarország 1102 Budapest",
+      "address2": "Liget utca 35/B",
+      "address": "Magyarország 1102 Budapest Liget utca 35/B",
+      "latitude": "47,488648",
+      "longitude": "19,1337316",
+      "info": "Telefon: 70/595-5811 Nyitvatartás: H-P: 6:00 - 23:00 Sz-Vas: 8:00 - 20:00"
+    },
+    {
+      "id": 149,
+      "title": "Fitness Five & Gym [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Pünkösdfürdõ u. 52 (Self Store Plaza)",
+      "address": "Magyarország 1039 Budapest Pünkösdfürdõ u. 52 (Self Store Plaza)",
+      "latitude": "47,595186",
+      "longitude": "19,054367",
+      "info": "Telefon: +36 20 360 30"
+    },
+    {
+      "id": 150,
+      "title": "Fitness Five & Gym - Home Center [Budapest XVII. ker.]",
+      "address1": "Magyarország 1173 Budapest",
+      "address2": "Pesti út 237. (Home Center A épület)",
+      "address": "Magyarország 1173 Budapest Pesti út 237. (Home Center A épület)",
+      "latitude": "47,4737795",
+      "longitude": "19,2712645",
+      "info": "Telefon: +36 20 484 99 0 Nyitvatartás: Hétfõtõl - Péntekig: 06:00 - 23:00-ig Szombat - vasárnap: 08:00 - 20:00-ig"
+    },
+    {
+      "id": 151,
+      "title": "Fitness M Wellness Club [Miskolc]",
+      "address1": "Magyarország 3508 Miskolc",
+      "address2": "Futó utca 70",
+      "address": "Magyarország 3508 Miskolc Futó utca 70",
+      "latitude": "48,0696771",
+      "longitude": "20,7792862",
+      "info": "Telefon: +36 46 431 745 Nyitvatartás: H-P: 8-22 óráig Szo-V: 8-20 óráig"
+    },
+    {
+      "id": 152,
+      "title": "Fitness Plaza [Paks]",
+      "address1": "Magyarország 7030 Paks",
+      "address2": "Barátság u. 3.",
+      "address": "Magyarország 7030 Paks Barátság u. 3.",
+      "latitude": "46,614965",
+      "longitude": "18,844043",
+      "info": "Telefon: +36 75 310 324 Nyitvatartás: Hétfõ – Péntek: 6:00 – 22:00 Szombat – Vasárnap: 9:00 – 17:00"
+    },
+    {
+      "id": 153,
+      "title": "Fitness Stúdió [Zsámbék]",
+      "address1": "Magyarország 2072 Zsámbék",
+      "address2": "Mányi út 64.",
+      "address": "Magyarország 2072 Zsámbék Mányi út 64.",
+      "latitude": "47,5439411",
+      "longitude": "18,7082225",
+      "info": "Telefon: +36303717372 Nyitvatartás: H: 18:00 - 21:00 K: 16:30 - 20:00 Sz: 18:00 - 21:00 Cs: 17:30 - 20:00 P: 18:00 - 20:00"
+    },
+    {
+      "id": 154,
+      "title": "Fitness Word Center [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Hadrianus u. 9.",
+      "address": "Magyarország 1039 Budapest Hadrianus u. 9.",
+      "latitude": "47,603822",
+      "longitude": "19,066282",
+      "info": "Telefon: +3612430323 Nyitvatartás: H-P: 7:00 – 22:00 Szo: 9:00 – 19:00 Vas: 9:00 - 17:00"
+    },
+    {
+      "id": 155,
+      "title": "Fitness Works [Budapest XI. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Föveny utca 4-6.",
+      "address": "Magyarország 1138 Budapest Föveny utca 4-6.",
+      "latitude": "47,5439199",
+      "longitude": "19,072964",
+      "info": "Telefon: +36703948315 Nyitvatartás: H-P: 6:00-22:00 Sz: 8:00-20:00 V: Zárva"
+    },
+    {
+      "id": 156,
+      "title": "Fitness World [Pécs]",
+      "address1": "Magyarország 7632 Pécs",
+      "address2": "Esztergályos János utca 23",
+      "address": "Magyarország 7632 Pécs Esztergályos János utca 23",
+      "latitude": "46,0398273",
+      "longitude": "18,2251822",
+      "info": "Telefon: +36 20 275 4716 Nyitvatartás: H-P: 6:00 - 21: 00 Szo: 8:00 - 15:00 V: 8:00 - 12:00"
+    },
+    {
+      "id": 157,
+      "title": "Fitness World [Siklós]",
+      "address1": "Magyarország 7800 Siklós",
+      "address2": "Dózsa György utca 2/c alagsor",
+      "address": "Magyarország 7800 Siklós Dózsa György utca 2/c alagsor",
+      "latitude": "45,9094101",
+      "longitude": "18,3142842",
+      "info": "Telefon: +36 (72) 887 10 Nyitvatartás: H-P: 07-21 Sz: 08-16 V: 08-12"
+    },
+    {
+      "id": 158,
+      "title": "Fitness5 [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Pünkösdfürdõ u. 52",
+      "address": "Magyarország 1039 Budapest Pünkösdfürdõ u. 52",
+      "latitude": "47,594909",
+      "longitude": "19,054751",
+      "info": "Telefon: +36203603007 Nyitvatartás: Hétfõtõl - Péntekig: 6.00 - 24.00 óráig Szombat - vasárnap: 8.00 - 20.00 óráig"
+    },
+    {
+      "id": 159,
+      "title": "FitroMax [Ajka]",
+      "address1": "Magyarország 8400 Ajka",
+      "address2": "Rákóczi u. 14",
+      "address": "Magyarország 8400 Ajka Rákóczi u. 14",
+      "latitude": "47,1022729",
+      "longitude": "17,563818",
+      "info": "Telefon: +36209767663 Nyitvatartás: Hétfõ-Vasárnap: 7:00 - 21:00"
+    },
+    {
+      "id": 160,
+      "title": "FittLesz [Nagykanizsa]",
+      "address1": "Magyarország 8800 Nagykanizsa",
+      "address2": "Zemplén Gyõzõ út 10.",
+      "address": "Magyarország 8800 Nagykanizsa Zemplén Gyõzõ út 10.",
+      "latitude": "46,4616543",
+      "longitude": "17,0134072",
+      "info": "Telefon: +36306582072 Nyitvatartás:"
+    },
+    {
+      "id": 161,
+      "title": "Fittness Factory [Budapest XIII. ker.]",
+      "address1": "Magyarország 1131 Budapest",
+      "address2": "Róbert Károly krt. 54-58.",
+      "address": "Magyarország 1131 Budapest Róbert Károly krt. 54-58.",
+      "latitude": "47,528184",
+      "longitude": "19,074251",
+      "info": "Telefon: +361238076 Nyitvatartás: Hétfõ - Péntek: 06:00 - 22:30 Wellness rész 06:00-22:15 Szombat - Vasárnap : 08:00 - 20:00 Wellness rész 08:00-19:45"
+    },
+    {
+      "id": 162,
+      "title": "Flex Gym [Budapest I. ker.]",
+      "address1": "Magyarország 1012 Budapest",
+      "address2": "Márvány utca 17.",
+      "address": "Magyarország 1012 Budapest Márvány utca 17.",
+      "latitude": "47,4956407",
+      "longitude": "19,0241897",
+      "info": "Telefon: +3612020070 Nyitvatartás: Hétköznap 06:00 - 23:00 Hétvégén 08:00 - 22:00"
+    },
+    {
+      "id": 163,
+      "title": "Flex Sport Klub [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Malom u. 2.",
+      "address": "Magyarország 8000 Székesfehérvár Malom u. 2.",
+      "latitude": "47,198423",
+      "longitude": "18,406964",
+      "info": "Telefon: +3622380405 Nyitvatartás:"
+    },
+    {
+      "id": 164,
+      "title": "Flex Szabadidõközpont & SE [Gyõr]",
+      "address1": "Magyarország 9023 Gyõr",
+      "address2": "Mészáros L. u. 12.",
+      "address": "Magyarország 9023 Gyõr Mészáros L. u. 12.",
+      "latitude": "47,6839379",
+      "longitude": "17,6503403",
+      "info": "Telefon: 20/3684197 Nyitvatartás: H-P: 7:30 - 22:00 Sz: 9:00 - 20:00 V: 2:00 - 18:00"
+    },
+    {
+      "id": 165,
+      "title": "Force Gym [Budapest XIII. ker.]",
+      "address1": "Magyarország 1139 Budapest",
+      "address2": "Országbíró utca 38-42.",
+      "address": "Magyarország 1139 Budapest Országbíró utca 38-42.",
+      "latitude": "47,5311521",
+      "longitude": "19,0823272",
+      "info": "Telefon: +36 (30) 786 68 Nyitvatartás:"
+    },
+    {
+      "id": 166,
+      "title": "Force Now! [Budapest XIV. ker.]",
+      "address1": "Magyarország 1146 Budapest",
+      "address2": "Thököly út 164.",
+      "address": "Magyarország 1146 Budapest Thököly út 164.",
+      "latitude": "47,51825",
+      "longitude": "19,109897",
+      "info": "Telefon: 06 1 789-5396 | Nyitvatartás: H-P: 7:00 – 20:00 Sz-V: 8:00 - 20:00"
+    },
+    {
+      "id": 167,
+      "title": "Forma 1 Fitnesz [Szeged]",
+      "address1": "Magyarország 6725 Szeged",
+      "address2": "Attila u. 17-19.",
+      "address": "Magyarország 6725 Szeged Attila u. 17-19.",
+      "latitude": "46,2556841",
+      "longitude": "20,1416604",
+      "info": "Telefon: 06 62 424-070 & Nyitvatartás: H-Sz: 6:30-21:30 V: zárva"
+    },
+    {
+      "id": 168,
+      "title": "Forma 1 Fitnesz [Szeged]",
+      "address1": "Magyarország Szeged",
+      "address2": "Petõfi Sándor sgt. 77.",
+      "address": "Magyarország Szeged Petõfi Sándor sgt. 77.",
+      "latitude": "46,2452253",
+      "longitude": "20,1345135",
+      "info": "Telefon: 70/320-0488 Nyitvatartás: H-P: 7:00 - 19:00 Szo: 8:00 - 13:00 V: zárva"
+    },
+    {
+      "id": 169,
+      "title": "Forma Bontó Szabadidõs Közhasznú Egyesület [Békéscsaba]",
+      "address1": "Magyarország 5600 Békéscsaba",
+      "address2": "Bajza u. 15.sz",
+      "address": "Magyarország 5600 Békéscsaba Bajza u. 15.sz",
+      "latitude": "46,677914",
+      "longitude": "21,1052198",
+      "info": "Telefon: 06-30-33-96-419 Nyitvatartás: Naponta 07:30-20:00 Hétvégén 10-18 óráig."
+    },
+    {
+      "id": 170,
+      "title": "Forma Plusz Squass&Fitness [Szentes]",
+      "address1": "Magyarország 6600 Szentes",
+      "address2": "Daru u. 10/A",
+      "address": "Magyarország 6600 Szentes Daru u. 10/A",
+      "latitude": "46,648539",
+      "longitude": "20,266375",
+      "info": "Telefon: +36304911849 Nyitvatartás: Hétfõ-Péntek 08:00-21:00 Szombat 10:00-18:00Vasárnap 14:00-18:00"
+    },
+    {
+      "id": 171,
+      "title": "Forma Stúdió [Budapest XI. ker.]",
+      "address1": "Magyarország XI. kerüle Budapest",
+      "address2": "Bartók Béla út 9.",
+      "address": "Magyarország XI. kerüle Budapest Bartók Béla út 9.",
+      "latitude": "47,4822556",
+      "longitude": "19,0523908",
+      "info": "Telefon: +3612095258 Nyitvatartás:"
+    },
+    {
+      "id": 172,
+      "title": "FormaZona Sportközpont [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Izsáki út 4.",
+      "address": "Magyarország 6000 Kecskemét Izsáki út 4.",
+      "latitude": "46,8988266",
+      "longitude": "19,6742516",
+      "info": "Telefon: +3676325251 Nyitvatartás: Hétfõtõl-Péntekig: 6 órától - 22 óráig Szombaton: 8 órától - 14 óráig Vasárnap: 14 órától - 20 óráig"
+    },
+    {
+      "id": 173,
+      "title": "Fõ fasor Speedfitness Studio [Szeged]",
+      "address1": "Magyarország 6726 Szeged",
+      "address2": "Fõ fasor 184.",
+      "address": "Magyarország 6726 Szeged Fõ fasor 184.",
+      "latitude": "46,2389373",
+      "longitude": "20,1901197",
+      "info": "Telefon: +36305500846 Nyitvatartás:"
+    },
+    {
+      "id": 174,
+      "title": "Freddy Fitness [Budapest IV. ker.]",
+      "address1": "Magyarország 1048 Budapest",
+      "address2": "Külsõ-Szilágyi út 10.",
+      "address": "Magyarország 1048 Budapest Külsõ-Szilágyi út 10.",
+      "latitude": "47,5798184",
+      "longitude": "19,1151382",
+      "info": "Telefon: +36205938610 Nyitvatartás: H – P: 06.30 – 22.00 SZO – VA: 09.00 – 18.00"
+    },
+    {
+      "id": 175,
+      "title": "Fresh Nõi Fitness [Érd]",
+      "address1": "Magyarország 2030 Érd",
+      "address2": "Riminyáki u.23.",
+      "address": "Magyarország 2030 Érd Riminyáki u.23.",
+      "latitude": "47,3882366",
+      "longitude": "18,9220869",
+      "info": "Telefon: +3623365565 Nyitvatartás: Hétfõtõl-Péntekig: 7.00 - 21.00 Szombaton: 8.00 - 12.00"
+    },
+    {
+      "id": 176,
+      "title": "G4 Fitness [Debrecen]",
+      "address1": "Magyarország 4030 Debrecen",
+      "address2": "Gizella utca 4/b.",
+      "address": "Magyarország 4030 Debrecen Gizella utca 4/b.",
+      "latitude": "47,515914",
+      "longitude": "21,650765",
+      "info": "Telefon: +36 30/498 8908 Nyitvatartás: Hétfõ - Péntek 6:00 - 22:00 Szombat - Vasárnap 8:00 - 20:00"
+    },
+    {
+      "id": 177,
+      "title": "Galaxy Fit Gym [Hajdúszoboszló]",
+      "address1": "Magyarország 4200 Hajdúszoboszló",
+      "address2": "Debreceni út 10-1",
+      "address": "Magyarország 4200 Hajdúszoboszló Debreceni út 10-1",
+      "latitude": "47,4520008",
+      "longitude": "21,4112843",
+      "info": "Telefon: (30) 456 6599 Nyitvatartás: H-V: 8-22-ig"
+    },
+    {
+      "id": 178,
+      "title": "Galaxy Fitness [Hajdúsámson]",
+      "address1": "Magyarország 4251 Hajdúsámson",
+      "address2": "Árpád utca 1.",
+      "address": "Magyarország 4251 Hajdúsámson Árpád utca 1.",
+      "latitude": "47,6009684",
+      "longitude": "21,7598561",
+      "info": "Telefon: +36704295406 Nyitvatartás: H-Vas: 8:00 am - 10:00 pm"
+    },
+    {
+      "id": 179,
+      "title": "Galaxy Fitness Club [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Szûrcsapó u. 23.",
+      "address": "Magyarország 9700 Szombathely Szûrcsapó u. 23.",
+      "latitude": "47,238694",
+      "longitude": "16,605572",
+      "info": "Telefon: 70/289-3850 Nyitvatartás: H-P: 6:30-22:00 SZ-V: 9:00-19:00"
+    },
+    {
+      "id": 180,
+      "title": "Galaxy Wellness Club [Gyõr]",
+      "address1": "Magyarország 9024 Gyõr",
+      "address2": "Kálvária u. 1-3.",
+      "address": "Magyarország 9024 Gyõr Kálvária u. 1-3.",
+      "latitude": "47,680254",
+      "longitude": "17,632656",
+      "info": "Telefon: +3696438415 Nyitvatartás: Hétfõ-Szombat: 06.00-23.45 (kapuzárás: 23.00) Vasárnap: 12.00-23.45 (kapuzárás: 23.00)"
+    },
+    {
+      "id": 181,
+      "title": "Garden Fitness [Budapest II. ker.]",
+      "address1": "Magyarország 1021 Budapest",
+      "address2": "Hûvösvölgyi út 54.",
+      "address": "Magyarország 1021 Budapest Hûvösvölgyi út 54.",
+      "latitude": "47,524384",
+      "longitude": "18,9862783",
+      "info": "Telefon: +3612752945 Nyitvatartás: H-P: 6:00 – 22:00 Sz-V: 9:00 - 18:00"
+    },
+    {
+      "id": 182,
+      "title": "Gellért Szabadidõközpont [Szeged]",
+      "address1": "Magyarország 6726 Szeged",
+      "address2": "Derkovits fasor 113",
+      "address": "Magyarország 6726 Szeged Derkovits fasor 113",
+      "latitude": "46,235672",
+      "longitude": "20,17677",
+      "info": "Telefon: +3662745345 Nyitvatartás: H-V: 6-22"
+    },
+    {
+      "id": 183,
+      "title": "Get River Fitness [Budapest XIII. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Révész utca 29.",
+      "address": "Magyarország 1138 Budapest Révész utca 29.",
+      "latitude": "47,5279601",
+      "longitude": "19,0570038",
+      "info": "Telefon: +36205550060 Nyitvatartás: H-P: 6:00 - 23:00 Sz-V: 8:00 - 22:00"
+    },
+    {
+      "id": 184,
+      "title": "Ghost Edzõterem [Budapest III. ker.]",
+      "address1": "Magyarország 1036 Budapest",
+      "address2": "Fényes Adolf u. 23.",
+      "address": "Magyarország 1036 Budapest Fényes Adolf u. 23.",
+      "latitude": "47,5360531",
+      "longitude": "19,0419409",
+      "info": "Telefon: +3612405544 Nyitvatartás: Hétfõ – péntek: 07.00h – 22.00 Szombat: 09.00h – 16.00 Vasárnap: 09.00h - 14.00"
+    },
+    {
+      "id": 185,
+      "title": "Giants Gym [Budapest XIII. ker.]",
+      "address1": "Magyarország 1135 Budapest",
+      "address2": "Fáy utca 65/A",
+      "address": "Magyarország 1135 Budapest Fáy utca 65/A",
+      "latitude": "47,5350865",
+      "longitude": "19,0833878",
+      "info": "Telefon: +36 70 518 76 5 Nyitvatartás: Hétfõ - Péntek 6.00 - 22.00 Szombat és Vasárnap 8.00 - 20.00"
+    },
+    {
+      "id": 186,
+      "title": "Gilda Max Fitness II. - Flórián Bevásárlóközpont [Budapest III. ker.]",
+      "address1": "Magyarország 1033 Budapest",
+      "address2": "Flórián tér 6.",
+      "address": "Magyarország 1033 Budapest Flórián tér 6.",
+      "latitude": "47,542237",
+      "longitude": "19,040996",
+      "info": "Telefon: 240-56-38 Nyitvatartás: Éjjel-nappal nyitva tartunk."
+    },
+    {
+      "id": 187,
+      "title": "Gilda Max Fitness IV. - River Estates [Budapest XIII. ker.]",
+      "address1": "Magyarország 1136 Budapest",
+      "address2": "Váci út 35.",
+      "address": "Magyarország 1136 Budapest Váci út 35.",
+      "latitude": "47,5257208",
+      "longitude": "19,0641758",
+      "info": "Nyitvatartás: Éjjel-nappal nyitva tartunk."
+    },
+    {
+      "id": 188,
+      "title": "GILDAMAX - HERMINA TOWERS [Budapest XIV. ker.]",
+      "address1": "Magyarország 1146 Budapest",
+      "address2": "Hungária Krt. 162-166.",
+      "address": "Magyarország 1146 Budapest Hungária Krt. 162-166.",
+      "latitude": "47,514038",
+      "longitude": "19,0947299",
+      "info": "Telefon: +3614719199 Nyitvatartás: Minden nap: 0-24h"
+    },
+    {
+      "id": 189,
+      "title": "GildaMax Mozgásközpont Savoya Park [Budapest XI. ker.]",
+      "address1": "Magyarország 1117 Budapest",
+      "address2": "Hunyadi János út 19.",
+      "address": "Magyarország 1117 Budapest Hunyadi János út 19.",
+      "latitude": "47,4327843",
+      "longitude": "19,0413555",
+      "info": "Telefon: +3612099063 Nyitvatartás:"
+    },
+    {
+      "id": 190,
+      "title": "Gladiator GYM [Mátészalka]",
+      "address1": "Magyarország 4700 Mátészalka",
+      "address2": "Bajcsy-Zsilinszky utca 19.",
+      "address": "Magyarország 4700 Mátészalka Bajcsy-Zsilinszky utca 19.",
+      "latitude": "47,9550039",
+      "longitude": "22,3263032",
+      "info": "Telefon: + 36 30 224 719 Nyitvatartás: Hétfõ - Péntek: 06:00 - 22:00 Szombat: 14:00 - 20:00 Vasárnap: Zárva"
+    },
+    {
+      "id": 191,
+      "title": "Gold Sport és Szabadidõ Központ [Budapest XI. ker.]",
+      "address1": "Magyarország 1117 Budapest",
+      "address2": "Budafoki út 111-113",
+      "address": "Magyarország 1117 Budapest Budafoki út 111-113",
+      "latitude": "47,4622216",
+      "longitude": "19,0524606",
+      "info": "Telefon: +36204105463 Nyitvatartás: Biliárdszalon 1. szint(dohányzó) H-V: 0-24 óráig 2. szint(nem dohányzó) H-P: 06-02 óráig Sz-V: 08-02 óráig Fitness H-P: 6-24 óráig SZ-V: 8-24 óráig"
+    },
+    {
+      "id": 192,
+      "title": "Griff Aerobik [Budapest X. ker.]",
+      "address1": "Magyarország 1113 Budapest",
+      "address2": "Bartók B. út 152.",
+      "address": "Magyarország 1113 Budapest Bartók B. út 152.",
+      "latitude": "47,468936",
+      "longitude": "19,025618",
+      "info": "Telefon: +3612064065 Nyitvatartás: H - P: 07.00 - 23.00 Hétvégén és ünnepnapokon: 09.00 - 21.00"
+    },
+    {
+      "id": 193,
+      "title": "Griff Squash és Fitness Club [Budapest XI. ker.]",
+      "address1": "Magyarország 1113 Budapest",
+      "address2": "Bartók Béla út 152.",
+      "address": "Magyarország 1113 Budapest Bartók Béla út 152.",
+      "latitude": "47,4740746",
+      "longitude": "19,0367376",
+      "info": "Telefon: +3612064065 Nyitvatartás: H-P: 7:00 – 23:00 Sz-V: 9:00 - 19:00"
+    },
+    {
+      "id": 194,
+      "title": "Gyenkó Gym 2 [Budapest IX. ker.]",
+      "address1": "Magyarország 1098 Budapest",
+      "address2": "Csengettyû u. 8.",
+      "address": "Magyarország 1098 Budapest Csengettyû u. 8.",
+      "latitude": "47,4645667",
+      "longitude": "19,1116385",
+      "info": "Telefon: 06-30-203-53-05 Nyitvatartás:"
+    },
+    {
+      "id": 195,
+      "title": "Gym City [Budapest XIII. ker.]",
+      "address1": "Magyarország 1139 Budapest",
+      "address2": "Lomb u. 19.",
+      "address": "Magyarország 1139 Budapest Lomb u. 19.",
+      "latitude": "47,5359734",
+      "longitude": "19,0704582",
+      "info": "Telefon: +36705353808 Nyitvatartás: H-P: 6:00-24:00 Sz-V: 8:00-23:00"
+    },
+    {
+      "id": 196,
+      "title": "Gym City Office [Budapest XIII. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Madarász Viktor utca 47-49",
+      "address": "Magyarország 1138 Budapest Madarász Viktor utca 47-49",
+      "latitude": "47,5542478",
+      "longitude": "19,0799371",
+      "info": "Telefon: +3617938995 Nyitvatartás: H-P 06-23 Sz-V 08-22"
+    },
+    {
+      "id": 197,
+      "title": "Gym Class [Szeged]",
+      "address1": "Magyarország 6725 Szeged",
+      "address2": "Kossuth Lajos sgt. 119.",
+      "address": "Magyarország 6725 Szeged Kossuth Lajos sgt. 119.",
+      "latitude": "46,2661421",
+      "longitude": "20,1287261",
+      "info": "Telefon: +3670702969686 Nyitvatartás: Hétfõ -Péntek 06.00 – 23.00 Szombat - Vasárnap 07.30 - 22:00"
+    },
+    {
+      "id": 198,
+      "title": "GymCity [Budapest XIII. ker.]",
+      "address1": "Magyarország 1139 Budapest",
+      "address2": "Lomb utca 16.",
+      "address": "Magyarország 1139 Budapest Lomb utca 16.",
+      "latitude": "47,5359235",
+      "longitude": "19,0701035",
+      "info": "Telefon: +36705353808 Nyitvatartás: Hétfõ-Péntek: 06-24-ig Szombat-Vasárnap: 07-23-ig"
+    },
+    {
+      "id": 199,
+      "title": "Gymeniway [Salgótarján]",
+      "address1": "Magyarország 3100 Salgótarján",
+      "address2": "Mérleg út 4.",
+      "address": "Magyarország 3100 Salgótarján Mérleg út 4.",
+      "latitude": "48,106196",
+      "longitude": "19,808794",
+      "info": "Nyitvatartás: H-P 6-22 SZ: 6-20 V: 6-12:30"
+    },
+    {
+      "id": 200,
+      "title": "HagymaGym [Zalaegerszeg]",
+      "address1": "Magyarország 8900 Zalaegerszeg",
+      "address2": "Köztársaság u. 72.",
+      "address": "Magyarország 8900 Zalaegerszeg Köztársaság u. 72.",
+      "latitude": "46,8251468",
+      "longitude": "16,8308978",
+      "info": "Telefon: +36-30/779-9037 Nyitvatartás: H-P: 09-22h Sz: 10-16h V: 10-14h"
+    },
+    {
+      "id": 201,
+      "title": "Halassy Olivér Sportcentrum [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Pozsonyi út 4/c",
+      "address": "Magyarország 1042 Budapest Pozsonyi út 4/c",
+      "latitude": "47,5144071",
+      "longitude": "19,0484322",
+      "info": "Telefon: +3613692118 Nyitvatartás:"
+    },
+    {
+      "id": 202,
+      "title": "Hard Work Crossfit [Kiskunhalas]",
+      "address1": "Magyarország 6400 Kiskunhalas",
+      "address2": "Kertész utca 28.",
+      "address": "Magyarország 6400 Kiskunhalas Kertész utca 28.",
+      "latitude": "46,439302",
+      "longitude": "19,474766",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 203,
+      "title": "Hartel Sport Club [Budapest XV. ker.]",
+      "address1": "Magyarország 1155 Budapest",
+      "address2": "Kolozsvár u. 46/b",
+      "address": "Magyarország 1155 Budapest Kolozsvár u. 46/b",
+      "latitude": "47,5366011",
+      "longitude": "19,1149645",
+      "info": "Telefon: +3614163017 Nyitvatartás: H - P 07.00 - 22.30 Szom. 08.30 - 18.00 Vas. 08.30 - 17.00"
+    },
+    {
+      "id": 204,
+      "title": "Hercules Fitness [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Kossuth tér 3.",
+      "address": "Magyarország 6000 Kecskemét Kossuth tér 3.",
+      "latitude": "46,908159",
+      "longitude": "19,6916",
+      "info": "Telefon: +36303806969 Nyitvatartás: Hétfõtõl - Péntekig 6-22 óráig Szombat 9-17 óráig Vasárnap 9-16 óráig"
+    },
+    {
+      "id": 205,
+      "title": "Hercules Fitness Club [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Bródy Sándor u. 4.",
+      "address": "Magyarország 3300 Eger Bródy Sándor u. 4.",
+      "latitude": "47,9019876",
+      "longitude": "20,3715284",
+      "info": "Telefon: +36302159690 Nyitvatartás: H-P: 7:00 - 20:00 SZ: 10:00 - 14:00 V: ZÁRVA"
+    },
+    {
+      "id": 206,
+      "title": "Herkules Fitnes Club [Pilisvörösvár]",
+      "address1": "Magyarország 2085 Pilisvörösvár",
+      "address2": "Szent Erzsébet utca 20/a",
+      "address": "Magyarország 2085 Pilisvörösvár Szent Erzsébet utca 20/a",
+      "latitude": "47,6219445",
+      "longitude": "18,9070311",
+      "info": "Telefon: +36706362497 Nyitvatartás: Hétfõtõl-péntekig: 06.00-22.00-ig Szombat-vasárnap: 08.00-18.00-ig"
+    },
+    {
+      "id": 207,
+      "title": "Herkules Gym [Hajdúszoboszló]",
+      "address1": "Magyarország 4200 Hajdúszoboszló",
+      "address2": "Dózsa Gy. u. 29",
+      "address": "Magyarország 4200 Hajdúszoboszló Dózsa Gy. u. 29",
+      "latitude": "47,439608",
+      "longitude": "21,383996",
+      "info": "Nyitvatartás: H-P: 9:00 - 21:00 Sz: 10:00 - 18:00 V: 10:00 - 16:00"
+    },
+    {
+      "id": 208,
+      "title": "Herkules Sportklub [Budapest VIII. ker.]",
+      "address1": "Magyarország 1089 Budapest",
+      "address2": "Orczy út 6.",
+      "address": "Magyarország 1089 Budapest Orczy út 6.",
+      "latitude": "47,4805738",
+      "longitude": "19,0931519",
+      "info": "Telefon: (06 1) 314 1673 Nyitvatartás: Hétfõtõl - Péntekig: 07.00 - 21.00 -ig Szombaton: 10.00 - 20.00 -ig Vasárnap: 10.00 - 16.00-ig"
+    },
+    {
+      "id": 209,
+      "title": "HIÚ-Z SE [Budapest VIII. ker.]",
+      "address1": "Magyarország 1087 Budapest",
+      "address2": "Kõbányai út 19.",
+      "address": "Magyarország 1087 Budapest Kõbányai út 19.",
+      "latitude": "47,4889978",
+      "longitude": "19,0930791",
+      "info": "Telefon: +36305231269 Nyitvatartás: H-P: 14:00 - 20:00"
+    },
+    {
+      "id": 210,
+      "title": "Holiday Fitness [Budapest IV. ker]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Király utca 9.",
+      "address": "Magyarország 1042 Budapest Király utca 9.",
+      "latitude": "47,5623543",
+      "longitude": "19,0922114",
+      "info": "Telefon: +3617974211"
+    },
+    {
+      "id": 211,
+      "title": "HS Sportközpont [Gödöllõ]",
+      "address1": "Magyarország 2100 Gödöllõ",
+      "address2": "Dózsa György út 152.",
+      "address": "Magyarország 2100 Gödöllõ Dózsa György út 152.",
+      "latitude": "47,6106531",
+      "longitude": "19,3359458",
+      "info": "Telefon: +3628410333 Nyitvatartás: Hétfõ 7:00 - 22:00 Kedd 7:00 - 22:00 Szerda 7:00 - 22:00 Csütörtök 7:00 - 22:00 Péntek 7:00 - 23:00 Szombat 9:00 - 23:00 Vasárnap 9:00 - 22:00"
+    },
+    {
+      "id": 212,
+      "title": "Huber Fitness Center [Budapest VIII. ker.]",
+      "address1": "Magyarország 1084 Budapest",
+      "address2": "József u. 5.",
+      "address": "Magyarország 1084 Budapest József u. 5.",
+      "latitude": "47,4905843",
+      "longitude": "19,0718688",
+      "info": "Telefon: 06 (1) 303-7539 Nyitvatartás: Hétfõ-Péntek: 8:00 – 20:30 Szombat: 9:00 - 13:30"
+    },
+    {
+      "id": 213,
+      "title": "Huber Fitness Forma [Budapest VII. ker.]",
+      "address1": "Magyarország 1073 Budapest",
+      "address2": "Erzsébet krt. 19. I. em",
+      "address": "Magyarország 1073 Budapest Erzsébet krt. 19. I. em",
+      "latitude": "47,5000365",
+      "longitude": "19,0694325",
+      "info": "Telefon: +3613517481 Nyitvatartás: H-P: 8:00 - 20:00 Sz: 9:00 - 15:00"
+    },
+    {
+      "id": 214,
+      "title": "Hudák Fitness [Nagykáta]",
+      "address1": "Magyarország 2760 Nagykáta",
+      "address2": "Kossuth u. 7-11",
+      "address": "Magyarország 2760 Nagykáta Kossuth u. 7-11",
+      "latitude": "47,4174755",
+      "longitude": "19,7458267",
+      "info": "Telefon: 06-30/491-9033 Nyitvatartás: H-P: 7:00-22:00 Sz: 7:00-18:00 V: 8:00-16:00"
+    },
+    {
+      "id": 215,
+      "title": "Hulk Gym [Velence]",
+      "address1": "Magyarország 2481 Velence",
+      "address2": "Széchenyi u 5.",
+      "address": "Magyarország 2481 Velence Széchenyi u 5.",
+      "latitude": "47,2300505",
+      "longitude": "18,6634319",
+      "info": "Nyitvatartás: H-P: 8:00-21:00 Sz-V: 12:00-17:00"
+    },
+    {
+      "id": 216,
+      "title": "Hungarian Mecca OF Bodybuilding [Budapest XIII. ker.]",
+      "address1": "Magyarország 1135 Budapest",
+      "address2": "Béke utca 21-27.",
+      "address": "Magyarország 1135 Budapest Béke utca 21-27.",
+      "latitude": "47,5344257",
+      "longitude": "19,0828211",
+      "info": "Telefon: +3617880000 Nyitvatartás: H-P 6:00- 24:00 Sz-V 8:00- 22:00"
+    },
+    {
+      "id": 217,
+      "title": "HZSE Sport & Combat Sambo Szakosztály [Budapest X. ker.]",
+      "address1": "Magyarország 1101 Budapest",
+      "address2": "Hungária krt 9-11",
+      "address": "Magyarország 1101 Budapest Hungária krt 9-11",
+      "latitude": "47,4940986",
+      "longitude": "19,1095428",
+      "info": "Nyitvatartás: Hétfõ és Szerda: 19 30"
+    },
+    {
+      "id": 218,
+      "title": "Ibrányi Sportcentrum [Ibrány]",
+      "address1": "Magyarország 4484 Ibrány",
+      "address2": "Óvoda u. 4.",
+      "address": "Magyarország 4484 Ibrány Óvoda u. 4.",
+      "latitude": "48,12117",
+      "longitude": "21,700633",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 219,
+      "title": "IBS Fitness [Budapest III. ker.]",
+      "address1": "Magyarország 1031 Budapest",
+      "address2": "Záhony u. 7.",
+      "address": "Magyarország 1031 Budapest Záhony u. 7.",
+      "latitude": "47,5607381",
+      "longitude": "19,0559934",
+      "info": "Telefon: +3615888600 Nyitvatartás:"
+    },
+    {
+      "id": 220,
+      "title": "Ideál Nõi Mozgásstúdió [Budapest VII. ker.]",
+      "address1": "Magyarország 1074 Budapest",
+      "address2": "Szövetség u. 2/c",
+      "address": "Magyarország 1074 Budapest Szövetség u. 2/c",
+      "latitude": "47,498951",
+      "longitude": "19,074277",
+      "info": "Telefon: +36 1 352-5546 Nyitvatartás: Hétfõ 07.00 - 21.00 Kedd 07.00 - 21.00 Szerda 07.00 - 21.00 Csütörtök 07.00 - 21.00 Péntek 07.00 - 21.00 Szombat 08.00 - 13.00 Vasárnap 08.00 - 13.00"
+    },
+    {
+      "id": 221,
+      "title": "Imi Gym [Balassagyarmat]",
+      "address1": "Magyarország 2660 Balassagyarmat",
+      "address2": "Bajcsy - Zsilinszky utca 3.",
+      "address": "Magyarország 2660 Balassagyarmat Bajcsy - Zsilinszky utca 3.",
+      "latitude": "48,0760275",
+      "longitude": "19,2910545",
+      "info": "Telefon: +36 (35) 312213 Nyitvatartás: H-P:08.00-21.00 Szombat:09.00-17.00 Vasárnap:09.00-14.00"
+    },
+    {
+      "id": 222,
+      "title": "Iridium Fitness [Sárvár]",
+      "address1": "Magyarország 9600 Sárvár",
+      "address2": "Fekete-híd u. 84/B",
+      "address": "Magyarország 9600 Sárvár Fekete-híd u. 84/B",
+      "latitude": "47,2527649",
+      "longitude": "16,947685",
+      "info": "Telefon: +36706731060 Nyitvatartás: H-P: 6:30 – 21:30 Szo: 8:00 – 16:00 V: 10:00 – 18:00"
+    },
+    {
+      "id": 223,
+      "title": "Iron Bull [Fertõd]",
+      "address1": "Magyarország 9431 Fertõd",
+      "address2": "Liszt Ferenc u. 14.",
+      "address": "Magyarország 9431 Fertõd Liszt Ferenc u. 14.",
+      "latitude": "47,6168732",
+      "longitude": "16,851883",
+      "info": "Telefon: +36703319894 Nyitvatartás:"
+    },
+    {
+      "id": 224,
+      "title": "Ironmantraining [Budapest XI. ker.]",
+      "address1": "Magyarország 1117 Budapest",
+      "address2": "Sopron út 19.",
+      "address": "Magyarország 1117 Budapest Sopron út 19.",
+      "latitude": "47,4679596",
+      "longitude": "19,0459896",
+      "info": "Telefon: +36 30 388 8513 Nyitvatartás: Hétfõ - Péntek 7:00 - 20:00 Szombat 08:00 - 10:00"
+    },
+    {
+      "id": 225,
+      "title": "Izometria Fitnestic [Szeged]",
+      "address1": "Magyarország 6723 Szeged",
+      "address2": "Tisza Lajos krt. 41. I. em.",
+      "address": "Magyarország 6723 Szeged Tisza Lajos krt. 41. I. em.",
+      "latitude": "46,255896",
+      "longitude": "20,147724",
+      "info": "Telefon: +3662665822 Nyitvatartás: Hétfõ-péntek 6:00-22:00 Szombat-vasárnap 8:00-20:00."
+    },
+    {
+      "id": 226,
+      "title": "Izomix Body & Fitness Center [Tolna]",
+      "address1": "Magyarország 7130 Tolna",
+      "address2": "Deák Ferenc u.",
+      "address": "Magyarország 7130 Tolna Deák Ferenc u.",
+      "latitude": "46,4224656",
+      "longitude": "18,7800491",
+      "info": "Nyitvatartás: munkanapokon: 8-12 14-21 szombaton: 9-12"
+    },
+    {
+      "id": 227,
+      "title": "J&M Fitness [Szeged]",
+      "address1": "Magyarország 6724 Szeged",
+      "address2": "Szatymazi utca 2.",
+      "address": "Magyarország 6724 Szeged Szatymazi utca 2.",
+      "latitude": "46,2644499",
+      "longitude": "20,1364005",
+      "info": "Telefon: 0630 927 7595 Nyitvatartás: H-V 6:00-22:00"
+    },
+    {
+      "id": 228,
+      "title": "John Reed [Budapest XIII. ker.]",
+      "address1": "Magyarország 1134 Budapest",
+      "address2": "Váci út 45",
+      "address": "Magyarország 1134 Budapest Váci út 45",
+      "latitude": "47,5282069",
+      "longitude": "19,0652218",
+      "info": "Nyitvatartás: 0-24"
+    },
+    {
+      "id": 229,
+      "title": "Judy Gym [Debrecen]",
+      "address1": "Magyarország 4000 Debrecen",
+      "address2": "Pesti u. 2.",
+      "address": "Magyarország 4000 Debrecen Pesti u. 2.",
+      "latitude": "47,5321977",
+      "longitude": "21,6109618",
+      "info": "Telefon: +36308799977 Nyitvatartás: H-P: 7:00 - 21:00 Sz: 9:00 - 17:00 V: 9:00 - 18:00"
+    },
+    {
+      "id": 230,
+      "title": "Jump Fitness [Budapest X. ker.]",
+      "address1": "Magyarország 1106 Budapest",
+      "address2": "Fehér út 1/B. 2.em.",
+      "address": "Magyarország 1106 Budapest Fehér út 1/B. 2.em.",
+      "latitude": "47,5025396",
+      "longitude": "19,136133",
+      "info": "régi BKV székház épülete) Telefon: +3612604371 Nyitvatartás: H-P: 6-22 SZ-V: 8-20"
+    },
+    {
+      "id": 231,
+      "title": "Jumpfitness Ráckeve [Ráckeve]",
+      "address1": "Magyarország 2300 Ráckeve",
+      "address2": "Kossuth L. u 20",
+      "address": "Magyarország 2300 Ráckeve Kossuth L. u 20",
+      "latitude": "47,160843",
+      "longitude": "18,9457859",
+      "info": "Telefon: +36704345148 Nyitvatartás:"
+    },
+    {
+      "id": 232,
+      "title": "K-gym [Encs]",
+      "address1": "Magyarország 3860 Encs",
+      "address2": "Szeles utca 2.",
+      "address": "Magyarország 3860 Encs Szeles utca 2.",
+      "latitude": "48,331531",
+      "longitude": "21,121785",
+      "info": "Telefon: +36(70) 633 723 Nyitvatartás:"
+    },
+    {
+      "id": 233,
+      "title": "K2 fitness club és étterem [Dunakeszi]",
+      "address1": "Magyarország 2120 Dunakeszi",
+      "address2": "Fóti út 16",
+      "address": "Magyarország 2120 Dunakeszi Fóti út 16",
+      "latitude": "47,629101",
+      "longitude": "19,1416984",
+      "info": "Telefon: +36 27 341-091 Nyitvatartás: Hétfõ-Péntek 7:00 – 21:54 Szombat-Vasárnap 9:00 - 21:00"
+    },
+    {
+      "id": 234,
+      "title": "Kemény Dénes Városi Sportuszoda [Miskolc]",
+      "address1": "Magyarország 3533 Miskolc",
+      "address2": "Andrássy Gyula uc 63",
+      "address": "Magyarország 3533 Miskolc Andrássy Gyula uc 63",
+      "latitude": "48,100686",
+      "longitude": "20,72036",
+      "info": "Telefon: +3646379512 Nyitvatartás: Nyitva tartás: H-P: 6.00-18.00 Szo: 6.00-13.00 V: 6.00-17.00"
+    },
+    {
+      "id": 235,
+      "title": "Kerékvár ProfiEdzés [Nyíregyháza]",
+      "address1": "Magyarország 4400 Nyíregyháza",
+      "address2": "Szalag u. 33.",
+      "address": "Magyarország 4400 Nyíregyháza Szalag u. 33.",
+      "latitude": "47,9618722",
+      "longitude": "21,7405554",
+      "info": "Telefon: +3642451263 Nyitvatartás: H-P: 7:00 - 22:00 Sz: 10:00 - 18:00 V: 1:00 - 18:00"
+    },
+    {
+      "id": 236,
+      "title": "Kettlebell Békéscsaba [Békéscsaba]",
+      "address1": "Magyarország 5600 Békéscsaba",
+      "address2": "Kazinczy u. 31/B",
+      "address": "Magyarország 5600 Békéscsaba Kazinczy u. 31/B",
+      "latitude": "46,6835328",
+      "longitude": "21,0793497",
+      "info": "C épület 1. emelet Telefon: +36 70 6300974 Nyitvatartás: Haladó edzések idõpontja: HSz: 18-19 óráig; KSz: 18-19 óráig; K-Sz: 18-19 óráig; Cs: 18-19 és 19-20 óráig."
+    },
+    {
+      "id": 237,
+      "title": "Király Sportlétesítmény [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Temesvár u. 44.",
+      "address": "Magyarország 9700 Szombathely Temesvár u. 44.",
+      "latitude": "47,2104244",
+      "longitude": "16,6003305",
+      "info": "Telefon: +3694500369 Nyitvatartás:"
+    },
+    {
+      "id": 238,
+      "title": "KissLife Gym [Budapest XI. ker.]",
+      "address1": "Magyarország 1119 Budapest",
+      "address2": "Tétényi u 63.",
+      "address": "Magyarország 1119 Budapest Tétényi u 63.",
+      "latitude": "47,4639377",
+      "longitude": "19,033375",
+      "info": "Telefon: +36204400020 Nyitvatartás: H-P: 6-23 óráig Szo-V: 8-20 óráig"
+    },
+    {
+      "id": 239,
+      "title": "Koko-Gym Fitness Club [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Major u. 23.",
+      "address": "Magyarország 8000 Székesfehérvár Major u. 23.",
+      "latitude": "47,1955115",
+      "longitude": "18,4232161",
+      "info": "Telefon: +36303673469 Nyitvatartás: Hétfõtõl péntekig: 8-21 h Szombaton is 9-13 h"
+    },
+    {
+      "id": 240,
+      "title": "Komló Városi Sportcsarnok [Komló]",
+      "address1": "Magyarország 7300 Komló",
+      "address2": "Eszperanto tér 1.",
+      "address": "Magyarország 7300 Komló Eszperanto tér 1.",
+      "latitude": "46,189849",
+      "longitude": "18,262756",
+      "info": "Telefon: 72 / 481 494 Nyitvatartás:"
+    },
+    {
+      "id": 241,
+      "title": "Kondi-fitt Szépségpark [Újhartyán]",
+      "address1": "Magyarország 2367 Újhartyán",
+      "address2": "Pipacs.u. 35",
+      "address": "Magyarország 2367 Újhartyán Pipacs.u. 35",
+      "latitude": "47,2138915",
+      "longitude": "19,3946553",
+      "info": "Telefon: 30/596-2413 Nyitvatartás:"
+    },
+    {
+      "id": 242,
+      "title": "Kondor Fitness [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1184 Budapest",
+      "address2": "Kondor Béla sétány 7.",
+      "address": "Magyarország 1184 Budapest Kondor Béla sétány 7.",
+      "latitude": "47,4397329",
+      "longitude": "19,167585",
+      "info": "Telefon: +36703630777 Nyitvatartás: H-P: 7:00 – 22:00 Szo: 8:00 – 18:00 Vas: 8:00 - 14:00"
+    },
+    {
+      "id": 243,
+      "title": "KOR-NO Mozgásstúdió [Budapest XIV. ker.]",
+      "address1": "Magyarország 1147 Budapest",
+      "address2": "Lõcsei u. 43/a",
+      "address": "Magyarország 1147 Budapest Lõcsei u. 43/a",
+      "latitude": "47,5213862",
+      "longitude": "19,1124806",
+      "info": "Telefon: +3620 958 0506 Nyitvatartás: Nyitva tartás: órarend szerint"
+    },
+    {
+      "id": 244,
+      "title": "Kovács Mûhely [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1183 Budapest",
+      "address2": "Gyömrõi út 118",
+      "address": "Magyarország 1183 Budapest Gyömrõi út 118",
+      "latitude": "47,456714",
+      "longitude": "19,1824374",
+      "info": "Telefon: +36 20 468 0407 Nyitvatartás: Hétfõ - Péntek 06:00 - 22:00 Szombat - Vasárnap 08:00 - 20:00"
+    },
+    {
+      "id": 245,
+      "title": "Kozma Gym [Siófok]",
+      "address1": "Magyarország 8600 Siófok",
+      "address2": "Vámház u. 4.",
+      "address": "Magyarország 8600 Siófok Vámház u. 4.",
+      "latitude": "46,903683",
+      "longitude": "18,048618",
+      "info": "Telefon: +3684319413 Nyitvatartás: Hétfõ - Péntek: 06-22h Szombat: 10-18h Vasárnap: 10-16h"
+    },
+    {
+      "id": 246,
+      "title": "Kriko Gym [Hódmezõvásárhely]",
+      "address1": "Magyarország 6800 Hódmezõvásárhely",
+      "address2": "Teleki utca 18.",
+      "address": "Magyarország 6800 Hódmezõvásárhely Teleki utca 18.",
+      "latitude": "46,4206201",
+      "longitude": "20,3214906",
+      "info": "Telefon: +36 (70) 628 1 Nyitvatartás: H-P: 5:30 – 22:00 Sz: 10:00- 18:00 V: 14:00- 18:00"
+    },
+    {
+      "id": 247,
+      "title": "Külkereskedelmi Sportklub [Budapest III. ker.]",
+      "address1": "Magyarország 1038 Budapest",
+      "address2": "Márton út 25",
+      "address": "Magyarország 1038 Budapest Márton út 25",
+      "latitude": "47,592274",
+      "longitude": "19,0439673",
+      "info": "Telefon: +36306468389 Nyitvatartás:"
+    },
+    {
+      "id": 248,
+      "title": "Kürti GYM [Martfû]",
+      "address1": "Magyarország 5435 Martfû",
+      "address2": "Mártírok út 4.",
+      "address": "Magyarország 5435 Martfû Mártírok út 4.",
+      "latitude": "47,0175707",
+      "longitude": "20,2854421",
+      "info": "Nyitvatartás: H-P: 8:00 - 10:00 / 15:00 - 21:00 Sz-V: 16:00 - 20:00"
+    },
+    {
+      "id": 249,
+      "title": "Labirintus Fitness [Maglód]",
+      "address1": "Magyarország 2234 Maglód",
+      "address2": "Bajcsy Zs. u. 5.",
+      "address": "Magyarország 2234 Maglód Bajcsy Zs. u. 5.",
+      "latitude": "47,4437939",
+      "longitude": "19,348369",
+      "info": "Telefon: +36306822845 Nyitvatartás: H-P 7:00 - 22:00 Sz-V 7:00 - 20:00"
+    },
+    {
+      "id": 250,
+      "title": "Lady Fitness [Baja]",
+      "address1": "Magyarország 6500 Baja",
+      "address2": "Vasvári u. 8/14",
+      "address": "Magyarország 6500 Baja Vasvári u. 8/14",
+      "latitude": "46,179393",
+      "longitude": "18,9593301",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 251,
+      "title": "Lady Fitness Stúdió [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Fõ tér 24.",
+      "address": "Magyarország 9700 Szombathely Fõ tér 24.",
+      "latitude": "47,2324498",
+      "longitude": "16,6229367",
+      "info": "Telefon: +3694511074 Nyitvatartás:"
+    },
+    {
+      "id": 252,
+      "title": "Lantos Johnny Fitness [Budapest XIX. ker.]",
+      "address1": "Magyarország 1191 Budapest",
+      "address2": "Üllõi út 243",
+      "address": "Magyarország 1191 Budapest Üllõi út 243",
+      "latitude": "47,460873",
+      "longitude": "19,135668",
+      "info": "Telefon: +36709460243 Nyitvatartás: Hétfõ-Péntek: 06.00-22.00. Szombat-Vasárnap: 08.00-20.00."
+    },
+    {
+      "id": 253,
+      "title": "Lido Fitness Klub [Budapest III. ker.]",
+      "address1": "Magyarország 1037 Budapest",
+      "address2": "Nánási út 67 (Római part)",
+      "address": "Magyarország 1037 Budapest Nánási út 67 (Római part)",
+      "latitude": "47,5714413",
+      "longitude": "19,0652552",
+      "info": "Telefon: +3612504549 Nyitvatartás: Hétfötöl Péntekig: 6:00-22:00 Szombat-Vasárnap: 8:00-20:00"
+    },
+    {
+      "id": 254,
+      "title": "Life 1 Nyugati [Budapest VI. ker.]",
+      "address1": "Magyarország 1066 Budapest",
+      "address2": "Nyugati tér 1-2.",
+      "address": "Magyarország 1066 Budapest Nyugati tér 1-2.",
+      "latitude": "47,5096616",
+      "longitude": "19,0557199",
+      "info": "Telefon: +36703316607 Nyitvatartás: H-P: 6.00-23.00 Sz-V: 8.00-20.00"
+    },
+    {
+      "id": 255,
+      "title": "Life1 [Pécs]",
+      "address1": "Magyarország 7622 Pécs",
+      "address2": "Bajcsy-Zsilinszky út 2/1",
+      "address": "Magyarország 7622 Pécs Bajcsy-Zsilinszky út 2/1",
+      "latitude": "46,0730099",
+      "longitude": "18,229235",
+      "info": "Telefon: +36704553280 Nyitvatartás: H-P: 6:00 - 10:00 pm Sz-V: 8:00 am - 8:00 pm"
+    },
+    {
+      "id": 256,
+      "title": "Liget Wellness [Budapest XI. ker.]",
+      "address1": "Magyarország 1117 Budapest",
+      "address2": "Nádorliget u. 5/B.",
+      "address": "Magyarország 1117 Budapest Nádorliget u. 5/B.",
+      "latitude": "47,4681796",
+      "longitude": "19,047511",
+      "info": "Telefon: +36 1 786 7849 Nyitvatartás: Hétfõtõl-péntekig: 6.30-22.00 Szombat – vasárnap: 08.00-20.00"
+    },
+    {
+      "id": 257,
+      "title": "Lite Wellness [Budapest II. ker.]",
+      "address1": "Magyarország 1024 Budapest",
+      "address2": "Lövõház u. 2-6. (Mammut II 4. emelet)",
+      "address": "Magyarország 1024 Budapest Lövõház u. 2-6. (Mammut II 4. emelet)",
+      "latitude": "47,5086441",
+      "longitude": "19,0272386",
+      "info": "Telefon: +3613458544 Nyitvatartás:"
+    },
+    {
+      "id": 258,
+      "title": "Livingroom Fitness [Budapest VIII. ker.]",
+      "address1": "Magyarország 1081 Budapest",
+      "address2": "II. János Pál pápa tér 6.",
+      "address": "Magyarország 1081 Budapest II. János Pál pápa tér 6.",
+      "latitude": "47,4955745",
+      "longitude": "19,076672",
+      "info": "Telefon: +36 30 498 7191 Nyitvatartás: hétköznap: 7:00-22:00 * szombat: 10:00-18:00 * vasárnap: zárva"
+    },
+    {
+      "id": 259,
+      "title": "LordBodyFitness [Szigetszentmiklós]",
+      "address1": "Magyarország 2310 Szigetszentmiklós",
+      "address2": "Gyártelep, Viola köz 1, 3",
+      "address": "Magyarország 2310 Szigetszentmiklós Gyártelep, Viola köz 1, 3",
+      "latitude": "47,4118335",
+      "longitude": "19,0532199",
+      "info": "Telefon: 06 24 407 167 Nyitvatartás: Hétfõ - Péntek: 6:00 - 22:00 -ig Szombat - Vasárnap: 8:00 - 22:00 -ig"
+    },
+    {
+      "id": 260,
+      "title": "M1 Fitness [Miskolc]",
+      "address1": "Magyarország 3526 Miskolc",
+      "address2": "Szeles utca 11.",
+      "address": "Magyarország 3526 Miskolc Szeles utca 11.",
+      "latitude": "48,1083573",
+      "longitude": "20,7891365",
+      "info": "Telefon: +3646506536 Nyitvatartás: Hétköznap: 06.00-22.00 Hétvégén: 08.00-20.00"
+    },
+    {
+      "id": 261,
+      "title": "Magma-fitt központ [Székesfehérvár]",
+      "address1": "Magyarország 8000 Sz.fehérvár",
+      "address2": "Balatoni út 17",
+      "address": "Magyarország 8000 Sz.fehérvár Balatoni út 17",
+      "latitude": "47,1846385",
+      "longitude": "18,4096148",
+      "info": "Telefon: +3622505844 Nyitvatartás: H-P: 6.30-22.30-ig Sz-V : 8.00-20.00-ig"
+    },
+    {
+      "id": 262,
+      "title": "Mango Fitness [Salgótarján]",
+      "address1": "Magyarország 3100 Salgótarján",
+      "address2": "Mérleg u. 4",
+      "address": "Magyarország 3100 Salgótarján Mérleg u. 4",
+      "latitude": "48,106196",
+      "longitude": "19,808794",
+      "info": "Nyitvatartás: H-P:06.00-21.00 Sz-V:08.00-12.30"
+    },
+    {
+      "id": 263,
+      "title": "Marina Body Center [Pápa]",
+      "address1": "Magyarország 8500 Pápa",
+      "address2": "Második utca 4.",
+      "address": "Magyarország 8500 Pápa Második utca 4.",
+      "latitude": "47,3324924",
+      "longitude": "17,4735172",
+      "info": "Telefon: (89) 310-310 Nyitvatartás:"
+    },
+    {
+      "id": 264,
+      "title": "Maros Fitt Park [Szeged]",
+      "address1": "Magyarország 6726 Szeged",
+      "address2": "Rahói u. 6-8.",
+      "address": "Magyarország 6726 Szeged Rahói u. 6-8.",
+      "latitude": "46,2355046",
+      "longitude": "20,1873902",
+      "info": "Telefon: +3662311556 Nyitvatartás: Fitnesz H. - P.: 6:00 - 22:00 Szo.: 8:00 – 20:00 V.: 9:00 - 18:00 Szo.-V.: 14:00-24:00"
+    },
+    {
+      "id": 265,
+      "title": "Mass Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1114 Budapest",
+      "address2": "Bartók Béla út 61.",
+      "address": "Magyarország 1114 Budapest Bartók Béla út 61.",
+      "latitude": "47,4767556",
+      "longitude": "19,0438167",
+      "info": "Telefon: +3614665847 Nyitvatartás: H-P: 7:00 - 22:00 Sz-V: 10:00 - 16:00"
+    },
+    {
+      "id": 266,
+      "title": "Max Fitness [Gödöllõ]",
+      "address1": "Magyarország 2100 Gödöllõ",
+      "address2": "Batsányi u. 8.",
+      "address": "Magyarország 2100 Gödöllõ Batsányi u. 8.",
+      "latitude": "47,5931836",
+      "longitude": "19,3494094",
+      "info": "Telefon: 06 30/374-81-77 Nyitvatartás: H: 8:00 - 12:00 / 14:00 - 22:00 K-P: 8:00 - 22:00 Sz: 10:00 - 15:00"
+    },
+    {
+      "id": 267,
+      "title": "Maximum Fitness [Dombóvár]",
+      "address1": "Magyarország 7200 Dombóvár",
+      "address2": "Köztársaság u. 10.",
+      "address": "Magyarország 7200 Dombóvár Köztársaság u. 10.",
+      "latitude": "46,3856887",
+      "longitude": "18,1392708",
+      "info": "Telefon: +36(70) 420 503 Nyitvatartás: H-P 8:00-21:00 Sz 8:00-19:00 V Zárva"
+    },
+    {
+      "id": 268,
+      "title": "Mecsek Testépítõ Klub [Pécs]",
+      "address1": "Magyarország 7635 Pécs",
+      "address2": "Ybl Miklós u. 10. Mecsek Áruház IV. emelet",
+      "address": "Magyarország 7635 Pécs Ybl Miklós u. 10. Mecsek Áruház IV. emelet",
+      "latitude": "46,064779",
+      "longitude": "18,1984684",
+      "info": "Telefon: 72/257-258 Nyitvatartás: H-P 6:00 - 22:00 Sz-V 8:00 - 18:00"
+    },
+    {
+      "id": 269,
+      "title": "Mega-Fitness Centrum [Budapest XI. ker.]",
+      "address1": "Magyarország XI. kerület Budapest",
+      "address2": "Igmándi út 1.",
+      "address": "Magyarország XI. kerület Budapest Igmándi út 1.",
+      "latitude": "47,4575559",
+      "longitude": "19,019244",
+      "info": "Telefon: +36203298719 Nyitvatartás: Hétfõ-péntek: 6:00-22:00 Szombat: 8:00-16:00 Vasárnap: 8:00-16:00"
+    },
+    {
+      "id": 270,
+      "title": "Megafitness KöKi [Budapest XIX. ker.]",
+      "address1": "Magyarország 1191 Budapest",
+      "address2": "Vak Bottyán u. 75/A-C",
+      "address": "Magyarország 1191 Budapest Vak Bottyán u. 75/A-C",
+      "latitude": "47,462298",
+      "longitude": "19,1477976",
+      "info": "Telefon: +36 20 4122 669 Nyitvatartás: Hétfõ - Péntek: 6:00 - 22:30 Szombat - Vasárnap: 8:00 - 20:00"
+    },
+    {
+      "id": 271,
+      "title": "Mende Fitness [Mende]",
+      "address1": "Magyarország 2235 Mende",
+      "address2": "Szent István Park 1.",
+      "address": "Magyarország 2235 Mende Szent István Park 1.",
+      "latitude": "47,4324763",
+      "longitude": "19,4530079",
+      "info": "Telefon: 06-29/266-957 Nyitvatartás: Hét - Pén 6:00-22:00 Szo - Vas 6:00-18:00"
+    },
+    {
+      "id": 272,
+      "title": "Mester Klub [Békéscsaba]",
+      "address1": "Magyarország 5600 Békéscsaba",
+      "address2": "Mester u. 14.",
+      "address": "Magyarország 5600 Békéscsaba Mester u. 14.",
+      "latitude": "46,663989",
+      "longitude": "21,13036",
+      "info": "Telefon: +3666459459 Nyitvatartás:"
+    },
+    {
+      "id": 273,
+      "title": "Meta Fitness Stúdió [Kaposvár]",
+      "address1": "Magyarország 7400 Kaposvár",
+      "address2": "Németh István fasor 25.",
+      "address": "Magyarország 7400 Kaposvár Németh István fasor 25.",
+      "latitude": "46,3606644",
+      "longitude": "17,7986193",
+      "info": "Telefon: +36302882514 Nyitvatartás: Hétfõtõl péntekig: 7h-21h Szombattól vasárnapig: 9h-16h"
+    },
+    {
+      "id": 274,
+      "title": "MetroFlex (Fittbody Gym & Fitness) [Nagykanizsa]",
+      "address1": "Magyarország 8800 Nagykanizsa",
+      "address2": "Teleki út 19",
+      "address": "Magyarország 8800 Nagykanizsa Teleki út 19",
+      "latitude": "46,4526208",
+      "longitude": "17,010044",
+      "info": "Telefon: +36306015639 Nyitvatartás: H-P: 6:00 - 22:00 Sz: 8:00 - 20:00 V: 9:00 - 14:00"
+    },
+    {
+      "id": 275,
+      "title": "Metropol Fitness [Miskolc]",
+      "address1": "Magyarország 3532 Miskolc",
+      "address2": "Gyõri kapu 149",
+      "address": "Magyarország 3532 Miskolc Gyõri kapu 149",
+      "latitude": "48,1022523",
+      "longitude": "20,7383484",
+      "info": "Telefon: +3646332761 Nyitvatartás:"
+    },
+    {
+      "id": 276,
+      "title": "Metrosport [Budapest XVI. ker.]",
+      "address1": "Magyarország 1162 Budapest",
+      "address2": "Csömöri út 158.",
+      "address": "Magyarország 1162 Budapest Csömöri út 158.",
+      "latitude": "47,5294223",
+      "longitude": "19,1689965",
+      "info": "Telefon: +3614065584 Nyitvatartás: Mindennap 6.00-22.00-ig"
+    },
+    {
+      "id": 277,
+      "title": "Miami Fitt SE [Keszthely]",
+      "address1": "Magyarország 8360 Keszthely",
+      "address2": "Skála köz 1.",
+      "address": "Magyarország 8360 Keszthely Skála köz 1.",
+      "latitude": "46,7688354",
+      "longitude": "17,2476195",
+      "info": "Telefon: +36-20228-2501 Nyitvatartás: Hétfõ-Péntek: 07:00 – 21:00-ig Szombat: 09:00 – 20:00-ig Vasárnap: 15:00 - 20:00-ig\" de igény szerint tovább is nyitva tartunk."
+    },
+    {
+      "id": 278,
+      "title": "Millenium Fitness [Budapest IX. ker.]",
+      "address1": "Magyarország 1095 Budapest",
+      "address2": "Lechner Ödön fasor 8.",
+      "address": "Magyarország 1095 Budapest Lechner Ödön fasor 8.",
+      "latitude": "47,4728996",
+      "longitude": "19,0711587",
+      "info": "Telefon: +36 30 521 8800 Nyitvatartás: Hétköznap: 06:00 – 22:00 Hétvégén: 08:00 – 21:00"
+    },
+    {
+      "id": 279,
+      "title": "Mini Garros Tenisz Club [Budapest XIV. ker.]",
+      "address1": "Magyarország 1147 Budapest",
+      "address2": "Csömöri út 21/A.",
+      "address": "Magyarország 1147 Budapest Csömöri út 21/A.",
+      "latitude": "47,5223749",
+      "longitude": "19,116422",
+      "info": "Telefon: +3613636800 Nyitvatartás: 06.00- 22.00"
+    },
+    {
+      "id": 280,
+      "title": "Mirror Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1122 Budapest",
+      "address2": "Városmajor utca 36-38",
+      "address": "Magyarország 1122 Budapest Városmajor utca 36-38",
+      "latitude": "47,5046984",
+      "longitude": "19,0189401",
+      "info": "Telefon: +36120222 Nyitvatartás: Nyitvatartás: H - P 7:00 - 21:00 SZ - V 9 - 16"
+    },
+    {
+      "id": 281,
+      "title": "Mirror Mozgásstúdió [Budapest XII. ker.]",
+      "address1": "Magyarország 1122 Budapest",
+      "address2": "Városmajor u. 36.",
+      "address": "Magyarország 1122 Budapest Városmajor u. 36.",
+      "latitude": "47,5046984",
+      "longitude": "19,0189401",
+      "info": "Telefon: +3612022290 Nyitvatartás: H-P: 07:00-21:00 Szo-V: 09:00-16:00"
+    },
+    {
+      "id": 282,
+      "title": "Miskolci Egyetemi Atlétikai és Futball Club (MEAFC) [Miskolc]",
+      "address1": "Magyarország 3515 Miskolc",
+      "address2": "Egyetemváros",
+      "address": "Magyarország 3515 Miskolc Egyetemváros",
+      "latitude": "48,0793507",
+      "longitude": "20,7653961",
+      "info": "Telefon: 46/565-250 Nyitvatartás:"
+    },
+    {
+      "id": 283,
+      "title": "Miskolci Vasutas Sportklub [Miskolc]",
+      "address1": "Magyarország 3528 Miskolc",
+      "address2": "Csokonai. u. 3",
+      "address": "Magyarország 3528 Miskolc Csokonai. u. 3",
+      "latitude": "48,096095",
+      "longitude": "20,8047516",
+      "info": "Telefon: +3646357578 Nyitvatartás:"
+    },
+    {
+      "id": 284,
+      "title": "MOM Wellness Centrum [Budapest XII. ker.]",
+      "address1": "Magyarország 1124 Budapest",
+      "address2": "Alkotás útja 53.",
+      "address": "Magyarország 1124 Budapest Alkotás útja 53.",
+      "latitude": "47,4907309",
+      "longitude": "19,023923",
+      "info": "Telefon: +36302775600 Nyitvatartás: Hétköznap: 06.30–22.00 óráig Hétvégén: 09.00–20.00 óráig"
+    },
+    {
+      "id": 285,
+      "title": "Monster Fitness [Érd]",
+      "address1": "Magyarország 2030 Érd",
+      "address2": "Diósdi út 31.",
+      "address": "Magyarország 2030 Érd Diósdi út 31.",
+      "latitude": "47,3828824",
+      "longitude": "18,923733",
+      "info": "Telefon: +36205118472 Nyitvatartás: Hétfõtõl-péntekig: 6.30-21.30 Szombat: 09.00-17.00 Vasárnap: 10.00-17.00"
+    },
+    {
+      "id": 286,
+      "title": "Motilitás Testkultúra Szalon [Budapest IX. ker.]",
+      "address1": "Magyarország 1091 Budapest",
+      "address2": "Üllõi út 53/a",
+      "address": "Magyarország 1091 Budapest Üllõi út 53/a",
+      "latitude": "47,484578",
+      "longitude": "19,072797",
+      "info": "Nyitvatartás: H-P: 6:00 – 23:00 Sz-V: 8:00 - 22:00"
+    },
+    {
+      "id": 287,
+      "title": "Mozgásmánia Stúdió [Szeged]",
+      "address1": "Magyarország 6720 Szeged",
+      "address2": "József Attila sgt. 36.",
+      "address": "Magyarország 6720 Szeged József Attila sgt. 36.",
+      "latitude": "46,2610828",
+      "longitude": "20,1573335",
+      "info": "Telefon: +3662311727 Nyitvatartás: H-SZ-P: 7:00 – 21:00 K-CS: 7:30 – 21:00 Szombat: 8:30 – 19:00 Vasárnap: 15:00 - 19:00"
+    },
+    {
+      "id": 288,
+      "title": "Mozgástér [Budapest I. ker.]",
+      "address1": "Magyarország 1015 Budapest",
+      "address2": "Donáti utca 40-42.",
+      "address": "Magyarország 1015 Budapest Donáti utca 40-42.",
+      "latitude": "47,5059987",
+      "longitude": "19,0351954",
+      "info": "Telefon: +36305289392 Nyitvatartás: H-P: 7-22 Sz-V: 7-18"
+    },
+    {
+      "id": 289,
+      "title": "Multifit Fitness Stúdió [Budapest VI. ker.]",
+      "address1": "Magyarország 1065 Budapest",
+      "address2": "Lázár utca 9",
+      "address": "Magyarország 1065 Budapest Lázár utca 9",
+      "latitude": "47,502165",
+      "longitude": "19,056253",
+      "info": "Telefon: +36 30 607 6507 Nyitvatartás: Hétfõ: 07:00-22:00 Kedd: 07:00-22:00 Szerda: 07:00-22:00 Csütörtök: 07:00-22:00 Péntek: 07:00-20:00 Szombat: 09:00-19:00"
+    },
+    {
+      "id": 290,
+      "title": "Muscle Fit [Békéscsaba]",
+      "address1": "Magyarország 5600 Békéscsaba",
+      "address2": "Andrássy út 71.-73.",
+      "address": "Magyarország 5600 Békéscsaba Andrássy út 71.-73.",
+      "latitude": "46,6725",
+      "longitude": "21,084866",
+      "info": "Nyitvatartás: H-P: 6:00 am - 10:00 pm Sz-V: 8:00 am - 9:00 pm"
+    },
+    {
+      "id": 291,
+      "title": "Muscle Gym Fitness Centrum [Pécs]",
+      "address1": "Magyarország 7622 Pécs",
+      "address2": "Siklósi út 22",
+      "address": "Magyarország 7622 Pécs Siklósi út 22",
+      "latitude": "46,0617052",
+      "longitude": "18,2301215",
+      "info": "Telefon: +3672268936 Nyitvatartás: H-P: 6:00 - 21:00 Sz: 7:00 - 17:00"
+    },
+    {
+      "id": 292,
+      "title": "My Way [Bag]",
+      "address1": "Magyarország 2191 Bag",
+      "address2": "Peres utca1.",
+      "address": "Magyarország 2191 Bag Peres utca1.",
+      "latitude": "47,6404704",
+      "longitude": "19,4700913",
+      "info": "Nyitvatartás: H-P: 7:00 - 11:00 / 15:00-21:00 Sz: 8:00-12:00 / 15:00-18:00 V: Zárva"
+    },
+    {
+      "id": 293,
+      "title": "Nagytétényi Atlasz Sport Klub [Budapest XXII. ker.]",
+      "address1": "Magyarország 1225 Budapest",
+      "address2": "Angeli u. 64.",
+      "address": "Magyarország 1225 Budapest Angeli u. 64.",
+      "latitude": "47,3975671",
+      "longitude": "18,9767761",
+      "info": "Telefon: +3612070070 Nyitvatartás: H-P: 7-21 Sz: 7-14 V: 16-20"
+    },
+    {
+      "id": 294,
+      "title": "Napraforgó Fitness Studio [Pécs]",
+      "address1": "Magyarország 7621 Pécs",
+      "address2": "Rákóczi u. 7",
+      "address": "Magyarország 7621 Pécs Rákóczi u. 7",
+      "latitude": "46,0735979",
+      "longitude": "18,2222968",
+      "info": "Telefon: +3672510796 Nyitvatartás:"
+    },
+    {
+      "id": 295,
+      "title": "NEMES FITNESS [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1182 Budapest",
+      "address2": "Nemes u.103",
+      "address": "Magyarország 1182 Budapest Nemes u.103",
+      "latitude": "47,4133683",
+      "longitude": "19,201092",
+      "info": "Telefon: +3612970653 Nyitvatartás: H - P: 7.00-22.00 Sz - V: 8.00-20.00"
+    },
+    {
+      "id": 296,
+      "title": "New York Fitness [Budapest XV. ker.]",
+      "address1": "Magyarország 1154 Budapest",
+      "address2": "Késmárk u. 32.",
+      "address": "Magyarország 1154 Budapest Késmárk u. 32.",
+      "latitude": "47,5293875",
+      "longitude": "19,1502479",
+      "info": "Telefon: +3614140919 Nyitvatartás: H-P: 07:00 - 23:00 SZ-V: 08:00 - 22:00"
+    },
+    {
+      "id": 297,
+      "title": "Next Fitness II [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Rezgõ utca 1",
+      "address": "Magyarország 6000 Kecskemét Rezgõ utca 1",
+      "latitude": "46,8870212",
+      "longitude": "19,6342942",
+      "info": "Telefon: +36 30 748 3738 Nyitvatartás: H-P: 6:00 – 22:00 Szo-V:8:00 – 20:00"
+    },
+    {
+      "id": 298,
+      "title": "Nova-Sun Fitness [Budapest XIII. ker.]",
+      "address1": "Magyarország 1132 Budapest",
+      "address2": "Kádár u. 6.",
+      "address": "Magyarország 1132 Budapest Kádár u. 6.",
+      "latitude": "47,5114614",
+      "longitude": "19,0550007",
+      "info": "Telefon: +3613204042 Nyitvatartás: H-P: 6:30-22:00 SZ: 8:30-18:00 V: 8:30-15:00"
+    },
+    {
+      "id": 299,
+      "title": "Oázis Wellness Park [Szigetszentmiklós]",
+      "address1": "Magyarország 2310 Szigetszentmiklós",
+      "address2": "Thököly u. 184.",
+      "address": "Magyarország 2310 Szigetszentmiklós Thököly u. 184.",
+      "latitude": "47,3499421",
+      "longitude": "19,0175628",
+      "info": "Telefon: +3624468997 Nyitvatartás: H-P: 05:00-22:00 Sz: 08:00-21:00 V: 08:00-20:00"
+    },
+    {
+      "id": 300,
+      "title": "Oktogon Fitness [Budapest VI. ker.]",
+      "address1": "Magyarország 1060 Budapest",
+      "address2": "Jókai tér 1.",
+      "address": "Magyarország 1060 Budapest Jókai tér 1.",
+      "latitude": "47,5049981",
+      "longitude": "19,0612433",
+      "info": "Telefon: +3617048189 Nyitvatartás: H - P: 8.00 - 22.00 SZO: 9.00 - 20.00 VA: ZÁRVA"
+    },
+    {
+      "id": 301,
+      "title": "Oleg Gym [Kaposvár]",
+      "address1": "Magyarország 7400 Kaposvár",
+      "address2": "Puskin u. 24.",
+      "address": "Magyarország 7400 Kaposvár Puskin u. 24.",
+      "latitude": "46,3708041",
+      "longitude": "17,7915576",
+      "info": "Telefon: +3682416000 Nyitvatartás:"
+    },
+    {
+      "id": 302,
+      "title": "Olívia Nõi Fitness [Érd]",
+      "address1": "Magyarország 2030 Érd",
+      "address2": "Budai út 62",
+      "address": "Magyarország 2030 Érd Budai út 62",
+      "latitude": "47,3785276",
+      "longitude": "18,9274718",
+      "info": "Telefon: +36306352654 Nyitvatartás: Hétköznap: 8-21 Hétvégén: 9-14"
+    },
+    {
+      "id": 303,
+      "title": "Olümposz Gym [Makó]",
+      "address1": "Magyarország 6900 Makó",
+      "address2": "",
+      "address": "Magyarország 6900 Makó",
+      "latitude": "46,2313855",
+      "longitude": "20,5016408",
+      "info": "Telefon: +36702656464 Nyitvatartás: HÉTFÕTÕL-PÉNTEKIG: 7:00-21:00 SZOMBAT: 9:00-18:00 VASÁRNAP: 14:00-18:00"
+    },
+    {
+      "id": 304,
+      "title": "Olympia Fitness [Pécs]",
+      "address1": "Magyarország 7633 Pécs",
+      "address2": "Esztergár Lajos u. 10",
+      "address": "Magyarország 7633 Pécs Esztergár Lajos u. 10",
+      "latitude": "46,063696",
+      "longitude": "18,193862",
+      "info": "Telefon: +36-20-936-7541 Nyitvatartás: Hétfõ-Péntek: 7:30-21:00 Szombat: 8:00-16:00 Vasárnap: 8:00-12:00"
+    },
+    {
+      "id": 305,
+      "title": "Online Squash Club [Budaörs]",
+      "address1": "Magyarország 2040 Buadörs",
+      "address2": "Forrás u. 8.",
+      "address": "Magyarország 2040 Buadörs Forrás u. 8.",
+      "latitude": "47,4535049",
+      "longitude": "18,9625594",
+      "info": "Telefon: +3623444344 Nyitvatartás: Hétfõtõl péntekig: 7 – 22:30 Hétvégén: 9 – 21:00."
+    },
+    {
+      "id": 306,
+      "title": "Optimus Gym [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Árpád út 90-92",
+      "address": "Magyarország 1042 Budapest Árpád út 90-92",
+      "latitude": "47,5600885",
+      "longitude": "19,0931721",
+      "info": "Telefon: 06 1 785 96 03 Nyitvatartás: Hétfõ-Péntek 06.00-22.00 Szombat 08:00-20:00 Vasárnap 08:00-18:00"
+    },
+    {
+      "id": 307,
+      "title": "Optofit Sportcentrum [Vác]",
+      "address1": "Magyarország 2600 Vác",
+      "address2": "Vám u. 13.",
+      "address": "Magyarország 2600 Vác Vám u. 13.",
+      "latitude": "47,7694513",
+      "longitude": "19,1461858",
+      "info": "Telefon: (27) 502-860 Nyitvatartás:"
+    },
+    {
+      "id": 308,
+      "title": "Oros-KokoSport Gym [Orosháza]",
+      "address1": "Magyarország 5900 Orosháza",
+      "address2": "Báthory utca 23.",
+      "address": "Magyarország 5900 Orosháza Báthory utca 23.",
+      "latitude": "46,552999",
+      "longitude": "20,6616779",
+      "info": "Nyitvatartás: H-P:6:00-21:00 Sz: 7:00-19:00"
+    },
+    {
+      "id": 309,
+      "title": "Oxy Gym [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Deák Ferenc utca 6.",
+      "address": "Magyarország 8000 Székesfehérvár Deák Ferenc utca 6.",
+      "latitude": "47,1891963",
+      "longitude": "18,4201454",
+      "info": "Telefon: +3622786405 Nyitvatartás: Hétfõ-Péntek: 6-22 óráig Szombat: 9-18 óráig Vasárnap: 10-18 óráig"
+    },
+    {
+      "id": 310,
+      "title": "OxyFitt Szalon [Budapest XVI. ker.]",
+      "address1": "Magyarország 1162 Budapest",
+      "address2": "Timur u. 103.",
+      "address": "Magyarország 1162 Budapest Timur u. 103.",
+      "latitude": "47,5369388",
+      "longitude": "19,2029599",
+      "info": "Telefon: +36305361766 Nyitvatartás: H-P:7-21 óráig SZ: 9-14 V: 9-13"
+    },
+    {
+      "id": 311,
+      "title": "Oxygain Fitness [Tapolca]",
+      "address1": "Magyarország 8300 Tapolca",
+      "address2": "Árpád út 2.",
+      "address": "Magyarország 8300 Tapolca Árpád út 2.",
+      "latitude": "46,8813475",
+      "longitude": "17,4331028",
+      "info": "Telefon: +36(30) 483 532 Nyitvatartás: Hétfõ 7:00 - 21:00 Kedd 7:00 - 21:00 Szerda 7:00 - 21:00 Csütörtök 7:00 - 21:00 Péntek 7:00 - 21:00 Szombat 9:00 - 17:00 Vasárnap 9:00 - 13:00"
+    },
+    {
+      "id": 312,
+      "title": "Oxygen Wellness 2 [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Árpád út 47-49.",
+      "address": "Magyarország 1042 Budapest Árpád út 47-49.",
+      "latitude": "47,560445",
+      "longitude": "19,086891",
+      "info": "Telefon: +3617997990 Nyitvatartás:"
+    },
+    {
+      "id": 313,
+      "title": "Oxygen Wellness Fáy [Budapest XIII. ker.]",
+      "address1": "Magyarország 1139 Budapest",
+      "address2": "Fáy utca 45.",
+      "address": "Magyarország 1139 Budapest Fáy utca 45.",
+      "latitude": "47,5357367",
+      "longitude": "19,0800783",
+      "info": "Telefon: +361888 3210 Nyitvatartás: Hétfõ - Péntek: 06:00 - 22:30 Szombat-vasárnap: 08:00 - 20:00"
+    },
+    {
+      "id": 314,
+      "title": "Öntöde SE [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Géfin G. u. 24.",
+      "address": "Magyarország 9700 Szombathely Géfin G. u. 24.",
+      "latitude": "47,228578",
+      "longitude": "16,6091694",
+      "info": "Telefon: +3694341341 Nyitvatartás: H-P: 6:00 - 22:00 Sz-V: 9:00 - 19:00"
+    },
+    {
+      "id": 315,
+      "title": "Padma Jóga Stúdió Életmód és Testkultúra Szalon [Budapest XIV. ker.]",
+      "address1": "Magyarország 1148 Budapest",
+      "address2": "Bánki Donát u. 62.",
+      "address": "Magyarország 1148 Budapest Bánki Donát u. 62.",
+      "latitude": "47,5056168",
+      "longitude": "19,1341084",
+      "info": "Telefon: +36205526305 Nyitvatartás:"
+    },
+    {
+      "id": 316,
+      "title": "Pálma Fitness (Nõi konditerem) [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1181 Budapest",
+      "address2": "Üllõi út 457.",
+      "address": "Magyarország 1181 Budapest Üllõi út 457.",
+      "latitude": "47,4425396",
+      "longitude": "19,1794519",
+      "info": "Telefon: +3612902989 Nyitvatartás: H - P: 6 - 21 Sz - V: 7 - 15"
+    },
+    {
+      "id": 317,
+      "title": "Petõfi Tenisz És FitneszKlub [Nagykõrös]",
+      "address1": "Magyarország 2750 Nagykõrös",
+      "address2": "Ménesi út",
+      "address": "Magyarország 2750 Nagykõrös Ménesi út",
+      "latitude": "47,0431747",
+      "longitude": "19,7827304",
+      "info": "Nyitvatartás: Hétköznap: 07:00 - 20:00 Szombaton:07:00 - 16:00 Vasárnap:17:00 - 19:00"
+    },
+    {
+      "id": 318,
+      "title": "Pit Bull Gym [Budapest IX. ker.]",
+      "address1": "Magyarország 1096 Budapest",
+      "address2": "Telepy u. 17.",
+      "address": "Magyarország 1096 Budapest Telepy u. 17.",
+      "latitude": "47,478747",
+      "longitude": "19,083329",
+      "info": "Telefon: +36 1 215-6247 Nyitvatartás: H-P: 16 – 22 Szombat: 10 - 16"
+    },
+    {
+      "id": 319,
+      "title": "PitBull Gym Kondicionáló és Fitness Szalon [Paks]",
+      "address1": "Magyarország 7030 Paks",
+      "address2": "Rákóczi u. 5-7",
+      "address": "Magyarország 7030 Paks Rákóczi u. 5-7",
+      "latitude": "46,6238195",
+      "longitude": "18,8544548",
+      "info": "Telefon: +362042411599 Nyitvatartás: Hétfõ"
+    },
+    {
+      "id": 320,
+      "title": "Platán Fitness [Pilis]",
+      "address1": "Magyarország 2721 Pilis",
+      "address2": "Rákoczi út 14.",
+      "address": "Magyarország 2721 Pilis Rákoczi út 14.",
+      "latitude": "47,284177",
+      "longitude": "19,544809",
+      "info": "Telefon: +36204247057 Nyitvatartás: H-P: 8-22 Sz-V: 8-12; 16-20"
+    },
+    {
+      "id": 321,
+      "title": "Pláza Fitness Eger [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Törvényház Út 4. 2. Emelet",
+      "address": "Magyarország 3300 Eger Törvényház Út 4. 2. Emelet",
+      "latitude": "47,9004949",
+      "longitude": "20,3682255",
+      "info": "Telefon: +36 36 789 192 Nyitvatartás: Hétfõ – Péntek: 6:00 – 22:00 Szombat – Vasárnap: 9:00 – 17:00"
+    },
+    {
+      "id": 322,
+      "title": "Pólus Fitness [Budapest XV. ker.]",
+      "address1": "Magyarország 1157 Budapest",
+      "address2": "Szentmihályi u. 131. (Pólus Center)",
+      "address": "Magyarország 1157 Budapest Szentmihályi u. 131. (Pólus Center)",
+      "latitude": "47,552875",
+      "longitude": "19,141459",
+      "info": "Telefon: +3614101670 Nyitvatartás: H-P: 7-22 Sz-V: 9-19"
+    },
+    {
+      "id": 323,
+      "title": "Power Fitness 1 [Budapest VIII. ker.]",
+      "address1": "Magyarország 1082 Budapest",
+      "address2": "Szigony utca 13.",
+      "address": "Magyarország 1082 Budapest Szigony utca 13.",
+      "latitude": "47,4890037",
+      "longitude": "19,0793538",
+      "info": "Telefon: +36303800470 Nyitvatartás: Hétfõ - Péntek: 7-220 Szombat: 8- 18 Vasárnap: 10- 18"
+    },
+    {
+      "id": 324,
+      "title": "Power Fitness 2 [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "József Attila u. 94.",
+      "address": "Magyarország 1042 Budapest József Attila u. 94.",
+      "latitude": "47,5602232",
+      "longitude": "19,0951559",
+      "info": "Telefon: +36307916309 Nyitvatartás: Hétfõ-Péntek: 7:00-22:00 Szombat: 8:00-20:00 Vasárnap: 10:00-20:00"
+    },
+    {
+      "id": 325,
+      "title": "Power Gym [Budapest XVII. ker.]",
+      "address1": "Magyarország 1171 Budapest",
+      "address2": "Péceli út 156.",
+      "address": "Magyarország 1171 Budapest Péceli út 156.",
+      "latitude": "47,485227",
+      "longitude": "19,281128",
+      "info": "Telefon: 06-1-292-3097 Nyitvatartás: H-P: 6.00-22:00 Szo:8-18 V:9-17"
+    },
+    {
+      "id": 326,
+      "title": "Power Gym [Budapest XIX. ker.]",
+      "address1": "Magyarország 1191 Budapest",
+      "address2": "Üllõi út 216.",
+      "address": "Magyarország 1191 Budapest Üllõi út 216.",
+      "latitude": "47,4590067",
+      "longitude": "19,1427481",
+      "info": "Telefon: +36205510006 Nyitvatartás: H-P: 6.30 – 22.00 Sz-V: 9-19"
+    },
+    {
+      "id": 327,
+      "title": "Power Gym [Szentlõrinc]",
+      "address1": "Magyarország 7940 Szentlõrinc",
+      "address2": "Deák Ferenc utca 17.",
+      "address": "Magyarország 7940 Szentlõrinc Deák Ferenc utca 17.",
+      "latitude": "46,0372718",
+      "longitude": "17,9889634",
+      "info": "Telefon: +36302686340 Nyitvatartás:"
+    },
+    {
+      "id": 328,
+      "title": "Power Gym Nõi-Férfi konditerem és szolárium [Zalaegerszeg]",
+      "address1": "Magyarország 8900 Zalaegerszeg",
+      "address2": "Stadion u. 3/A",
+      "address": "Magyarország 8900 Zalaegerszeg Stadion u. 3/A",
+      "latitude": "46,8462195",
+      "longitude": "16,852302",
+      "info": "Telefon: +36303893180 Nyitvatartás: Hétköznap: 07-22h Szombat: 09-16h Vasárnap: 10-15h"
+    },
+    {
+      "id": 329,
+      "title": "Power House Gym [Budapest XIII. ker.]",
+      "address1": "Magyarország 1132 Budapest",
+      "address2": "Klapka u. 21. I. em.",
+      "address": "Magyarország 1132 Budapest Klapka u. 21. I. em.",
+      "latitude": "47,5253925",
+      "longitude": "19,0706036",
+      "info": "Telefon: 0612398075 Nyitvatartás: H - P: 5.30 - 22.00 SZO: 6.00 - 22.00 VA: 6.00 - 22.00"
+    },
+    {
+      "id": 330,
+      "title": "Prima Torna [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Mészöly G. u.",
+      "address": "Magyarország 8000 Székesfehérvár Mészöly G. u.",
+      "latitude": "47,196519",
+      "longitude": "18,4040747",
+      "info": "Telefon: +36305526542 Nyitvatartás:"
+    },
+    {
+      "id": 331,
+      "title": "Pro Fitness Gym [Budapest X. ker.]",
+      "address1": "Magyarország 1103 Budapest",
+      "address2": "Kõér u. 1/a",
+      "address": "Magyarország 1103 Budapest Kõér u. 1/a",
+      "latitude": "47,466717",
+      "longitude": "19,126936",
+      "info": "Nyitvatartás:"
+    },
+    {
+      "id": 332,
+      "title": "Professors Gym [Pécs]",
+      "address1": "Magyarország 7624 Pécs",
+      "address2": "Jakabhegyi út 8. (PTE Jakabhegyi kollégium)",
+      "address": "Magyarország 7624 Pécs Jakabhegyi út 8. (PTE Jakabhegyi kollégium)",
+      "latitude": "46,0754064",
+      "longitude": "18,2003577",
+      "info": "Telefon: +36213804393 Nyitvatartás: H-Cs: 7-22 P: 7-21 Szo: 9-19 Vas: 8-12 és 16-22"
+    },
+    {
+      "id": 333,
+      "title": "Profi Fitness [Vác]",
+      "address1": "Magyarország 2600 Vác",
+      "address2": "Telep utca 2-4",
+      "address": "Magyarország 2600 Vác Telep utca 2-4",
+      "latitude": "47,784028",
+      "longitude": "19,132413",
+      "info": "Telefon: +3627305312 Nyitvatartás: Hétfõ-Péntek: 6:00 - 21:30 Szombat-vasárnap: 9:00 - 19:00"
+    },
+    {
+      "id": 334,
+      "title": "Progym Fitness [Szombathely]",
+      "address1": "Magyarország 9700 Szombathely",
+      "address2": "Varasd u. 10.",
+      "address": "Magyarország 9700 Szombathely Varasd u. 10.",
+      "latitude": "47,239976",
+      "longitude": "16,651407",
+      "info": "Telefon: +36 70 603 9224 Nyitvatartás: Hétfõ – Péntek 6:30 – 22:00 Szombat – Vasárnap: 9:00 – 21:00"
+    },
+    {
+      "id": 335,
+      "title": "Pull Fitness [Budapest VI. ker.]",
+      "address1": "Magyarország 1064 Budapest",
+      "address2": "Podmaniczky u. 75.",
+      "address": "Magyarország 1064 Budapest Podmaniczky u. 75.",
+      "latitude": "47,514064",
+      "longitude": "19,0670707",
+      "info": "Telefon: +36 1 706 7810 Nyitvatartás: hétfõ 7:00–22:00 kedd 7:00–22:00 szerda 7:00–22:00 csütörtök 7:00–22:00 péntek 7:00–22:00 szombat 8:00–18:00 vasárnap 8:00–18:00"
+    },
+    {
+      "id": 336,
+      "title": "PVSK - PÉCSI VASUTAS SPORTKÖR [Pécs]",
+      "address1": "Magyarország 7633 Pécs",
+      "address2": "Verseny utca 11.",
+      "address": "Magyarország 7633 Pécs Verseny utca 11.",
+      "latitude": "46,064965",
+      "longitude": "18,223941",
+      "info": "Telefon: +3672514900 Nyitvatartás:"
+    },
+    {
+      "id": 337,
+      "title": "Quasimodo Testépítõ Sportegyesület [Salgótarján]",
+      "address1": "Magyarország 3100 Salgótarján",
+      "address2": "Bajcsy Zsilinszky út 12.",
+      "address": "Magyarország 3100 Salgótarján Bajcsy Zsilinszky út 12.",
+      "latitude": "48,0981867",
+      "longitude": "19,799048",
+      "info": "Telefon: +3632422376 Nyitvatartás: Hétfõ-Péntek: 5:00-21:00 Szombat-Vasárnap: 6:30-13:00"
+    },
+    {
+      "id": 338,
+      "title": "RB Fitness [Hajdúszoboszló]",
+      "address1": "Magyarország 4200 Hajdúszoboszló",
+      "address2": "Erzsébet u.5.",
+      "address": "Magyarország 4200 Hajdúszoboszló Erzsébet u.5.",
+      "latitude": "47,4443806",
+      "longitude": "21,3839559",
+      "info": "Telefon: +36 70 3772 787 Nyitvatartás: H-P: 06:00-22:00 Sz-V: 08:00-18:00"
+    },
+    {
+      "id": 339,
+      "title": "Retro-City [Kazincbarcika]",
+      "address1": "Magyarország 3700 Kazincbarcika",
+      "address2": "Jószerencsét út 6",
+      "address": "Magyarország 3700 Kazincbarcika Jószerencsét út 6",
+      "latitude": "48,253231",
+      "longitude": "20,62785",
+      "info": "Telefon: +3670 944 3780 Nyitvatartás: H-P: 6:00 – 22:00 Sz-V: 8:00 - 20:00"
+    },
+    {
+      "id": 340,
+      "title": "Rob Gym [Mosonmagyaróvár]",
+      "address1": "Magyarország 9200 Mosonmagyaróvár",
+      "address2": "Szent István Király u. 26. ( Kisalföld Áruház mögött)",
+      "address": "Magyarország 9200 Mosonmagyaróvár Szent István Király u. 26. ( Kisalföld Áruház mögött)",
+      "latitude": "47,8675509",
+      "longitude": "17,2724427",
+      "info": "Telefon: +36203945955 Nyitvatartás: H-V: 6:00 - 22:00"
+    },
+    {
+      "id": 341,
+      "title": "Római Teniszakadémia [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Királyok útja 105.",
+      "address": "Magyarország 1039 Budapest Királyok útja 105.",
+      "latitude": "47,5847654",
+      "longitude": "19,0651597",
+      "info": "Telefon: +36703353165 Nyitvatartás:"
+    },
+    {
+      "id": 342,
+      "title": "Roxan Fitness [Budapest VI. ker.]",
+      "address1": "Magyarország 1065 Budapest",
+      "address2": "Lázár u. 9",
+      "address": "Magyarország 1065 Budapest Lázár u. 9",
+      "latitude": "47,502165",
+      "longitude": "19,056253",
+      "info": "Telefon: +3613116828 Nyitvatartás: H-Cs: 7:00 – 22:00 P: 7:00-20:00 Sz: 9:00 – 19:00 V: Zárva"
+    },
+    {
+      "id": 343,
+      "title": "Sebi-Gym [Isaszeg]",
+      "address1": "Magyarország 2117 Isaszeg",
+      "address2": "Madách Imre u. 17",
+      "address": "Magyarország 2117 Isaszeg Madách Imre u. 17",
+      "latitude": "47,530138",
+      "longitude": "19,401782",
+      "info": "Telefon: +36203307347 Nyitvatartás: Hétfõ-Péntek: 14.00-21.00 Szombat: 14.00-18.00 Vasárnap: Zárva"
+    },
+    {
+      "id": 344,
+      "title": "Segner Fitness [Debrecen]",
+      "address1": "Magyarország Debrecen",
+      "address2": "Segner tér 5.",
+      "address": "Magyarország Debrecen Segner tér 5.",
+      "latitude": "47,5280495",
+      "longitude": "21,6127699",
+      "info": "Telefon: +3652788549 Nyitvatartás: Hétfõ - Péntek 06.00 – 22.00 Szombat 08.00 – 20.00 Vasárnap 08.00 - 20.00"
+    },
+    {
+      "id": 345,
+      "title": "Siluett Fitness Club [Gyomaendrõd]",
+      "address1": "Magyarország 5500 Gyomaendrõd",
+      "address2": "Kner tér",
+      "address": "Magyarország 5500 Gyomaendrõd Kner tér",
+      "latitude": "46,9367721",
+      "longitude": "20,8315746",
+      "info": "Telefon: +3666285840 Nyitvatartás:"
+    },
+    {
+      "id": 346,
+      "title": "Silver Fitness [Budapest VII. ker.]",
+      "address1": "Magyarország 1075 Budapest",
+      "address2": "Wesselényi u. 54.",
+      "address": "Magyarország 1075 Budapest Wesselényi u. 54.",
+      "latitude": "47,4999192",
+      "longitude": "19,0677209",
+      "info": "Telefon: +3613521442 Nyitvatartás:"
+    },
+    {
+      "id": 347,
+      "title": "Sparta Gym [Budapest III. ker.]",
+      "address1": "Magyarország 1032 Budapest",
+      "address2": "Bécsi út 314",
+      "address": "Magyarország 1032 Budapest Bécsi út 314",
+      "latitude": "47,5720152",
+      "longitude": "19,0162857",
+      "info": "Telefon: +36706299999 Nyitvatartás: HÉTFÕ - PÉNTEK: 08:00 - 22:00 SZOMBAT - VASÁRNAP: 10:00 - 16:00"
+    },
+    {
+      "id": 348,
+      "title": "Speed Fitness Speed [Szeged]",
+      "address1": "Magyarország 6724 Szeged",
+      "address2": "Fonógyári út 18.",
+      "address": "Magyarország 6724 Szeged Fonógyári út 18.",
+      "latitude": "46,2627815",
+      "longitude": "20,1091064",
+      "info": "Telefon: 30/960-1597 Nyitvatartás: Hétfõ-péntek: 8:00 – 19:00 Szombat: igény esetén egyeztetés alapjá"
+    },
+    {
+      "id": 349,
+      "title": "Speedfit Fitness (ALPHAPARK) [Sopron]",
+      "address1": "Magyarország 9400 Sopron",
+      "address2": "Határdomb u. 1-2.",
+      "address": "Magyarország 9400 Sopron Határdomb u. 1-2.",
+      "latitude": "47,672254",
+      "longitude": "16,612015",
+      "info": "Telefon: +36-99/505-238 Nyitvatartás: Hetfotol vasarnapig 6-24 oraig"
+    },
+    {
+      "id": 350,
+      "title": "SPEEDFIT Fitnesz és Szolárium Stúdió [Gyõr]",
+      "address1": "Magyarország 9025 Gyõr",
+      "address2": "Csipkegyári u. 11.<br>Dunacenter Bevásárló Központ",
+      "address": "Magyarország 9025 Gyõr Csipkegyári u. 11.<br>Dunacenter Bevásárló Központ",
+      "latitude": "47,6774235",
+      "longitude": "17,617532",
+      "info": "Telefon: +3696528448 Nyitvatartás:"
+    },
+    {
+      "id": 351,
+      "title": "Sport11 Fitness & Squash [Budapest XI. ker.]",
+      "address1": "Magyarország 1112 Budapest",
+      "address2": "Kánai út 2.",
+      "address": "Magyarország 1112 Budapest Kánai út 2.",
+      "latitude": "47,4465101",
+      "longitude": "19,00218",
+      "info": "Telefon: +36 1 877-5485 Nyitvatartás: HÉTFÕ - PÉNTEK: 07:00 - 21:30 HÉTVÉGÉN: 08:00 - 20:00"
+    },
+    {
+      "id": 352,
+      "title": "Springday Health Club [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Árpád út 47-49.",
+      "address": "Magyarország 1042 Budapest Árpád út 47-49.",
+      "latitude": "47,560445",
+      "longitude": "19,086891",
+      "info": "Telefon: +36-1-799-7990 Nyitvatartás: H-P: 6:00 - 22:30 SZ:8:00 - 20:00 V:8:00 - 20:00"
+    },
+    {
+      "id": 353,
+      "title": "Sqash Club Szabadidõközpont [Szeged]",
+      "address1": "Magyarország 6728 Szeged",
+      "address2": "Kenyérgyári út 3.",
+      "address": "Magyarország 6728 Szeged Kenyérgyári út 3.",
+      "latitude": "46,2560238",
+      "longitude": "20,1222348",
+      "info": "Telefon: +36302726666 Nyitvatartás: H-P: 6-22 Sz-V: 7-22"
+    },
+    {
+      "id": 354,
+      "title": "Squash Sziget Fitness [Szigetszentmiklós]",
+      "address1": "Magyarország 2310 Szigetszentmiklós",
+      "address2": "Bajcsy - Zsilinszky utca 1/a",
+      "address": "Magyarország 2310 Szigetszentmiklós Bajcsy - Zsilinszky utca 1/a",
+      "latitude": "47,3456966",
+      "longitude": "19,0399073",
+      "info": "Telefon: (24) 443757 Nyitvatartás: Hétfõ - Péntek 07.00 - 22.00 Szombat 09.00 - 21.00 Vasárnap 10.00 - 21.00"
+    },
+    {
+      "id": 355,
+      "title": "Stádium Fitness [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Széchenyi István sétány 3",
+      "address": "Magyarország 6000 Kecskemét Széchenyi István sétány 3",
+      "latitude": "46,912789",
+      "longitude": "19,6782229",
+      "info": "Telefon: +3676341783 Nyitvatartás: H-P: 6:45 - 21:45 Sz-V: 13:00 - 19:00"
+    },
+    {
+      "id": 356,
+      "title": "Star Fitness [Budapest II. ker.]",
+      "address1": "Magyarország 1021 Budapest",
+      "address2": "Hûvösvölgyi út 138 Stop Shop",
+      "address": "Magyarország 1021 Budapest Hûvösvölgyi út 138 Stop Shop",
+      "latitude": "47,5378391",
+      "longitude": "18,9670969",
+      "info": "Telefon: +3613988183 Nyitvatartás: H-P. : 6.00-tól 23.00-ig Sz-V.: 9.00-tõl 20.00-ig"
+    },
+    {
+      "id": 357,
+      "title": "StarFit Fitneszközpont [Kazincbarcika]",
+      "address1": "Magyarország 3700 Kazincbarcika",
+      "address2": "Fõ tér 39.",
+      "address": "Magyarország 3700 Kazincbarcika Fõ tér 39.",
+      "latitude": "48,252776",
+      "longitude": "20,624588",
+      "info": "Telefon: +36 48 788 959 Nyitvatartás: Hétfõ – Péntek: 06.00 – 22.00 Szombat – Vasárnap: 10.00 – 18.00"
+    },
+    {
+      "id": 358,
+      "title": "Steel Power Gym [Hódmezõvásárhely]",
+      "address1": "Magyarország 6800 Hódmezõvásárhely",
+      "address2": "Ipoly utca 1/C",
+      "address": "Magyarország 6800 Hódmezõvásárhely Ipoly utca 1/C",
+      "latitude": "46,406921",
+      "longitude": "20,3140357",
+      "info": "Nyitvatartás: H-P : 21:30 Sz: 14:00 - 18:00 V: 21:00 - 12:00"
+    },
+    {
+      "id": 359,
+      "title": "Sugó Fitness [Baja]",
+      "address1": "Magyarország 6500 Baja",
+      "address2": "Kossuth u. 3-4",
+      "address": "Magyarország 6500 Baja Kossuth u. 3-4",
+      "latitude": "46,1817002",
+      "longitude": "18,9539236",
+      "info": "Telefon: +36203219515 Nyitvatartás: H-P: 06:00-21:00 Szo-V: 14:00-19:00"
+    },
+    {
+      "id": 360,
+      "title": "sun palace fitnes [Budapest III. ker.]",
+      "address1": "Magyarország 1036 Budapest",
+      "address2": "Nagyszombat u. 1.",
+      "address": "Magyarország 1036 Budapest Nagyszombat u. 1.",
+      "latitude": "47,5318493",
+      "longitude": "19,042387",
+      "info": "Telefon: +3612509068 Nyitvatartás: Hétfõtõl péntekig: 6 – 22 Hétvégén és ünnepnapokon: 8 - 21"
+    },
+    {
+      "id": 361,
+      "title": "Sunbody Fitness [Budapest IX. ker.]",
+      "address1": "Magyarország 1092 Budapest",
+      "address2": "Ráday u. 16.",
+      "address": "Magyarország 1092 Budapest Ráday u. 16.",
+      "latitude": "47,4876794",
+      "longitude": "19,0631154",
+      "info": "Telefon: +3612100694 Nyitvatartás: H-P: 7:00 – 22:00 Sz-V: 10:00 - 20:00"
+    },
+    {
+      "id": 362,
+      "title": "Sunrise Beach [Budapest XIII. ker.]",
+      "address1": "Magyarország 1138 Budapest",
+      "address2": "Süllõ u. 8.",
+      "address": "Magyarország 1138 Budapest Süllõ u. 8.",
+      "latitude": "47,5300468",
+      "longitude": "19,0628742",
+      "info": "Telefon: +36304104368 Nyitvatartás: H-P 6.00-22.00 SZO-V 8.00-17.00"
+    },
+    {
+      "id": 363,
+      "title": "SuperGym Opera [Budapest VI. ker.]",
+      "address1": "Magyarország 1065 Budapest",
+      "address2": "Hajós Utca 25",
+      "address": "Magyarország 1065 Budapest Hajós Utca 25",
+      "latitude": "47,5041491",
+      "longitude": "19,0574923",
+      "info": "Telefon: 06-1/400-8265 Nyitvatartás: H–P: 06:00–22:00 Szo: 10:00–20:00 V: 10:00–20:00"
+    },
+    {
+      "id": 364,
+      "title": "SW Fitness [Bonyhád]",
+      "address1": "Magyarország 7150 Bonyhád",
+      "address2": "Széchenyi tér.1.",
+      "address": "Magyarország 7150 Bonyhád Széchenyi tér.1.",
+      "latitude": "46,2970791",
+      "longitude": "18,5324389",
+      "info": "Telefon: +36303464646 Nyitvatartás: Hétfõ 8.00 - 12.00 14.00 - 21.00 Kedd 8.00 - 12.00"
+    },
+    {
+      "id": 365,
+      "title": "Sxl Fitness & Gym Gödöllõ [Gödöllõ]",
+      "address1": "Magyarország 2100 Gödöllõ",
+      "address2": "Köztársaság út 85",
+      "address": "Magyarország 2100 Gödöllõ Köztársaság út 85",
+      "latitude": "47,5860985",
+      "longitude": "19,3727068",
+      "info": "Telefon: (20) 611 1060 Nyitvatartás: H-P: 6:00 – 22:00 Szo-V: 8:00 – 18:00"
+    },
+    {
+      "id": 366,
+      "title": "SXL Fitness Fogarasi [Budapest XIV. ker.]",
+      "address1": "Magyarország 1148 Budapest",
+      "address2": "Fogarasi út 47.",
+      "address": "Magyarország 1148 Budapest Fogarasi út 47.",
+      "latitude": "47,507237",
+      "longitude": "19,1267207",
+      "info": "Telefon: +36706007257 Nyitvatartás: hétfõ - péntek 6:00–23:00 szombat - vasárnap 8:00–21:00"
+    },
+    {
+      "id": 367,
+      "title": "Szegi Fitness [Szeged]",
+      "address1": "Magyarország 6720 Szeged",
+      "address2": "József Attila út 115.",
+      "address": "Magyarország 6720 Szeged József Attila út 115.",
+      "latitude": "46,266437",
+      "longitude": "20,1581244",
+      "info": "Telefon: +36205783440 Nyitvatartás: H-P: 6:00 - 22:00 Sz: 8:00 - 19:00 V: 9:00 - 19:00"
+    },
+    {
+      "id": 368,
+      "title": "Szépvölgyi Teniszcentrum [Budapest III. ker.]",
+      "address1": "Magyarország 1037 Budapest",
+      "address2": "Virág Benedek u. 39-41.",
+      "address": "Magyarország 1037 Budapest Virág Benedek u. 39-41.",
+      "latitude": "47,5320837",
+      "longitude": "19,0190765",
+      "info": "Telefon: +3613881591 Nyitvatartás:"
+    },
+    {
+      "id": 369,
+      "title": "SZÍNES Nõi Torna Stúdió [Budapest V. ker.]",
+      "address1": "Magyarország 1052 Budapest",
+      "address2": "Kossuth Lajos utca 12.",
+      "address": "Magyarország 1052 Budapest Kossuth Lajos utca 12.",
+      "latitude": "47,4937459",
+      "longitude": "19,057648",
+      "info": "Telefon: +36301945811 Nyitvatartás: http://www.szintorna.hu/orarend/fitness-edzes-orarend.php"
+    },
+    {
+      "id": 370,
+      "title": "Szinva Fitness Stúdió [Miskolc]",
+      "address1": "Magyarország 3530 Miskolc",
+      "address2": "Széchényi út 68.",
+      "address": "Magyarország 3530 Miskolc Széchényi út 68.",
+      "latitude": "48,1026847",
+      "longitude": "20,7888173",
+      "info": "Telefon: +36204971355 Nyitvatartás:"
+    },
+    {
+      "id": 371,
+      "title": "Sztár Fitness [Szolnok]",
+      "address1": "Magyarország 5000 Szolnok",
+      "address2": "Kossuth Lajos út 16. I. emelet",
+      "address": "Magyarország 5000 Szolnok Kossuth Lajos út 16. I. emelet",
+      "latitude": "47,1747017",
+      "longitude": "20,1963784",
+      "info": "Telefon: +36203758222 Nyitvatartás: H-P: 6:00 – 22:00 Sz: 8:00 – 20:00 Vas: 8:00 - 16:00"
+    },
+    {
+      "id": 372,
+      "title": "SZTE EHÖK SE Fitness Klub [Szeged]",
+      "address1": "Magyarország 6722 Szeged",
+      "address2": "Kálvária sgt. 9-11",
+      "address": "Magyarország 6722 Szeged Kálvária sgt. 9-11",
+      "latitude": "46,251473",
+      "longitude": "20,1420096",
+      "info": "Telefon: 62/313388 Nyitvatartás: Hétfõ-Péntek: 07.00-22.00 Szombat-Vasárnap: 09.00-22.00"
+    },
+    {
+      "id": 373,
+      "title": "T-Forma Nõi Fitness Stúdió [Debrecen]",
+      "address1": "Magyarország 4028 Debrecen",
+      "address2": "Csapó u. 42. I.emelet",
+      "address": "Magyarország 4028 Debrecen Csapó u. 42. I.emelet",
+      "latitude": "47,5333697",
+      "longitude": "21,630937",
+      "info": "Telefon: +36209178790 Nyitvatartás:"
+    },
+    {
+      "id": 374,
+      "title": "T-Klub Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1118 Budapest",
+      "address2": "Dió u. 2.",
+      "address": "Magyarország 1118 Budapest Dió u. 2.",
+      "latitude": "47,4642224",
+      "longitude": "19,0059847",
+      "info": "Telefon: +36 20/546-99-4 Nyitvatartás: Hétköznap: 7-22 hétvégén: 8-20"
+    },
+    {
+      "id": 375,
+      "title": "T&M Sport-Fitness [Hódmezõvásárhely]",
+      "address1": "Magyarország 6800 Hódmezõvásárhely",
+      "address2": "Táncsics Mihály u. 29/a",
+      "address": "Magyarország 6800 Hódmezõvásárhely Táncsics Mihály u. 29/a",
+      "latitude": "46,4522421",
+      "longitude": "20,4528944",
+      "info": "Telefon: +3662236458 Nyitvatartás: Hétköznap: 6-21 Szombat: 10-18 Vasárnap:14-18"
+    },
+    {
+      "id": 376,
+      "title": "Tabáni Tenisz Center [Budapest I. ker.]",
+      "address1": "Magyarország 1016 Budapest",
+      "address2": "Krisztina krt. 61",
+      "address": "Magyarország 1016 Budapest Krisztina krt. 61",
+      "latitude": "47,4972775",
+      "longitude": "19,0307384",
+      "info": "Telefon: +3612127205 Nyitvatartás:"
+    },
+    {
+      "id": 377,
+      "title": "Tabi Fitness Klub S.E. [Tab]",
+      "address1": "Magyarország 8660 Tab",
+      "address2": "Kossuth L u. 80.",
+      "address": "Magyarország 8660 Tab Kossuth L u. 80.",
+      "latitude": "46,731594",
+      "longitude": "18,034234",
+      "info": "Telefon: +36209603470 Nyitvatartás: H-P: 8:30 - 11:30 15:00 - 20:00"
+    },
+    {
+      "id": 378,
+      "title": "Tapolca Sportház [Tapolca]",
+      "address1": "Magyarország 8300 Tapolca",
+      "address2": "Sümegi út 38.",
+      "address": "Magyarország 8300 Tapolca Sümegi út 38.",
+      "latitude": "46,886793",
+      "longitude": "17,423758",
+      "info": "Telefon: +36202149122 Nyitvatartás: H-P: 8:00 - 20:00 Sz-V: 9:00 - 20:00"
+    },
+    {
+      "id": 379,
+      "title": "Tárnokfit [Tárnok]",
+      "address1": "Magyarország 2461 Tárnok",
+      "address2": "Fehérvári út 7.",
+      "address": "Magyarország 2461 Tárnok Fehérvári út 7.",
+      "latitude": "47,3577433",
+      "longitude": "18,8640487",
+      "info": "Telefon: +36306506266 Nyitvatartás: H-P: 8:00 am - 9:30 pm Sz-Va: 8:00 am - 1:00 pm"
+    },
+    {
+      "id": 380,
+      "title": "Tatárárok Teniszcentrum [Salgótarján]",
+      "address1": "Magyarország 3100 Salgótarján",
+      "address2": "Kemping út 5",
+      "address": "Magyarország 3100 Salgótarján Kemping út 5",
+      "latitude": "48,1318525",
+      "longitude": "19,8171711",
+      "info": "Telefon: +36204668122"
+    },
+    {
+      "id": 381,
+      "title": "Team Fitness [Budapest III. ker.]",
+      "address1": "Magyarország 1039 Budapest",
+      "address2": "Rákóczi utca 36.",
+      "address": "Magyarország 1039 Budapest Rákóczi utca 36.",
+      "latitude": "47,58104",
+      "longitude": "19,049671",
+      "info": "Telefon: +36 1 250 8640 Nyitvatartás: Hétfõ - Péntek: 07:00 - 22:00 Szombat-vasárnap: 08:00 - 20:00"
+    },
+    {
+      "id": 382,
+      "title": "Teleszel központ [Budapest XII. ker.]",
+      "address1": "Magyarország 1121 Budapest",
+      "address2": "Mártonhegyi út 20/E<br>(Mártonfa u. sarok)",
+      "address": "Magyarország 1121 Budapest Mártonhegyi út 20/E<br>(Mártonfa u. sarok)",
+      "latitude": "47,4911299",
+      "longitude": "18,9991458",
+      "info": "Telefon: +36704554224 Nyitvatartás:"
+    },
+    {
+      "id": 383,
+      "title": "Tenisz Club Pécs Városi [Pécs]",
+      "address1": "Magyarország 7633 Pécs",
+      "address2": "dr. Veress E. u. 4.",
+      "address": "Magyarország 7633 Pécs dr. Veress E. u. 4.",
+      "latitude": "46,064001",
+      "longitude": "18,202024",
+      "info": "Telefon: (72) 313607 Nyitvatartás:"
+    },
+    {
+      "id": 384,
+      "title": "Teniszcentrum Gyõr [Gyõr]",
+      "address1": "Magyarország 9024 Gyõr",
+      "address2": "Pápai út 1",
+      "address": "Magyarország 9024 Gyõr Pápai út 1",
+      "latitude": "47,6725834",
+      "longitude": "17,6294303",
+      "info": "Telefon: 30/466-0088 Nyitvatartás:"
+    },
+    {
+      "id": 385,
+      "title": "Tenkes Fitness [Komló]",
+      "address1": "Magyarország 7300 Komló",
+      "address2": "Juhász Gyula u. 1.",
+      "address": "Magyarország 7300 Komló Juhász Gyula u. 1.",
+      "latitude": "46,187854",
+      "longitude": "18,256632",
+      "info": "Telefon: +36309532314 Nyitvatartás: H-P: 7-21 Szo: 8-19 Vas: 8-16"
+    },
+    {
+      "id": 386,
+      "title": "Tenkes Fitness Sportközpont [Siklós]",
+      "address1": "Magyarország 7800 Siklós",
+      "address2": "Felszabadulás utca 87",
+      "address": "Magyarország 7800 Siklós Felszabadulás utca 87",
+      "latitude": "45,858089",
+      "longitude": "18,288158",
+      "info": "Telefon: +36309532314"
+    },
+    {
+      "id": 387,
+      "title": "The Freezer's GYM [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Árpád út 112.",
+      "address": "Magyarország 1042 Budapest Árpád út 112.",
+      "latitude": "47,5604614",
+      "longitude": "19,0980705",
+      "info": "Nyitvatartás: H-P: 06-22 Sz: 08-20 V: 10-20"
+    },
+    {
+      "id": 388,
+      "title": "Thor Fitness [Budapest XVI. ker.]",
+      "address1": "Magyarország 1163 Budapest",
+      "address2": "Batsányi János u. 1",
+      "address": "Magyarország 1163 Budapest Batsányi János u. 1",
+      "latitude": "47,5093102",
+      "longitude": "19,1795792",
+      "info": "Telefon: +36304136740 Nyitvatartás: H-P: 7:00 - 21:00 Sz-V: 9:00 - 15:00"
+    },
+    {
+      "id": 389,
+      "title": "THOR GYM [Budapest XIV. ker.]",
+      "address1": "Magyarország 1144 Budapest",
+      "address2": "Füredi út 72-76",
+      "address": "Magyarország 1144 Budapest Füredi út 72-76",
+      "latitude": "47,5127683",
+      "longitude": "19,1489641",
+      "info": "Telefon: +36 30 8535663 Nyitvatartás: Hétközben: 06:00-22:30 Hétvégén: 08:00-20:00"
+    },
+    {
+      "id": 390,
+      "title": "Tiszaújvárosi Fitness Sportklub [Tiszaújváros]",
+      "address1": "Magyarország 3580 Tiszaújváros",
+      "address2": "Teleki Blanka út 2.",
+      "address": "Magyarország 3580 Tiszaújváros Teleki Blanka út 2.",
+      "latitude": "47,930095",
+      "longitude": "21,04476",
+      "info": "Telefon: +3649440692 Nyitvatartás: Hétfõ - Péntek: 7:00 – 21:30 Szombat: 9:00 – 20:00 Vasárnap: 9:00 - 15:00"
+    },
+    {
+      "id": 391,
+      "title": "Titán Fitness [Budapest XIII. ker.]",
+      "address1": "Magyarország 1131 Budapest",
+      "address2": "Reitter Ferenc u. 132",
+      "address": "Magyarország 1131 Budapest Reitter Ferenc u. 132",
+      "latitude": "47,540705",
+      "longitude": "19,0909873",
+      "info": "Telefon: +36208096058 Nyitvatartás: H-P: 7:30 – 21:00 Sz-V: 8-12"
+    },
+    {
+      "id": 392,
+      "title": "Titán Fitness Kalocsa [Kalocsa]",
+      "address1": "Magyarország 6300 Kalocsa",
+      "address2": "Martinovics u. 1",
+      "address": "Magyarország 6300 Kalocsa Martinovics u. 1",
+      "latitude": "46,532679",
+      "longitude": "18,976949",
+      "info": "Telefon: +36702577199 Nyitvatartás: Hétfõ 08:00 - 21:30 Kedd 08:00 - 21:30 Szerda 08:00 - 21:30 Csütörtök 08:00 - 21:30 Péntek 08:00 - 21:00 Szombat 09:00 - 20:00 Vasárnap zárva"
+    },
+    {
+      "id": 393,
+      "title": "Titan Gym [Püspökladány]",
+      "address1": "Magyarország 4150 Püspökladány",
+      "address2": "Csillag utca 2-6.",
+      "address": "Magyarország 4150 Püspökladány Csillag utca 2-6.",
+      "latitude": "47,322431",
+      "longitude": "21,1207819",
+      "info": "Telefon: +36(70) 453 257 Nyitvatartás: H - P: 12:00 - 21:00 Szo: 12:00 - 19:00 V: ZÁRVA"
+    },
+    {
+      "id": 394,
+      "title": "Toldi Fitness & Szépség Center [Vecsés]",
+      "address1": "Magyarország 2220 Vecsés",
+      "address2": "Toldy Ferenc u. 8.",
+      "address": "Magyarország 2220 Vecsés Toldy Ferenc u. 8.",
+      "latitude": "47,400013",
+      "longitude": "19,265373",
+      "info": "Telefon: +36303283438 Nyitvatartás: H-P: 7:00 am - 9:30 pm Sz: 7:00 am - 2:00 pm Vas: 9:00 am - 2:00 pm"
+    },
+    {
+      "id": 395,
+      "title": "Top Fitnes [Szekszárd]",
+      "address1": "Magyarország 7100 Szekszárd",
+      "address2": "Kis Korzó tér 3",
+      "address": "Magyarország 7100 Szekszárd Kis Korzó tér 3",
+      "latitude": "46,350192",
+      "longitude": "18,702633",
+      "info": "Telefon: +36209621511 Nyitvatartás: H-P: 6:00 am - 10:00 pm Sz-V: 7:00 am - 10:00 pm"
+    },
+    {
+      "id": 396,
+      "title": "Top Gym Fitness Club [Veszprém]",
+      "address1": "Magyarország 8200 Veszprém",
+      "address2": "Ady Endre utca 23.",
+      "address": "Magyarország 8200 Veszprém Ady Endre utca 23.",
+      "latitude": "47,0924944",
+      "longitude": "17,9188907",
+      "info": "Telefon: +36204332121 Nyitvatartás: Hétfõtõl-Péntekig: 7:00-21:30 Szombat: 9:00-14:00 Vasárnap: 9:00-13:00"
+    },
+    {
+      "id": 397,
+      "title": "Trend Fitness [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "Rezgõ utca 1.",
+      "address": "Magyarország 6000 Kecskemét Rezgõ utca 1.",
+      "latitude": "46,8870212",
+      "longitude": "19,6342942",
+      "info": "Telefon: +36303605050 Nyitvatartás:"
+    },
+    {
+      "id": 398,
+      "title": "Tura Force Fitness [Tura]",
+      "address1": "Magyarország 2194 Tura",
+      "address2": "Táncsics Mihály út 47.",
+      "address": "Magyarország 2194 Tura Táncsics Mihály út 47.",
+      "latitude": "47,6095622",
+      "longitude": "19,6014953",
+      "info": "Nyitvatartás: hétfõ - péntek: 9:00 - 21:00 szombat: 10:00 - 15:00 vasárnap: zárva"
+    },
+    {
+      "id": 399,
+      "title": "Turbo Slim Studió [Budapest XI. ker.]",
+      "address1": "Magyarország 1118 Budapest",
+      "address2": "Rétköz u. 7.",
+      "address": "Magyarország 1118 Budapest Rétköz u. 7.",
+      "latitude": "47,4663951",
+      "longitude": "19,0058239",
+      "info": "Telefon: 06 30 270 46 88 Nyitvatartás:"
+    },
+    {
+      "id": 401,
+      "title": "Újbudai Sportcentrum [Budapest XI. ker.]",
+      "address1": "Magyarország 1115 Budapest",
+      "address2": "Bocskai út 39-41.",
+      "address": "Magyarország 1115 Budapest Bocskai út 39-41.",
+      "latitude": "47,476521",
+      "longitude": "19,036905",
+      "info": "Telefon: +36704582118 Nyitvatartás: H-Szo: 7:00 - 22:00"
+    },
+    {
+      "id": 402,
+      "title": "Underground Gym [Szeged ]",
+      "address1": "Magyarország 6722 Szeged",
+      "address2": "Nemes Takács u. 16",
+      "address": "Magyarország 6722 Szeged Nemes Takács u. 16",
+      "latitude": "46,250059",
+      "longitude": "20,1366751",
+      "info": "Telefon: +36 30 266 9864 Nyitvatartás: Hétfõ-Péntek: 6:00-22:00 Szombat: 10:00-18:00 Vasárnap: 10:00-17:00"
+    },
+    {
+      "id": 403,
+      "title": "Union Centrum [Székesfehérvár]",
+      "address1": "Magyarország 8000 Székesfehérvár",
+      "address2": "Király sor 17.",
+      "address": "Magyarország 8000 Székesfehérvár Király sor 17.",
+      "latitude": "47,1960216",
+      "longitude": "18,4219685",
+      "info": "Telefon: +36306161103 Nyitvatartás: Hétköznap: 7:00 - 23:00 Hétvégén: 8:00 - 20:00"
+    },
+    {
+      "id": 404,
+      "title": "Universal Gym&fitness CLUB [Edelény]",
+      "address1": "Magyarország 3780 Edelény",
+      "address2": "Antal György út 63.",
+      "address": "Magyarország 3780 Edelény Antal György út 63.",
+      "latitude": "48,2932707",
+      "longitude": "20,7281738",
+      "info": "Telefon: (70) 385 3223 Nyitvatartás:"
+    },
+    {
+      "id": 405,
+      "title": "University Boxing Club [Budapest IX. ker.]",
+      "address1": "Magyarország 1095 Budapest",
+      "address2": "Soroksári út 24.",
+      "address": "Magyarország 1095 Budapest Soroksári út 24.",
+      "latitude": "47,476366",
+      "longitude": "19,06953",
+      "info": "Telefon: +36 70 318-2465 Nyitvatartás: Hétfõ-Péntek: 7:00-21:00 Szombat-Vasárnap: 10:00-13:00"
+    },
+    {
+      "id": 406,
+      "title": "Universum Fitness [Budapest XIV. ker.]",
+      "address1": "Magyarország 1146 Budapest",
+      "address2": "Istvánmezei út 6 (Récsei Center)",
+      "address": "Magyarország 1146 Budapest Istvánmezei út 6 (Récsei Center)",
+      "latitude": "47,5048319",
+      "longitude": "19,0927106",
+      "info": "Telefon: +36308775254 Nyitvatartás: Hétfõ - Péntek: 06:00 – 22:00 Szombat - Vasárnap: 08:00 - 20:00"
+    },
+    {
+      "id": 407,
+      "title": "Vágta Fitness [Kisbér]",
+      "address1": "Magyarország 2870 Kisbér",
+      "address2": "Angol kert 2.",
+      "address": "Magyarország 2870 Kisbér Angol kert 2.",
+      "latitude": "47,4996985",
+      "longitude": "18,0282263",
+      "info": "Nyitvatartás: H-P: 09:00-21:00 Sz: 09:00-14:00 V: Zárva"
+    },
+    {
+      "id": 408,
+      "title": "Valais 98 [Ócsa]",
+      "address1": "Magyarország 2364 Ócsa",
+      "address2": "Szõlõhegyi u. 4.",
+      "address": "Magyarország 2364 Ócsa Szõlõhegyi u. 4.",
+      "latitude": "47,2975468",
+      "longitude": "19,2418398",
+      "info": "Telefon: +36 29 380-762 Nyitvatartás:"
+    },
+    {
+      "id": 409,
+      "title": "Várdai Fitness Centrum [Dabas]",
+      "address1": "Magyarország 2373 Dabas",
+      "address2": "D. Szabó Károly utca 11.",
+      "address": "Magyarország 2373 Dabas D. Szabó Károly utca 11.",
+      "latitude": "47,1736903",
+      "longitude": "19,3282103",
+      "info": "Telefon: (29) 367919 Nyitvatartás: H-P: 5:30 – 22:00 Sz: 7:00 - 20:00"
+    },
+    {
+      "id": 410,
+      "title": "Városmajori Teniszklub [Budapest XII. ker.]",
+      "address1": "Magyarország 1122 Budapest",
+      "address2": "Városmajori u. 63-69.",
+      "address": "Magyarország 1122 Budapest Városmajori u. 63-69.",
+      "latitude": "47,508114",
+      "longitude": "19,011689",
+      "info": "Telefon: +3612025337 Nyitvatartás: Hétköznap 7:00 - 22:00 Hétvégén 7:00 - 20:00"
+    },
+    {
+      "id": 411,
+      "title": "Vasas Pasarét Sportcentrum [Budapest II. ker.]",
+      "address1": "Magyarország 1026 Budapest",
+      "address2": "Pasaréti út 11-13",
+      "address": "Magyarország 1026 Budapest Pasaréti út 11-13",
+      "latitude": "47,51259",
+      "longitude": "19,0081082",
+      "info": "Telefon: +3612125246 Nyitvatartás: Hétfõ– Péntek: 6.00 – 22.00 Szombat – Vasárnap: 7.00 – 21.00"
+    },
+    {
+      "id": 412,
+      "title": "Vasutas Spartacus Sportklub NYVSC [Nyíregyháza]",
+      "address1": "Magyarország 4400 Nyíregyháza",
+      "address2": "Sóstói út 24/A",
+      "address": "Magyarország 4400 Nyíregyháza Sóstói út 24/A",
+      "latitude": "47,9700716",
+      "longitude": "21,715601",
+      "info": "Telefon: +3642315255 Nyitvatartás:"
+    },
+    {
+      "id": 413,
+      "title": "Ventura Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1110 Budapest",
+      "address2": "Fehérvári út 179.",
+      "address": "Magyarország 1110 Budapest Fehérvári út 179.",
+      "latitude": "47,4538147",
+      "longitude": "19,0388207",
+      "info": "Telefon: +3613710217 Nyitvatartás: H-P: 14:00 - 22:00"
+    },
+    {
+      "id": 414,
+      "title": "Venus Pole Dance SE [Budapest XX. ker.]",
+      "address1": "Magyarország 1203 Budapest",
+      "address2": "Vizisport u.21",
+      "address": "Magyarország 1203 Budapest Vizisport u.21",
+      "latitude": "47,4325691",
+      "longitude": "19,0925583",
+      "info": "Telefon: +36703610640 Nyitvatartás:"
+    },
+    {
+      "id": 415,
+      "title": "Veszprémi Egyetemi és Diák Atlétikai Club [Veszprém]",
+      "address1": "Magyarország 8200 Veszprém",
+      "address2": "Wartha Vince u. 3",
+      "address": "Magyarország 8200 Veszprém Wartha Vince u. 3",
+      "latitude": "47,0847353",
+      "longitude": "17,9043588",
+      "info": "Telefon: +36 88 422 868 Nyitvatartás:"
+    },
+    {
+      "id": 416,
+      "title": "Vezér Fitness [Debrecen]",
+      "address1": "Magyarország 4032 Debrecen",
+      "address2": "Böszörményi út 150.<br>(bejárat a Vezér utca felol)",
+      "address": "Magyarország 4032 Debrecen Böszörményi út 150.<br>(bejárat a Vezér utca felol)",
+      "latitude": "47,5550861",
+      "longitude": "21,6059158",
+      "info": "Telefon: 52/715-816 Nyitvatartás:"
+    },
+    {
+      "id": 417,
+      "title": "Viaduktfitt [Biatorbagy]",
+      "address1": "Magyarország 2051 Biatorbagy",
+      "address2": "Fõ út 1/a.",
+      "address": "Magyarország 2051 Biatorbagy Fõ út 1/a.",
+      "latitude": "47,4724454",
+      "longitude": "18,8324959",
+      "info": "Telefon: 06/70 280 4099 Nyitvatartás: Hétfõ – Péntek: 6:30-22:00 Szombat-Vasárnap: 8:00-20:00"
+    },
+    {
+      "id": 418,
+      "title": "Victory Fitness [Érd]",
+      "address1": "Magyarország 2030 Érd",
+      "address2": "Budai út 13.",
+      "address": "Magyarország 2030 Érd Budai út 13.",
+      "latitude": "47,378876",
+      "longitude": "18,926081",
+      "info": "Telefon: +36 23 385 823 Nyitvatartás: H-P: 06:00 - 22:00 SZ-V: 08:00 -20:00"
+    },
+    {
+      "id": 419,
+      "title": "Victory Fitness [Budapest IV. ker.]",
+      "address1": "Magyarország 1048 Budapest",
+      "address2": "Homoktövis u. 1.",
+      "address": "Magyarország 1048 Budapest Homoktövis u. 1.",
+      "latitude": "47,5906003",
+      "longitude": "19,118108",
+      "info": "Telefon: +36 1 788 5229 Nyitvatartás: H-P 6-22 Sz-V 8-20"
+    },
+    {
+      "id": 420,
+      "title": "Victory Gym [Sajószentpéter]",
+      "address1": "Magyarország 3770 Sajószentpéter",
+      "address2": "Somogyi Béla u. 9.",
+      "address": "Magyarország 3770 Sajószentpéter Somogyi Béla u. 9.",
+      "latitude": "48,221184",
+      "longitude": "20,708497",
+      "info": "Telefon: +36209477270 Nyitvatartás: H-P: 8:00 – 21:00Sz-V: 8:00 - 16:00"
+    },
+    {
+      "id": 421,
+      "title": "Victory Gym [Jászberény]",
+      "address1": "Magyarország 5100 Jászberény",
+      "address2": "Jákóhalmi út 9.",
+      "address": "Magyarország 5100 Jászberény Jákóhalmi út 9.",
+      "latitude": "47,4919866",
+      "longitude": "19,9989212",
+      "info": "Telefon: +36204390200 Nyitvatartás: H-P: 7:30 – 21:30 Szo: 10:00 – 19:00 V: 10:00 – 17:00"
+    },
+    {
+      "id": 422,
+      "title": "Victory Újpest [Budapest IV. ker.]",
+      "address1": "Magyarország 1042 Budapest",
+      "address2": "Árpád út 183-185. 1. em.",
+      "address": "Magyarország 1042 Budapest Árpád út 183-185. 1. em.",
+      "latitude": "47,5619458",
+      "longitude": "19,1064192",
+      "info": "Telefon: +36/1-404-51-31 Nyitvatartás: H-P: 06:00- 23:00 Sz.-V.: 07:00 - 22:00"
+    },
+    {
+      "id": 423,
+      "title": "Vida Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1113 Budapest",
+      "address2": "Fehérvári út 87.III. emelet",
+      "address": "Magyarország 1113 Budapest Fehérvári út 87.III. emelet",
+      "latitude": "47,4649638",
+      "longitude": "19,0419961",
+      "info": "Telefon: +36 1 205-5713 Nyitvatartás: Hétfõtõl - Péntekig: 8-22-ig Szombaton: 9-14-ig Vasárnap: 13-16-ig"
+    },
+    {
+      "id": 424,
+      "title": "Viki Fitness Stúdió & Aerobic Klub [Kecskemét]",
+      "address1": "Magyarország 6000 Kecskemét",
+      "address2": "László Károly u. 16.",
+      "address": "Magyarország 6000 Kecskemét László Károly u. 16.",
+      "latitude": "46,9047506",
+      "longitude": "19,6978088",
+      "info": "Telefon: +36703397149 Nyitvatartás:"
+    },
+    {
+      "id": 425,
+      "title": "Villányi Fitness [Budapest XI. ker.]",
+      "address1": "Magyarország 1114 Budapest",
+      "address2": "Villányi út 27.",
+      "address": "Magyarország 1114 Budapest Villányi út 27.",
+      "latitude": "47,4788697",
+      "longitude": "19,0411906",
+      "info": "Telefon: +3612091789 Nyitvatartás: H - P: 6.30-22.00 Sz: 08.00 - 19.00 V: 08.00 - 17.00 Ünnepnap: 09.00 - 14.00"
+    },
+    {
+      "id": 426,
+      "title": "Vital Force Nõi Fitness Wellness Stúdió [Zalaegerszeg]",
+      "address1": "Magyarország 8900 Zalaegerszeg",
+      "address2": "Iskola köz 3",
+      "address": "Magyarország 8900 Zalaegerszeg Iskola köz 3",
+      "latitude": "46,8444911",
+      "longitude": "16,8446374",
+      "info": "Telefon: +3692318-690 Nyitvatartás: Hétfõtõl - péntekig: 08:00 - 18:00-ig Szombat - Vasárnap: Zárva"
+    },
+    {
+      "id": 427,
+      "title": "wake up [Százhalombatta]",
+      "address1": "Magyarország 2440 Százhalombatta",
+      "address2": "Dunafüredi út 5.",
+      "address": "Magyarország 2440 Százhalombatta Dunafüredi út 5.",
+      "latitude": "47,321366",
+      "longitude": "18,9133578",
+      "info": "Telefon: +3620/325-61-69 Nyitvatartás: Hétfõ - Péntek 7:00 - 21:30 Szombat: 8:00 - 15:00 Vasárnap: Zárva"
+    },
+    {
+      "id": 428,
+      "title": "Wellness Fitness [Budapest XVIII. ker.]",
+      "address1": "Magyarország 1183 Budapest",
+      "address2": "Üllõi út 440.",
+      "address": "Magyarország 1183 Budapest Üllõi út 440.",
+      "latitude": "47,44037",
+      "longitude": "19,185564",
+      "info": "Telefon: +3612900855 Nyitvatartás: H-P: 7:00 – 22:00 Sz: 8:00 – 16:00 Vas: 9:00 - 14:00"
+    },
+    {
+      "id": 429,
+      "title": "Woondy Gym [Gyõr]",
+      "address1": "Magyarország 9024 Gyõr",
+      "address2": "Lajta út 32",
+      "address": "Magyarország 9024 Gyõr Lajta út 32",
+      "latitude": "47,6672356",
+      "longitude": "17,6372257",
+      "info": "Telefon: +36304329910 Nyitvatartás: Hétköznap: 7:00 – 22:00 Hétvégén: 9:00 - 13:00"
+    },
+    {
+      "id": 430,
+      "title": "World Class Fitness [Budapest V. ker.]",
+      "address1": "Magyarország 1052 Budapest",
+      "address2": "Apáczai Csere János u. 4-6",
+      "address": "Magyarország 1052 Budapest Apáczai Csere János u. 4-6",
+      "latitude": "47,4942972",
+      "longitude": "19,0500883",
+      "info": "Telefon: +3612664290 Nyitvatartás: Hétköznap: 6:00 – 22:00 Hétvége: 8:00 - 21:00"
+    },
+    {
+      "id": 431,
+      "title": "X1 fittnes terem [Fót]",
+      "address1": "Magyarország 2151 Fót",
+      "address2": "Keleti Márton u. 7",
+      "address": "Magyarország 2151 Fót Keleti Márton u. 7",
+      "latitude": "47,6135893",
+      "longitude": "19,1781108",
+      "info": "Nyitvatartás: Hétfõ-Péntek: 06-22 Szombat-Vasárnap: 07-21"
+    },
+    {
+      "id": 432,
+      "title": "XBody EGER [Eger]",
+      "address1": "Magyarország 3300 Eger",
+      "address2": "Vörösmarty M. u. 18.",
+      "address": "Magyarország 3300 Eger Vörösmarty M. u. 18.",
+      "latitude": "47,8979545",
+      "longitude": "20,3678208",
+      "info": "Telefon: +36 20 967 7720 Nyitvatartás: H - P 8.00 - 20.00 Elõzetes egyeztetés szerint"
+    },
+    {
+      "id": 433,
+      "title": "XL-Fittlesz [Kaposvár]",
+      "address1": "Magyarország 7400 Kaposvár",
+      "address2": "Arany J. u. 2/a",
+      "address": "Magyarország 7400 Kaposvár Arany J. u. 2/a",
+      "latitude": "46,366725",
+      "longitude": "17,784886",
+      "info": "Telefon: +36 82 526 300 Nyitvatartás: Hétfõ-Péntek: 06:00 – 22:00 Szombat: 08:00 – 21:00 Vasárnap: 09:00 - 21:00"
+    },
+    {
+      "id": 434,
+      "title": "XXL Fitness Klub [Zalaegerszeg]",
+      "address1": "Magyarország 8900 Zalaegerszeg",
+      "address2": "Vágóhíd u. 16.",
+      "address": "Magyarország 8900 Zalaegerszeg Vágóhíd u. 16.",
+      "latitude": "46,848581",
+      "longitude": "16,835184",
+      "info": "Telefon: +36703945798 Nyitvatartás: Hétköznap: 07-22h Szombat: 09-16h Vasárnap: 09-14h"
+    },
+    {
+      "id": 435,
+      "title": "Zalaszentgróti Fitness Klub [Zalaszentgrót]",
+      "address1": "Magyarország 8790 Zalaszentgrót",
+      "address2": "Béke u. 4.",
+      "address": "Magyarország 8790 Zalaszentgrót Béke u. 4.",
+      "latitude": "46,948485",
+      "longitude": "17,0814276",
+      "info": "Nyitvatartás: H-P: 15:00-20:00 Sz-V: Zárva"
+    }
+  ]
+}

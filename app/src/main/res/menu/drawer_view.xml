@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--Note that you can set one of these elements to be default selected by using android:checked="true".-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard_fragment"
+            android:icon="@drawable/ic_dashboard_white_24dp"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:icon="@drawable/ic_map_orange_600_24dp"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:icon="@drawable/ic_search_orange_600_24dp"
+            android:title="Gym List" />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:icon="@drawable/ic_format_list_numbered_orange_600_24dp"
+            android:title="Online search" />
+    </group>
+
+    <!--<item android:title="Sub items">-->
+        <!--<menu>-->
+            <!--<group android:checkableBehavior="single">-->
+                <!--<item-->
+                    <!--android:icon="@drawable/ic_dashboard"-->
+                    <!--android:title="Sub item 1" />-->
+                <!--<item-->
+                    <!--android:icon="@drawable/ic_forum"-->
+                    <!--android:title="Sub item 2" />-->
+            <!--</group>-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

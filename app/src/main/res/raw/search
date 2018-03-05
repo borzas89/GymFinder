@@ -1,0 +1,47 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CoQC_AAAAJHliBVroCVs59CSA_JFbKdX6b7CKNvlWQF7J6V0g6wmgc_xbUOQVAgxsP7AzZenj7ReTBwU07Rz2hzV-Xk28crfj8xq6O3tYhGJk1Rtg-j4bmv1nBFetOsrQ7SRNtulAEUQ2Jacz0NDORxGg513gbqekGSDKXJ46QAC9LRP1pOPdLd8aeN_gY65zcHx5iqErcZFrLRRmOii5LPZf6LkPmDpqpiAuHBdItwESeijqpfZK-EfxW9dUYWw6-PetjZgUWa2HWU70KRxWn5rLIPIbiC0MRig61QoznoGiJC7LPSysc5eAR4o7ZSahfmBsU1KNsU1CvXlGYNt6vKir9hWhocSELFAam0pGHUA7yDKZWVXM5caFBpJtZv3emPfdBNjVFyd_VW1CLWt",
+   "results" : [
+      {
+         "formatted_address" : "Budapest, Lázár u. 9, 1065 Hungary",
+         "geometry" : {
+            "location" : {
+               "lat" : 47.50210070000001,
+               "lng" : 19.0563692
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 47.5034968802915,
+                  "lng" : 19.0576681802915
+               },
+               "southwest" : {
+                  "lat" : 47.5007989197085,
+                  "lng" : 19.0549702197085
+               }
+            }
+         },
+         "icon" : "https://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "bc10034227f89c776b8141446ad193c846ee857b",
+         "name" : "Multifit Fitness Studio",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1536,
+               "html_attributions" : [
+                  "\u003ca href=\"https://maps.google.com/maps/contrib/117685084725252507272/photos\"\u003eMultifit Fitness Stúdió\u003c/a\u003e"
+               ],
+               "photo_reference" : "CmRaAAAAsGnnL34-d0ILACWJejQQfHT6Sj3ecwLhFSO6MzpkxuamK4C-E8DBq9-JnsAjQfT4PczhLGDUpqAE61tfI7So5H1dAlf30CuaJW0zSbLyuZer6dO0BFW2vYRexdwzSuuyEhDP23eqGii5qOMd_Su8Pjk4GhQR0xrETxRw482fGWPsP4ujXatAFQ",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJpXsKbWvcQUcRwePVm9ArYvs",
+         "rating" : 4.4,
+         "reference" : "CmRSAAAAgbknNAeS-2Dvmf4dVZVZz8KDpNXDf1QMt2LW9KaCin2Ge5r_RrdV4BKDiH64wOVl0qB0lC3aDJ3r5jhH50ptBHrjEutlOgdT6onsgfkOieviVQ5Q4qOVADTCqgHWZE9yEhA_kjo1cSHB2ETB-e2tFg0_GhR_EymRxTMh70wlYWNc2gTJ1LzAzQ",
+         "types" : [ "gym", "spa", "health", "point_of_interest", "establishment" ]
+      }
+   ],
+   "status" : "OK"
+}
