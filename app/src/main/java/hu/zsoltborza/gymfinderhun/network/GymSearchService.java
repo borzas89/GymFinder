@@ -12,6 +12,8 @@ import retrofit2.http.Query;
 
 public interface GymSearchService {
 
+    // google map api calls
+
     @GET("textsearch/json?query=edzőterem+budapest&key=AIzaSyCyk1W3jHXffYh7sXdSaoFJRmcTRcyk9sg")
     public Call<GymSearch> getGymsatBudapest();
 

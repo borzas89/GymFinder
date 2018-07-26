@@ -212,8 +212,6 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
 
     public synchronized void offlineMarkers(){
 
-
-
         for (int i = 0; i < gymListNew.size(); i++) {
 
             String title = gymListNew.get(i).getTitle();
