@@ -1,5 +1,7 @@
 package hu.zsoltborza.gymfinderhun.network;
 
+import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
+
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -44,6 +46,7 @@ public class RetrofitServiceFactory {
                     .client(okHttpClient)
                     .baseUrl(BASE_URL_API)
                     .addConverterFactory(GsonConverterFactory.create())
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();
         }
         return retrofit;

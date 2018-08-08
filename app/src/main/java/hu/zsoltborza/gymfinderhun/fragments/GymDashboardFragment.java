@@ -15,10 +15,15 @@ import butterknife.ButterKnife;
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.network.GymApiService;
-import hu.zsoltborza.gymfinderhun.network.GymSearchService;
+
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
 import hu.zsoltborza.gymfinderhun.network.domain.Gym;
-import hu.zsoltborza.gymfinderhun.network.domain.GymSearch;
+
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.observers.DisposableObserver;
+
+import io.reactivex.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -45,7 +50,9 @@ public class GymDashboardFragment extends DrawerItemBaseFragment {
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                getGymsByRadiusAndCoordinate();
+//                getGymsByRadiusAndCoordinate();
+
+                getReactiveGymsByRadiusAndCoordinate();
             }
         });
 
@@ -91,9 +98,41 @@ public class GymDashboardFragment extends DrawerItemBaseFragment {
 
 
 
+    }
+
+    public void getReactiveGymsByRadiusAndCoordinate(){
+
+        Observable<List<Gym>> gymListaObservable;
+
+        final GymApiService apiService =
+                RetrofitServiceFactory.getClientForGymFinderApi().create(GymApiService.class);
+
+        gymListaObservable = apiService.getReactiveGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
+
+        gymListaObservable
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(new DisposableObserver<List<Gym>>() {
+                                   @Override
+                                   public void onNext(List<Gym> gyms) {
+
+                                   }
+
+                                   @Override
+                                   public void onError(Throwable e) {
+                                       Log.d("GYM","error : " + e.getMessage().toLowerCase());
+                                   }
+
+                                   @Override
+                                   public void onComplete() {
+                                       Log.d("GYM","Completed");
+                                   }
+                               });
+
 
 
     }
+
 
     @Override
     public String getTagText() {
