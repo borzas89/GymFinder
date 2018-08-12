@@ -37,7 +37,6 @@ public class DetailActivity extends AppCompatActivity {
     TextView gymTitle;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 public class BaseActivity extends AppCompatActivity {
 
     // dialog feldobása és eltüntetése
-
     private ProgressDialog progressDialog;
 
     public void showProgressDialog(){

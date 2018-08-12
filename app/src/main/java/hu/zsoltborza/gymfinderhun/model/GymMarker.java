@@ -28,6 +28,11 @@ public class GymMarker implements ClusterItem {
         return mTitle;
     }
 
+    @Override
+    public String getSnippet() {
+        return null;
+    }
+
     public void setTitle(String mTitle) {
         this.mTitle = mTitle;
     }
