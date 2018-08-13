@@ -99,6 +99,15 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
     private LocationRequest mLocationRequest;
     private LocationSettingsRequest mLocationSettingsRequest;
     private LocationCallback mLocationCallback;
+
+    public Location getmCurrentLocation() {
+        return mCurrentLocation;
+    }
+
+    public void setmCurrentLocation(Location mCurrentLocation) {
+        this.mCurrentLocation = mCurrentLocation;
+    }
+
     private Location mCurrentLocation;
 
     // boolean flag to toggle the ui
@@ -191,6 +200,10 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
+            Bundle bundle = new Bundle();
+            bundle.putDouble("lat",mCurrentLocation.getLatitude());
+            bundle.putDouble("lon",mCurrentLocation.getLongitude());
+            fragment.setArguments(bundle);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -19,6 +19,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import hu.zsoltborza.gymfinderhun.activities.MainActivity;
 import hu.zsoltborza.gymfinderhun.adapter.GymAdapter;
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.network.GymApiService;
@@ -85,7 +86,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-       gymList = Utils.getDataFromFile(getContext());
+     //  gymList = Utils.getDataFromFile(getContext());
 
        
         recyclerView = view.findViewById(R.id.recyclerView);
@@ -106,7 +107,11 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
             listDetailInterface = (ListDetailInterface) getActivity();
         }
 
-//        getGymsByRadiusAndCoordinate();
+
+        Bundle args = getArguments();
+        double lat = args.getDouble("lat");
+        double lon = args.getDouble("lon");
+        getGymsByRadiusAndCoordinate(lat,lon);
 
 //        adapter = new GymAdapter(getContext(), getGymsByRadiusAndCoordinate(), this);
 //        recyclerView.setAdapter(adapter);
@@ -114,7 +119,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     }
 
 
-    public void  getGymsByRadiusAndCoordinate(){
+    public void  getGymsByRadiusAndCoordinate(double lat, double lon){
 
 
 
@@ -122,7 +127,10 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         final GymApiService apiService =
                 RetrofitServiceFactory.getClientForGymFinderApi().create(GymApiService.class);
 
-        call = apiService.getGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
+       // call = apiService.getGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
+
+        android.location.Location currLoc =((MainActivity) getActivity()).getmCurrentLocation();
+        call = apiService.getGymsByRadiusAndCoordinate(5000,lat, lon);
 
         call.enqueue(new Callback<List<Gym>>() {
             @Override
@@ -145,12 +153,11 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
                     gymListItem.setLatitude(String.valueOf(gymItem.getAddress().getLatitude()));
                     gymListItem.setLongitude(String.valueOf(gymItem.getAddress().getLongitude()));
                     gymListItem.setTitle(gymItem.getTitle());
-
                     reGymList.add(gymListItem);
                 }
 
-
-                adapter.notifyDataSetChanged();
+                gymList = reGymList;
+                adapter.setFilter(reGymList);
 
 
                 Log.d("GYM",call.request().url().toString());

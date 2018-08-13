@@ -27,6 +27,7 @@ import hu.zsoltborza.gymfinderhun.fragments.base.ListDetailInterface;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
 import hu.zsoltborza.gymfinderhun.network.GymSearchService;
 import hu.zsoltborza.gymfinderhun.network.domain.GymSearch;
+import hu.zsoltborza.gymfinderhun.network.domain.Location;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -82,8 +83,10 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
         super.onViewCreated(view, savedInstanceState);
 
 
-
-        getGymsFromBudapest();
+       Bundle args = getArguments();
+        double lat = args.getDouble("lat");
+        double lon = args.getDouble("lon");
+        getGymsFromBudapest(lat,lon);
 
 
         recyclerView = view.findViewById(R.id.recyclerView);
@@ -107,7 +110,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
     }
 
 
-    public void getGymsFromBudapest(){
+    public void getGymsFromBudapest(final double lat, final double lon){
 
         Call<GymSearch> call;
         final GymSearchService apiService =
@@ -145,6 +148,10 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                             , response.body().getResults().get(i).getGeometry().getLocation().getLng());
 
                     LatLng actucalPosition = new LatLng(47.5350554,19.043856);
+                  //  if(currLoc !=null){
+                        actucalPosition = new LatLng(lat,lon);
+                   // }
+                   // LatLng actucalPosition = new LatLng(47.5350554,19.043856);
 
 
                     item.setRating( response.body().getResults().get(i).getRating());

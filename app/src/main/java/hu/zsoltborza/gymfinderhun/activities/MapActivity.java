@@ -113,13 +113,14 @@ public class MapActivity extends BaseMapActivity implements ClusterManager.OnClu
     }
 
 
-    public synchronized void getCurrentGyms() {
+    public synchronized void getCurrentGyms(double lat, double lon) {
 
         Call<MarkerSearch> call;
         GymSearchService apiService =
                 RetrofitServiceFactory.getClient().create(GymSearchService.class);
 
-        call = apiService.getGymsByLocation("47.548, 19.0719793",5000);
+       // call = apiService.getGymsByLocation("47.548, 19.0719793",5000);
+        call = apiService.getGymsByLocation(String.valueOf(lat) + ", " +String.valueOf(lon),5000);
         call.enqueue(new Callback<MarkerSearch>() {
 
 
