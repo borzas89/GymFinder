@@ -48,7 +48,7 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     private GoogleMap mMap;
     private ClusterManager<GymMarker> mClusterManager;
 
-    LatLng currentLocation = new LatLng(47.548, 19.0719793);
+    LatLng currentLocation;
 
     List<GymMarker> gymsList = new ArrayList<>();
 
@@ -113,6 +113,13 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
+        Bundle args = getArguments();
+        double lat = args.getDouble("lat");
+        double lon = args.getDouble("lon");
+
+        currentLocation = new LatLng(lat, lon);
+        //  = new LatLng(47.548, 19.0719793);
+
         ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
 
     }
@@ -136,12 +143,17 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     }
 
     private synchronized void initMap(){
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(47.548, 19.0719793), 13));
+       // mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(47.548, 19.0719793), 13));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.latitude, currentLocation.longitude), 13));
         mClusterManager = new ClusterManager<GymMarker>(getContext(), getMap());
         getMap().setOnCameraIdleListener(mClusterManager);
         getMap().setOnMarkerClickListener(mClusterManager);
         mClusterManager.setRenderer(new MarkerRenderer());
         mClusterManager.setOnClusterItemClickListener(this);
+
+        // TODO check permissions...
+        mMap.setMyLocationEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
 //        custom tile
 //        mMap.addTileOverlay()

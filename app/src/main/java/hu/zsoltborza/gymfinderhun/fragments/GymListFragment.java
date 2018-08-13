@@ -86,13 +86,12 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        // Sample data from file...
      //  gymList = Utils.getDataFromFile(getContext());
 
-       
         recyclerView = view.findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
-
 
         adapter = new GymAdapter(getContext(), gymList, this);
         recyclerView.setAdapter(adapter);
@@ -107,21 +106,15 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
             listDetailInterface = (ListDetailInterface) getActivity();
         }
 
-
         Bundle args = getArguments();
         double lat = args.getDouble("lat");
         double lon = args.getDouble("lon");
         getGymsByRadiusAndCoordinate(lat,lon);
 
-//        adapter = new GymAdapter(getContext(), getGymsByRadiusAndCoordinate(), this);
-//        recyclerView.setAdapter(adapter);
-
     }
 
 
     public void  getGymsByRadiusAndCoordinate(double lat, double lon){
-
-
 
         Call<List<Gym>> call;
         final GymApiService apiService =
@@ -129,7 +122,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
 
        // call = apiService.getGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
 
-        android.location.Location currLoc =((MainActivity) getActivity()).getmCurrentLocation();
+
         call = apiService.getGymsByRadiusAndCoordinate(5000,lat, lon);
 
         call.enqueue(new Callback<List<Gym>>() {

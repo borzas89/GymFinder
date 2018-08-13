@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import hu.zsoltborza.gymfinderhun.R;
@@ -68,6 +69,13 @@ public class GymOnlineSearchAdapter extends RecyclerView.Adapter<GymOnlineSearch
                 listener.onItemClicked(position);
             }
         });
+    }
+
+    public void updateList(List<GymItemDto> receivedList){
+        gymList = new ArrayList<>();
+        gymList.addAll(receivedList);
+        notifyDataSetChanged();
+
     }
 
     @Override

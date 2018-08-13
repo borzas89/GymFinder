@@ -37,6 +37,7 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResponse;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.SettingsClient;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.karumi.dexter.Dexter;
@@ -46,10 +47,14 @@ import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
+
+import org.greenrobot.eventbus.EventBus;
+
 import java.text.DateFormat;
 import java.util.Date;
 
 import hu.zsoltborza.gymfinderhun.BuildConfig;
+import hu.zsoltborza.gymfinderhun.event.UserLocationEvent;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 import hu.zsoltborza.gymfinderhun.fragments.GymDetailFragment;
@@ -99,15 +104,6 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
     private LocationRequest mLocationRequest;
     private LocationSettingsRequest mLocationSettingsRequest;
     private LocationCallback mLocationCallback;
-
-    public Location getmCurrentLocation() {
-        return mCurrentLocation;
-    }
-
-    public void setmCurrentLocation(Location mCurrentLocation) {
-        this.mCurrentLocation = mCurrentLocation;
-    }
-
     private Location mCurrentLocation;
 
     // boolean flag to toggle the ui
@@ -117,6 +113,8 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -344,6 +342,12 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
         ft.commit();
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+
 
     @Override
     public void onBackPressed() {
@@ -525,6 +529,17 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
             Toast.makeText(this, "Lat: "
                             + mCurrentLocation.getLatitude() + ", "
                             +  "Lng: " + mCurrentLocation.getLongitude(),Toast.LENGTH_SHORT).show();
+
+           UserLocationEvent userLocationEvent =
+                   new UserLocationEvent();
+           LatLng currentLocation = new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude());
+           userLocationEvent.setUserLocation(currentLocation);
+
+
+
+
+
+
 
 
             // location last updated time

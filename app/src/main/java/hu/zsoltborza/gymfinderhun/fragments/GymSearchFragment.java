@@ -4,14 +4,21 @@ package hu.zsoltborza.gymfinderhun.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.design.widget.TabLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.model.LatLng;
 import com.google.maps.android.SphericalUtil;
+
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -21,6 +28,7 @@ import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.activities.MainActivity;
 import hu.zsoltborza.gymfinderhun.adapter.GymOnlineSearchAdapter;
 import hu.zsoltborza.gymfinderhun.adapter.OnItemClickListener;
+import hu.zsoltborza.gymfinderhun.event.UserLocationEvent;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.ListDetailInterface;
@@ -52,12 +60,14 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
     //List<Listable> onlineList = new ArrayList<>();
 
-
+    Location receivedLocation;
 
     @Override
     public String getTagText() {
         return TAG;
     }
+
+
 
     @Override
     public boolean onBackPressed() {
@@ -86,6 +96,11 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
        Bundle args = getArguments();
         double lat = args.getDouble("lat");
         double lon = args.getDouble("lon");
+        Log.d(TAG,"lat,lon: " + lat + " , " + lon);
+
+        if(receivedLocation !=null){
+            getGymsFromBudapest(receivedLocation.getLat(),receivedLocation.getLng());
+        }
         getGymsFromBudapest(lat,lon);
 
 
@@ -110,6 +125,8 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
     }
 
 
+
+
     public void getGymsFromBudapest(final double lat, final double lon){
 
         Call<GymSearch> call;
@@ -122,52 +139,62 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
             @Override
             public void onResponse(Call<GymSearch> call, Response<GymSearch> response) {
 
-                for(int i= 0; i<response.body().getResults().size();i++){
-                    GymItemDto item = new GymItemDto();
-                    item.setFromOnline(true);
+                Log.d(TAG,response.message());
+
+                if(response != null){
+                    Log.d(TAG,response.message());
+                    if(response.body() !=null){
+                        for(int i= 0; i<response.body().getResults().size();i++){
+                            GymItemDto item = new GymItemDto();
+                            item.setFromOnline(true);
 //                    item.setId(response.body().getResults().get(i).getId());
-                    item.setTitle(response.body().getResults().get(i).getName());
-                    item.setAddress(response.body().getResults().get(i).getFormattedAddress());
-                    if(response.body().getResults().get(i).getPhotos() !=null){
-                        item.setPhotoReference(response.body().getResults().get(i).getPhotos().get(0).getPhotoReference());
-                    }else{
-                        item.setPhotoReference("PHOTO_REFERENCE");
-                    }
+                            item.setTitle(response.body().getResults().get(i).getName());
+                            item.setAddress(response.body().getResults().get(i).getFormattedAddress());
+                            if(response.body().getResults().get(i).getPhotos() !=null){
+                                item.setPhotoReference(response.body().getResults().get(i).getPhotos().get(0).getPhotoReference());
+                            }else{
+                                item.setPhotoReference("PHOTO_REFERENCE");
+                            }
 
-                    String isOpen = "";
-                    if(response.body().getResults().get(i).getOpeningHours() != null && response.body().getResults().get(i).getOpeningHours().getOpenNow()){
+                            String isOpen = "";
+                            if(response.body().getResults().get(i).getOpeningHours() != null && response.body().getResults().get(i).getOpeningHours().getOpenNow()){
 //                        isOpen = "Igen";
-                        item.setOpen(true);
+                                item.setOpen(true);
 
-                    }else{
+                            }else{
 //                        isOpen = "Nem";
-                        item.setOpen(false);
-                    }
+                                item.setOpen(false);
+                            }
 
-                    LatLng gymposition = new LatLng( response.body().getResults().get(i).getGeometry().getLocation().getLat()
-                            , response.body().getResults().get(i).getGeometry().getLocation().getLng());
+                            LatLng gymposition = new LatLng( response.body().getResults().get(i).getGeometry().getLocation().getLat()
+                                    , response.body().getResults().get(i).getGeometry().getLocation().getLng());
 
-                    LatLng actucalPosition = new LatLng(47.5350554,19.043856);
-                  //  if(currLoc !=null){
-                        actucalPosition = new LatLng(lat,lon);
-                   // }
-                   // LatLng actucalPosition = new LatLng(47.5350554,19.043856);
+                            LatLng actucalPosition = new LatLng(47.5350554,19.043856);
+                            //  if(currLoc !=null){
+                            actucalPosition = new LatLng(lat,lon);
+                            // }
+                            // LatLng actucalPosition = new LatLng(47.5350554,19.043856);
 
 
-                    item.setRating( response.body().getResults().get(i).getRating());
-                    item.setLatitude(gymposition.latitude);
-                    item.setLongitude(gymposition.longitude);
-                    item.setInfo(df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km");
+                            item.setRating( response.body().getResults().get(i).getRating());
+                            item.setLatitude(gymposition.latitude);
+                            item.setLongitude(gymposition.longitude);
+                            item.setInfo(df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km");
 
 //                    item.setInfo("Értékelés: " + response.body().getResults().get(i).getRating().toString()+ '\n' + "Jelenleg nyitva: " + isOpen
 //                    +'\n' +  df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km-re");
 
 
-                    gymList.add(item);
+                            gymList.add(item);
+                        }
+
+                    }
+
                 }
 
-                //onlineList.addAll(gymList);
-                adapter.notifyDataSetChanged();
+
+                adapter.updateList(gymList);
+
 
 
 
@@ -175,7 +202,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
             @Override
             public void onFailure(Call<GymSearch> call, Throwable t) {
-
+                Log.d(TAG,t.getMessage());
             }
         });
 
