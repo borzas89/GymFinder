@@ -113,11 +113,11 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-        Bundle args = getArguments();
-        double lat = args.getDouble("lat");
-        double lon = args.getDouble("lon");
+       Bundle args = getArguments();
+       // double lat = args.getDouble("lat");
+       // double lon = args.getDouble("lon");
 
-        currentLocation = new LatLng(lat, lon);
+       // currentLocation = new LatLng(lat, lon);
         //  = new LatLng(47.548, 19.0719793);
 
         ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);

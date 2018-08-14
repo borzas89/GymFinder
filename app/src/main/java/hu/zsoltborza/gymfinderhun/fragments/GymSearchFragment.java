@@ -94,14 +94,14 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
 
        Bundle args = getArguments();
-        double lat = args.getDouble("lat");
-        double lon = args.getDouble("lon");
-        Log.d(TAG,"lat,lon: " + lat + " , " + lon);
+        //double lat = args.getDouble("lat");
+       // double lon = args.getDouble("lon");
+       // Log.d(TAG,"lat,lon: " + lat + " , " + lon);
 
         if(receivedLocation !=null){
             getGymsFromBudapest(receivedLocation.getLat(),receivedLocation.getLng());
         }
-        getGymsFromBudapest(lat,lon);
+       // getGymsFromBudapest(lat,lon);
 
 
         recyclerView = view.findViewById(R.id.recyclerView);
@@ -171,7 +171,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
                             LatLng actucalPosition = new LatLng(47.5350554,19.043856);
                             //  if(currLoc !=null){
-                            actucalPosition = new LatLng(lat,lon);
+                           // actucalPosition = new LatLng(lat,lon);
                             // }
                             // LatLng actucalPosition = new LatLng(47.5350554,19.043856);
 

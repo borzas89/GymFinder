@@ -47,12 +47,10 @@ public class GymDashboardFragment extends DrawerItemBaseFragment {
         View rootView = inflater.inflate(R.layout.fragment_dashboard, container, false);
         ButterKnife.bind(this, rootView);
 
-
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 //                getGymsByRadiusAndCoordinate();
-                ((MainActivity)getActivity()).startLocationClick();
                 getReactiveGymsByRadiusAndCoordinate();
             }
         });

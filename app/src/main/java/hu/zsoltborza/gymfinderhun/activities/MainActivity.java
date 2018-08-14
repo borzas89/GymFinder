@@ -1,61 +1,26 @@
 package hu.zsoltborza.gymfinderhun.activities;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.IntentSender;
+import android.content.IntentFilter;
 import android.content.res.Configuration;
-import android.location.Location;
-import android.net.Uri;
-import android.os.Looper;
-import android.provider.Settings;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import com.google.android.gms.common.api.ApiException;
-import com.google.android.gms.common.api.ResolvableApiException;
-import com.google.android.gms.location.FusedLocationProviderClient;
-import com.google.android.gms.location.LocationCallback;
-import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationResult;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.LocationSettingsRequest;
-import com.google.android.gms.location.LocationSettingsResponse;
-import com.google.android.gms.location.LocationSettingsStatusCodes;
-import com.google.android.gms.location.SettingsClient;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
-
-
-import org.greenrobot.eventbus.EventBus;
-
-import java.text.DateFormat;
-import java.util.Date;
-
-import hu.zsoltborza.gymfinderhun.BuildConfig;
-import hu.zsoltborza.gymfinderhun.event.UserLocationEvent;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
+import hu.zsoltborza.gymfinderhun.location.InternalLocationReceiver;
+import hu.zsoltborza.gymfinderhun.location.LocationService;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 import hu.zsoltborza.gymfinderhun.fragments.GymDetailFragment;
 import hu.zsoltborza.gymfinderhun.fragments.GymListFragment;
@@ -86,28 +51,8 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
     // The android.support.v4.app.ActionBarDrawerToggle has been deprecated.
     private ActionBarDrawerToggle drawerToggle;
 
-    // location last updated time
-    private String mLastUpdateTime;
+    private InternalLocationReceiver mInternalLocationReceiver;
 
-    // location updates interval - 10sec
-    private static final long UPDATE_INTERVAL_IN_MILLISECONDS = 10000;
-
-    // fastest updates interval - 5 sec
-    // location updates will be received if another app is requesting the locations
-    // than your app can handle
-    private static final long FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS = 5000;
-
-    private static final int REQUEST_CHECK_SETTINGS = 100;
-    // bunch of location related apis
-    private FusedLocationProviderClient mFusedLocationClient;
-    private SettingsClient mSettingsClient;
-    private LocationRequest mLocationRequest;
-    private LocationSettingsRequest mLocationSettingsRequest;
-    private LocationCallback mLocationCallback;
-    private Location mCurrentLocation;
-
-    // boolean flag to toggle the ui
-    private Boolean mRequestingLocationUpdates;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,9 +85,9 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         }
 
-        initLocationServices();
-
-
+        //Create internal receiver object in this method only.
+        mInternalLocationReceiver = new InternalLocationReceiver(this);
+        requestUpdates();
     }
 
     public void hideTool(){
@@ -198,10 +143,6 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
-            Bundle bundle = new Bundle();
-            bundle.putDouble("lat",mCurrentLocation.getLatitude());
-            bundle.putDouble("lon",mCurrentLocation.getLongitude());
-            fragment.setArguments(bundle);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -343,11 +284,28 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onResume(){
+        super.onResume();
+        //Register to receive updates in activity only when activity is visible
+        LocalBroadcastManager.getInstance(this).registerReceiver(mInternalLocationReceiver, new
+                IntentFilter("googleLocation"));
     }
+    @Override
+    protected void onPause(){
+        super.onPause();
 
-
+        //Unregister to stop receiving updates in activity when it is not visible.
+        //NOTE: You will still receive updates even if this activity is killed.
+        LocalBroadcastManager.getInstance(this).unregisterReceiver(mInternalLocationReceiver);
+    }
+    //Helper method to get updates
+    private void requestUpdates(){
+        startService(new Intent(this, LocationService.class).putExtra("request", true));
+    }
+    //Helper method to stop updates
+    private void stopUpdates(){
+        startService(new Intent(this, LocationService.class).putExtra("remove", true));
+    }
 
     @Override
     public void onBackPressed() {
@@ -366,6 +324,12 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopUpdates();
     }
 
     // `onPostCreate` called when activity start-up is complete after `onStart()`
@@ -417,145 +381,4 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
     }
 
-    @Override
-    public void startLocationClick() {
-        // Requesting ACCESS_FINE_LOCATION using Dexter library
-        Dexter.withActivity(this)
-                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                .withListener(new PermissionListener() {
-                    @Override
-                    public void onPermissionGranted(PermissionGrantedResponse response) {
-                        mRequestingLocationUpdates = true;
-                        startLocationUpdates();
-                    }
-
-                    @Override
-                    public void onPermissionDenied(PermissionDeniedResponse response) {
-                        if (response.isPermanentlyDenied()) {
-                            // open device settings when the permission is
-                            // denied permanently
-                            openSettings();
-                        }
-                    }
-
-                    @Override
-                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                        token.continuePermissionRequest();
-                    }
-                }).check();
-    }
-
-    @Override
-    public void initLocationServices() {
-        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-        mSettingsClient = LocationServices.getSettingsClient(this);
-
-        mLocationCallback = new LocationCallback() {
-            @Override
-            public void onLocationResult(LocationResult locationResult) {
-                super.onLocationResult(locationResult);
-                // location is received
-                mCurrentLocation = locationResult.getLastLocation();
-                mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-
-                updateLocationUI();
-            }
-        };
-
-        mRequestingLocationUpdates = false;
-
-        mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(UPDATE_INTERVAL_IN_MILLISECONDS);
-        mLocationRequest.setFastestInterval(FASTEST_UPDATE_INTERVAL_IN_MILLISECONDS);
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-
-        LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder();
-        builder.addLocationRequest(mLocationRequest);
-        mLocationSettingsRequest = builder.build();
-    }
-
-    @Override
-    public void startLocationUpdates() {
-        mSettingsClient
-                .checkLocationSettings(mLocationSettingsRequest)
-                .addOnSuccessListener(this, new OnSuccessListener<LocationSettingsResponse>() {
-                    @SuppressLint("MissingPermission")
-                    @Override
-                    public void onSuccess(LocationSettingsResponse locationSettingsResponse) {
-                        Log.i(TAG, "All location settings are satisfied.");
-
-                        Toast.makeText(getApplicationContext(), "Started location updates!", Toast.LENGTH_SHORT).show();
-
-                        //noinspection MissingPermission
-                        mFusedLocationClient.requestLocationUpdates(mLocationRequest,
-                                mLocationCallback, Looper.myLooper());
-
-                        updateLocationUI();
-                    }
-                })
-                .addOnFailureListener(this, new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        int statusCode = ((ApiException) e).getStatusCode();
-                        switch (statusCode) {
-                            case LocationSettingsStatusCodes.RESOLUTION_REQUIRED:
-                                Log.i(TAG, "Location settings are not satisfied. Attempting to upgrade " +
-                                        "location settings ");
-                                try {
-                                    // Show the dialog by calling startResolutionForResult(), and check the
-                                    // result in onActivityResult().
-                                    ResolvableApiException rae = (ResolvableApiException) e;
-                                    rae.startResolutionForResult(MainActivity.this, REQUEST_CHECK_SETTINGS);
-                                } catch (IntentSender.SendIntentException sie) {
-                                    Log.i(TAG, "PendingIntent unable to execute request.");
-                                }
-                                break;
-                            case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
-                                String errorMessage = "Location settings are inadequate, and cannot be " +
-                                        "fixed here. Fix in Settings.";
-                                Log.e(TAG, errorMessage);
-
-                                Toast.makeText(MainActivity.this, errorMessage, Toast.LENGTH_LONG).show();
-                        }
-
-                        updateLocationUI();
-                    }
-                });
-    }
-
-    @Override
-    public void updateLocationUI() {
-        if (mCurrentLocation != null) {
-            Toast.makeText(this, "Lat: "
-                            + mCurrentLocation.getLatitude() + ", "
-                            +  "Lng: " + mCurrentLocation.getLongitude(),Toast.LENGTH_SHORT).show();
-
-           UserLocationEvent userLocationEvent =
-                   new UserLocationEvent();
-           LatLng currentLocation = new LatLng(mCurrentLocation.getLatitude(),mCurrentLocation.getLongitude());
-           userLocationEvent.setUserLocation(currentLocation);
-
-
-
-
-
-
-
-
-            // location last updated time
-            //("Last updated on: " + mLastUpdateTime);
-        }
-    }
-
-    @Override
-    public void openSettings() {
-        Intent intent = new Intent();
-        intent.setAction(
-                Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-        Uri uri = Uri.fromParts("package",
-                BuildConfig.APPLICATION_ID, null);
-        intent.setData(uri);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-    }
 }
