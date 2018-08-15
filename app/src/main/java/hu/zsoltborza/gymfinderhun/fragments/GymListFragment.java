@@ -107,9 +107,14 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         }
 
         Bundle args = getArguments();
-        double lat = args.getDouble("lat");
-        double lon = args.getDouble("lon");
-        getGymsByRadiusAndCoordinate(lat,lon);
+        if(args != null){
+            double lat = args.getDouble("lat");
+            double lon = args.getDouble("lon");
+            getGymsByRadiusAndCoordinate(lat,lon);
+        }else{
+            getGymsByRadiusAndCoordinate(47.4544331,19.633235);
+        }
+
 
     }
 

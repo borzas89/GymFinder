@@ -32,6 +32,7 @@ public class InternalLocationReceiver extends BroadcastReceiver {
             LocationResult result = intent.getParcelableExtra("result");
             double lat = result.getLastLocation().getLatitude();
             double lon = result.getLastLocation().getLongitude();
+            mActivity.setCurrentLocation(result.getLastLocation());
             Log.d(TAG,"Lat: " + lat + " , " + "Lon: " + lon);
             //Handle location update here
         }

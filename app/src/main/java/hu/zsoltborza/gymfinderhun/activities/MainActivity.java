@@ -1,8 +1,12 @@
 package hu.zsoltborza.gymfinderhun.activities;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
+import android.location.Location;
+import android.net.Uri;
+import android.provider.Settings;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +22,15 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.gms.maps.model.LatLng;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
+
+import hu.zsoltborza.gymfinderhun.BuildConfig;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
 import hu.zsoltborza.gymfinderhun.location.InternalLocationReceiver;
 import hu.zsoltborza.gymfinderhun.location.LocationService;
@@ -37,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
     private DrawerLayout drawer;
     private static final String TAG ="MainActivity";
+
+    private static final String bundleLatKey ="lat";
+    private static final String bundleLonKey ="lon";
+
+    LatLng sampleLocation = new LatLng(47.548, 19.0719793);
+
     private Toolbar toolbar;
     private NavigationView nvDrawer;
 
@@ -53,13 +72,20 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
     private InternalLocationReceiver mInternalLocationReceiver;
 
+    private Location currentLocation;
+
+    public Location getCurrentLocation() {
+        return currentLocation;
+    }
+
+    public void setCurrentLocation(Location currentLocation) {
+        this.currentLocation = currentLocation;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
 
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -87,7 +113,49 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         //Create internal receiver object in this method only.
         mInternalLocationReceiver = new InternalLocationReceiver(this);
-        requestUpdates();
+
+        requestLocationService();
+//        requestUpdates();
+    }
+
+    private void requestLocationService(){
+
+        // Requesting ACCESS_FINE_LOCATION using Dexter library
+        Dexter.withActivity(this)
+                .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
+                .withListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted(PermissionGrantedResponse response) {
+
+                        requestUpdates();
+                    }
+
+                    @Override
+                    public void onPermissionDenied(PermissionDeniedResponse response) {
+                        if (response.isPermanentlyDenied()) {
+                            // open device settings when the permission is
+                            // denied permanently
+                          openSettings();
+                        }
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+                        token.continuePermissionRequest();
+                    }
+                }).check();
+    }
+
+
+    private void openSettings() {
+        Intent intent = new Intent();
+        intent.setAction(
+                Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        Uri uri = Uri.fromParts("package",
+                BuildConfig.APPLICATION_ID, null);
+        intent.setData(uri);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     public void hideTool(){
@@ -142,6 +210,7 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
         }
 
         try {
+            fragment.setArguments(getLocationBundle());
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
@@ -157,6 +226,20 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
         setTitle(menuItem.getTitle());
             // Close the navigation drawer
         drawer.closeDrawers();
+    }
+
+    private Bundle getLocationBundle(){
+        Bundle locationBundle = new Bundle();
+
+        if(currentLocation != null){
+            locationBundle.putDouble(bundleLatKey, currentLocation.getLatitude());
+            locationBundle.putDouble(bundleLonKey, currentLocation.getLongitude());
+        }else{
+            locationBundle.putDouble(bundleLatKey, sampleLocation.latitude);
+            locationBundle.putDouble(bundleLonKey, sampleLocation.longitude);
+        }
+
+        return locationBundle;
     }
 
 

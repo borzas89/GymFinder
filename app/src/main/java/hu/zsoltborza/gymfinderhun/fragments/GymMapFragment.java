@@ -27,14 +27,18 @@ import com.google.maps.android.ui.IconGenerator;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-import hu.zsoltborza.gymfinderhun.adapter.GymAdapter;
 import hu.zsoltborza.gymfinderhun.model.GymMarker;
 import hu.zsoltborza.gymfinderhun.R;
+import hu.zsoltborza.gymfinderhun.network.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
+import hu.zsoltborza.gymfinderhun.network.domain.MarkerResult;
+import hu.zsoltborza.gymfinderhun.network.domain.MarkerSearch;
 import hu.zsoltborza.gymfinderhun.utils.Utils;
 import hu.zsoltborza.gymfinderhun.utils.CustomUrlTileProvider;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 /**
@@ -48,9 +52,10 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     private GoogleMap mMap;
     private ClusterManager<GymMarker> mClusterManager;
 
-    LatLng currentLocation;
+    private LatLng currentLocation;
 
-    List<GymMarker> gymsList = new ArrayList<>();
+
+    private List<GymMarker> gymsList = new ArrayList<>();
 
     // offline list
     private List<GymListItem> gymListNew;
@@ -66,6 +71,8 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
         public MarkerRenderer(Context context, GoogleMap map, ClusterManager<GymMarker> clusterManager) {
             super(context, map, clusterManager);
         }
+
+
         public MarkerRenderer(){
             super(getActivity().getApplicationContext(), getMap(), mClusterManager);
 
@@ -113,12 +120,15 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
 
-       Bundle args = getArguments();
-       // double lat = args.getDouble("lat");
-       // double lon = args.getDouble("lon");
+        Bundle args = getArguments();
+        if(args != null){
+            double lat = args.getDouble("lat");
+            double lon = args.getDouble("lon");
+           currentLocation = new LatLng(lat,lon);
+        }else{
+            currentLocation = new LatLng(47.4544331,19.633235);
+        }
 
-       // currentLocation = new LatLng(lat, lon);
-        //  = new LatLng(47.548, 19.0719793);
 
         ((SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.map)).getMapAsync(this);
 
@@ -144,6 +154,7 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
 
     private synchronized void initMap(){
        // mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(47.548, 19.0719793), 13));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(currentLocation.latitude, currentLocation.longitude), 13));
         mClusterManager = new ClusterManager<GymMarker>(getContext(), getMap());
         getMap().setOnCameraIdleListener(mClusterManager);
@@ -152,23 +163,10 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
         mClusterManager.setOnClusterItemClickListener(this);
 
         // TODO check permissions...
-        mMap.setMyLocationEnabled(true);
+      //  mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
 
 //        custom tile
-//        mMap.addTileOverlay()
-//        link
-//        http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg
-
-//        TileOverlayOptions mTileOverlayOptions = new TileOverlayOptions();
-//        mTileOverlayOptions.
-//        CustomTileProvider mTileProvider = new CustomTileProvider(
-//                tile_width,
-//                tile_height, overlayString);
-//         mMap.addTileOverlay(
-//                new TileOverlayOptions().tileProvider(mTileProvider)
-//                        .zIndex(OTPApp.CUSTOM_MAP_TILE_Z_INDEX));
-
         mMap.setMapType(GoogleMap.MAP_TYPE_NONE);
 //        String overlayString = "http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg";
         String overlayString = "http://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
@@ -203,9 +201,43 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
         });
         thread.start();
 
+    }
 
 
+    public synchronized void getOnlineMarkers() {
 
+        Call<MarkerSearch> call;
+        GymSearchService apiService =
+                RetrofitServiceFactory.getClient().create(GymSearchService.class);
+
+        call = apiService.getGymMarkers();
+        call.enqueue(new Callback<MarkerSearch>() {
+
+
+            @Override
+            public void onResponse(Call<MarkerSearch> call, Response<MarkerSearch> response) {
+
+//                response.body().getResults();
+                List<MarkerResult> result = response.body().getResults();
+                for (int i = 0; i < result.size(); i++) {
+
+                    double lat = result.get(i).getGeometry().getLocation().getLat();
+                    double lon = result.get(i).getGeometry().getLocation().getLng();
+                    String name = result.get(i).getName();
+                    gymsList.add(new GymMarker(new LatLng(lat, lon), name));
+//                    result.get(i).getRating();
+
+                }
+
+                mClusterManager.addItems(gymsList);
+
+            }
+
+            @Override
+            public void onFailure(Call<MarkerSearch> call, Throwable t) {
+
+            }
+        });
 
     }
 
@@ -213,10 +245,6 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
     public boolean onClusterItemClick(GymMarker gymMarker) {
 
         Toast.makeText(getContext(), gymMarker.getTitle(), Toast.LENGTH_SHORT).show();
-
-
-
-
 
         return false;
     }
@@ -241,8 +269,6 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
 
     @Override
     public void onClusterItemInfoWindowClick(GymMarker gymMarker) {
-
-
 
 
     }

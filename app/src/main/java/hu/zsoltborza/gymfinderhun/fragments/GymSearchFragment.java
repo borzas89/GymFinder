@@ -60,7 +60,6 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
     //List<Listable> onlineList = new ArrayList<>();
 
-    Location receivedLocation;
 
     @Override
     public String getTagText() {
@@ -93,16 +92,6 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
         super.onViewCreated(view, savedInstanceState);
 
 
-       Bundle args = getArguments();
-        //double lat = args.getDouble("lat");
-       // double lon = args.getDouble("lon");
-       // Log.d(TAG,"lat,lon: " + lat + " , " + lon);
-
-        if(receivedLocation !=null){
-            getGymsFromBudapest(receivedLocation.getLat(),receivedLocation.getLng());
-        }
-       // getGymsFromBudapest(lat,lon);
-
 
         recyclerView = view.findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
@@ -120,6 +109,15 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
             throw new ClassCastException("Hosting activity must implement GreetingsInterface");
         } else {
             listDetailInterface = (ListDetailInterface) getActivity();
+        }
+
+        Bundle args = getArguments();
+        if(args != null){
+            double lat = args.getDouble("lat");
+            double lon = args.getDouble("lon");
+            getGymsFromBudapest(lat,lon);
+        }else{
+            getGymsFromBudapest(47.4544331,19.633235);
         }
 
     }
