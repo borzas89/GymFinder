@@ -46,7 +46,7 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
         GymListItem item = gymList.get(position);
 
         holder.titleTV.setText(item.getTitle());
-        holder.addressTV.setText(item.getAddress1());
+        holder.addressTV.setText(item.getAddress1() + " " +item.getAddress2());
         holder.infoTV.setText(item.getInfo());
         holder.frameLayout.setOnClickListener(new View.OnClickListener() {
             @Override

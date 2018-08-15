@@ -210,8 +210,8 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
         }
 
         try {
-            fragment.setArguments(getLocationBundle());
             fragment = (Fragment) fragmentClass.newInstance();
+            fragment.setArguments(getLocationBundle());
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -28,7 +28,6 @@ import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.activities.MainActivity;
 import hu.zsoltborza.gymfinderhun.adapter.GymOnlineSearchAdapter;
 import hu.zsoltborza.gymfinderhun.adapter.OnItemClickListener;
-import hu.zsoltborza.gymfinderhun.event.UserLocationEvent;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.ListDetailInterface;
@@ -154,20 +153,22 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                                 item.setPhotoReference("PHOTO_REFERENCE");
                             }
 
-                            String isOpen = "";
-                            if(response.body().getResults().get(i).getOpeningHours() != null && response.body().getResults().get(i).getOpeningHours().getOpenNow()){
+                          /*  String isOpen = "";
+                            if(response.body().getResults().get(i).getOpeningHours() != null
+                                    && response.body().getResults().get(i).getOpeningHours().getOpenNow()){
 //                        isOpen = "Igen";
                                 item.setOpen(true);
 
                             }else{
 //                        isOpen = "Nem";
                                 item.setOpen(false);
-                            }
+                            }*/
 
                             LatLng gymposition = new LatLng( response.body().getResults().get(i).getGeometry().getLocation().getLat()
                                     , response.body().getResults().get(i).getGeometry().getLocation().getLng());
 
-                            LatLng actucalPosition = new LatLng(47.5350554,19.043856);
+                            //LatLng actucalPosition = new LatLng(47.5350554,19.043856);
+                            LatLng actucalPosition = new LatLng(lat,lon);
                             //  if(currLoc !=null){
                            // actucalPosition = new LatLng(lat,lon);
                             // }
