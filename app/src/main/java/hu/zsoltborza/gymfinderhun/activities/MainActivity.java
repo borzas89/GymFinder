@@ -32,6 +32,7 @@ import com.karumi.dexter.listener.single.PermissionListener;
 
 import hu.zsoltborza.gymfinderhun.BuildConfig;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
+import hu.zsoltborza.gymfinderhun.fragments.WebViewFragment;
 import hu.zsoltborza.gymfinderhun.location.InternalLocationReceiver;
 import hu.zsoltborza.gymfinderhun.location.LocationService;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
@@ -191,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
         switch(menuItem.getItemId()) {
             case R.id.nav_dashboard_fragment:
                 toolbar.setTitle("Dashboard");;
-                fragmentClass = GymDashboardFragment.class;
+                fragmentClass = WebViewFragment.class;
                 break;
             case R.id.nav_first_fragment:
                 toolbar.setTitle("Map Search");
@@ -206,7 +207,7 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
                 fragmentClass = GymSearchFragment.class;
                 break;
             default:
-                fragmentClass = GymDashboardFragment.class;
+                fragmentClass = WebViewFragment.class;
         }
 
         try {
