@@ -4,6 +4,7 @@ package hu.zsoltborza.gymfinderhun.fragments;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,9 +20,13 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import hu.zsoltborza.gymfinderhun.activities.MainActivity;
 import hu.zsoltborza.gymfinderhun.adapter.GymAdapter;
 import hu.zsoltborza.gymfinderhun.R;
+import hu.zsoltborza.gymfinderhun.converters.GymToGymItemConverter;
+import hu.zsoltborza.gymfinderhun.network.ApiManager;
 import hu.zsoltborza.gymfinderhun.network.GymApiService;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
 import hu.zsoltborza.gymfinderhun.network.domain.Gym;
@@ -29,6 +34,10 @@ import hu.zsoltborza.gymfinderhun.utils.Utils;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.ListDetailInterface;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.observers.DisposableObserver;
+import io.reactivex.observers.DisposableSingleObserver;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -37,7 +46,7 @@ import retrofit2.Response;
  * Created by Zsolt Borza on 2018.01.31..
  */
 
-public class GymListFragment extends DrawerItemBaseFragment implements GymAdapter.OnItemClickListener,SearchView.OnQueryTextListener {
+public class GymListFragment extends DrawerItemBaseFragment implements GymAdapter.OnItemClickListener,SearchView.OnQueryTextListener{
 
 //     SearchView.OnQueryTextListener
     public static final String TAG = "GymList";
@@ -47,6 +56,14 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     private List<GymListItem> gymList;
     private GymAdapter adapter;
     RecyclerView recyclerView;
+
+    @BindView(R.id.so_swipe)
+    SwipeRefreshLayout mSwipe;
+
+    private ApiManager apiManager;
+
+    private  double testLatitude = 47.4013408;
+    private  double testLongitude = 19.0990398;
 
 
     @Override
@@ -63,10 +80,13 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         // Defines the xml file for the fragment
-
+        View rootView = inflater.inflate(R.layout.fragment_gym_list, parent, false);
         setHasOptionsMenu(true);
 
-        return inflater.inflate(R.layout.fragment_gym_list, parent, false);
+        apiManager = new ApiManager(rootView.getContext());
+        ButterKnife.bind(this,rootView);
+
+        return rootView;
     }
 
     @Override
@@ -94,6 +114,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         recyclerView.setLayoutManager(layoutManager);
 
         adapter = new GymAdapter(getContext(), gymList, this);
+
         recyclerView.setAdapter(adapter);
 
         DividerItemDecoration decoration = new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL);
@@ -108,80 +129,52 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
 
         Bundle args = getArguments();
         if(args != null){
-            double lat = args.getDouble("lat");
-            double lon = args.getDouble("lon");
-            getGymsByRadiusAndCoordinate(lat,lon);
+       //     double lat = args.getDouble("lat");
+          //  double lon = args.getDouble("lon");
+         //  getGymsByRadiusAndCoordinate(lat,lon);
+            testLatitude = args.getDouble("lat");
+            testLongitude = args.getDouble("lon");
+            //refreshList(lat,lon);
         }else{
-            getGymsByRadiusAndCoordinate(47.4544331,19.633235);
+        //    getGymsByRadiusAndCoordinate(47.4544331,19.633235);
+           // refreshList(47.4544331,19.633235);
         }
 
-
-    }
-
-
-    public void  getGymsByRadiusAndCoordinate(double lat, double lon){
-
-        Call<List<Gym>> call;
-        final GymApiService apiService =
-                RetrofitServiceFactory.getClientForGymFinderApi().create(GymApiService.class);
-
-       // call = apiService.getGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
-
-
-        call = apiService.getGymsByRadiusAndCoordinate(5000,lat, lon);
-
-        call.enqueue(new Callback<List<Gym>>() {
-            @Override
-            public void onResponse(Call<List<Gym>> call, Response<List<Gym>> response) {
-
-                final List<GymListItem> reGymList = new ArrayList<>();
-
-                List<Gym> fetchedGymList = response.body();
-
-
-
-                for (Gym gymItem : fetchedGymList){
-
-                    GymListItem gymListItem = new GymListItem();
-                    gymListItem.setId(String.valueOf(gymItem.getId()));
-                    gymListItem.setAddress(gymItem.getAddress().getAddress1() + ", " + gymItem.getAddress().getAddress2());
-                    gymListItem.setAddress1(gymItem.getAddress().getAddress1());
-                    gymListItem.setAddress2(gymItem.getAddress().getAddress2());
-                    gymListItem.setInfo(gymItem.getInformation());
-                    gymListItem.setLatitude(String.valueOf(gymItem.getAddress().getLatitude()));
-                    gymListItem.setLongitude(String.valueOf(gymItem.getAddress().getLongitude()));
-                    gymListItem.setTitle(gymItem.getTitle());
-                    reGymList.add(gymListItem);
-                }
-
-                gymList = reGymList;
-                adapter.setFilter(reGymList);
-
-
-                Log.d("GYM",call.request().url().toString());
-
-                String size = String.valueOf(fetchedGymList.size());
-
-                Log.d("GYM",size);
-
-                Log.d("GYM",fetchedGymList.get(0).getInformation());
-
-
-
-            }
-
-            @Override
-            public void onFailure(Call<List<Gym>> call, Throwable t) {
-                Log.d("GYM",t.getMessage());
-                Log.d("GYM","FAILED AT " + call.request().url().toString());
-            }
-        });
-
-
+        mSwipe.setOnRefreshListener(this::refreshList);
+        refreshList();
 
 
     }
+    private void refreshList() {
+        showRefresh(true);
+        CompositeDisposable compositeDisposable = new CompositeDisposable();
+        compositeDisposable.add(
+                apiManager.getGymsByRadiusAndCoordinate(5000,testLatitude,testLongitude)
+                        .subscribeWith(new DisposableObserver<List<Gym>>() {
 
+                            @Override
+                            public void onNext(List<Gym> gyms) {
+                                showRefresh(false);
+                                adapter.updatingList(gyms);
+                            }
+
+                            @Override
+                            public void onError(Throwable e) {
+                                // handle the error case
+                                showRefresh(false);
+                                Log.d(TAG,"failed to load");
+
+                            }
+
+                            @Override
+                            public void onComplete() {
+                                showRefresh(false);
+                            }
+                        }));
+        // continue working and dispose all subscriptions when the values from the Single objects are not interesting any more
+        //compositeDisposable.dispose();
+
+    }
 
 
     @Override
@@ -190,7 +183,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                listDetailInterface.showListDetailItem(gymList.get(position));
+                listDetailInterface.showListDetailItem(adapter.getAdapterList().get(position));
             }
         }, 0);
 
@@ -230,4 +223,12 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         }
         return filteredItemsList;
     }
+
+
+    private void showRefresh(boolean show) {
+        mSwipe.setRefreshing(show);
+        int visibility = show ? View.GONE : View.VISIBLE;
+        recyclerView.setVisibility(visibility);
+    }
+
 }

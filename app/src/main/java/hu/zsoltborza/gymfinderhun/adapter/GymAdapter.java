@@ -15,6 +15,7 @@ import java.util.List;
 
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
+import hu.zsoltborza.gymfinderhun.network.domain.Gym;
 
 /**
  * Created by Borzas on 2018. 01. 21..
@@ -61,6 +62,34 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
         gymList.addAll(filteredItems);
         notifyDataSetChanged();
 
+    }
+
+    public void updatingList(List<Gym> fetchedGymList){
+        //gymList.clear();
+        List<GymListItem> reGymList = new ArrayList<>();
+
+        for (Gym gymItem : fetchedGymList){
+
+            GymListItem gymListItem = new GymListItem();
+            gymListItem.setId(String.valueOf(gymItem.getId()));
+            gymListItem.setAddress(gymItem.getAddress().getAddress1() + ", " + gymItem.getAddress().getAddress2());
+            gymListItem.setAddress1(gymItem.getAddress().getAddress1());
+            gymListItem.setAddress2(gymItem.getAddress().getAddress2());
+            gymListItem.setInfo(gymItem.getInformation());
+            gymListItem.setLatitude(String.valueOf(gymItem.getAddress().getLatitude()));
+            gymListItem.setLongitude(String.valueOf(gymItem.getAddress().getLongitude()));
+            gymListItem.setTitle(gymItem.getTitle());
+            reGymList.add(gymListItem);
+        }
+
+        gymList = reGymList;
+
+        gymList.addAll(reGymList);
+        notifyDataSetChanged();
+    }
+
+    public List<GymListItem> getAdapterList() {
+        return gymList;
     }
 
     @Override

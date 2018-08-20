@@ -62,13 +62,11 @@ public class GymDashboardFragment extends DrawerItemBaseFragment {
 
     public void getGymsByRadiusAndCoordinate(){
 
-
-
         Call<List<Gym>> call;
         final GymApiService apiService =
                 RetrofitServiceFactory.getClientForGymFinderApi().create(GymApiService.class);
 
-        call = apiService.getGymsByRadiusAndCoordinate(1000,47.547141,19.076171);
+        call = apiService.getGymsCallsByRadiusAndCoordinate(1000,47.547141,19.076171);
 
         call.enqueue(new Callback<List<Gym>>() {
             @Override

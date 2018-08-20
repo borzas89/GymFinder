@@ -70,14 +70,11 @@ public class WebViewFragment extends DrawerItemBaseFragment {
         mIsWebViewAvailable = true;
         WebSettings settings = mWebView.getSettings();
         settings.setJavaScriptEnabled(true);
-
+        mWebView.clearHistory();
         mWebView.loadUrl(mUrl);
         mWebView.setVerticalScrollBarEnabled(true);
         mWebView.setVerticalScrollBarEnabled(true);
         mWebView.setHorizontalScrollBarEnabled(true);
-        mWebView.clearHistory();
-
-
 
         return mWebView;
     }

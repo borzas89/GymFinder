@@ -24,9 +24,16 @@ public interface GymApiService {
     // Fetching gyms by id
     // sample data: "gym/neargyms?radius=1000&latitude=47.547141&longitude=19.076171"
     @GET("gym/neargyms")
-    Call<List<Gym>> getGymsByRadiusAndCoordinate(@Query("radius") long radiusInMeter,
+    Observable<List<Gym>> getGymsByRadiusAndCoordinate(@Query("radius") long radiusInMeter,
                                                  @Query("latitude") double latitude,
                                                  @Query("longitude") double longitude);
+
+    @GET("gym/neargyms")
+    Call<List<Gym>> getGymsCallsByRadiusAndCoordinate(@Query("radius") long radiusInMeter,
+                                                       @Query("latitude") double latitude,
+                                                       @Query("longitude") double longitude);
+
+
 
 
     @GET("search/json?type=gym&key=AIzaSyCyk1W3jHXffYh7sXdSaoFJRmcTRcyk9sg")
