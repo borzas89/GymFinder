@@ -14,11 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hu.zsoltborza.gymfinderhun.R;
+import hu.zsoltborza.gymfinderhun.converters.GymToGymItemConverter;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
 import hu.zsoltborza.gymfinderhun.network.domain.Gym;
 
 /**
  * Created by Borzas on 2018. 01. 21..
+ * This adapter is using GymFinder API calls results.
  */
 public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
 
@@ -67,6 +69,8 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
     public void updatingList(List<Gym> fetchedGymList){
         //gymList.clear();
         List<GymListItem> reGymList = new ArrayList<>();
+
+
 
         for (Gym gymItem : fetchedGymList){
 

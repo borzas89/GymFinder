@@ -13,9 +13,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import hu.zsoltborza.gymfinderhun.R;
-import hu.zsoltborza.gymfinderhun.activities.MainActivity;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
-import hu.zsoltborza.gymfinderhun.network.GymApiService;
+import hu.zsoltborza.gymfinderhun.network.service.GymApiService;
 
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
 import hu.zsoltborza.gymfinderhun.network.domain.Gym;

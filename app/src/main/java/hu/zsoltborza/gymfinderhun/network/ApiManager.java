@@ -9,37 +9,45 @@ import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import hu.zsoltborza.gymfinderhun.model.GymListItem;
+import hu.zsoltborza.gymfinderhun.network.cache.CacheProviders;
 import hu.zsoltborza.gymfinderhun.network.domain.Gym;
+import hu.zsoltborza.gymfinderhun.network.service.GymApiService;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.schedulers.Schedulers;
+import io.rx_cache2.internal.RxCache;
+import io.victoralbertos.jolyglot.GsonSpeaker;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+/**
+ *  GymFinfer Api manager class, contatins several dependencies for fetching data.
+ */
 public class ApiManager {
 
     private static final String BASE_URL_API = "https://gymfinder-hun.herokuapp.com/api/";
-    private static Retrofit retrofit = null;
 
+    private static Retrofit retrofit;
+    private OkHttpClient okHttpClient;
+    private Gson gson;
+    private HttpLoggingInterceptor interceptor;
     private GymApiService gymApiService;
 
-    CompositeDisposable compositeDisposable = new CompositeDisposable();
+    private CacheProviders cacheProviders;
 
    public ApiManager(Context context){
-       HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
+
+       interceptor = new HttpLoggingInterceptor();
        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-       Gson gson = new GsonBuilder()
+       gson = new GsonBuilder()
                .setLenient()
                .create();
 
-
        // avoid connect timed out..
-       OkHttpClient okHttpClient = new OkHttpClient.Builder()
+      okHttpClient = new OkHttpClient.Builder()
                .connectTimeout(1, TimeUnit.MINUTES)
                .readTimeout(30, TimeUnit.SECONDS)
                .writeTimeout(15, TimeUnit.SECONDS)
@@ -52,14 +60,19 @@ public class ApiManager {
                .addConverterFactory(GsonConverterFactory.create(gson))
                .build();
 
+       cacheProviders = new RxCache.Builder()
+               .setMaxMBPersistenceCache(5)
+               .persistence(context.getFilesDir(), new GsonSpeaker())
+               .using(CacheProviders.class);
+
        gymApiService = retrofit.create(GymApiService.class);
 
     }
 
     public Observable<List<Gym>> getGymsByRadiusAndCoordinate(int radius,double lat, double lon) {
-        return gymApiService
+       return cacheProviders.getCachedGymsByRadiusAndCoordinates(gymApiService
                 .getGymsByRadiusAndCoordinate(radius,lat,lon)
                 .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread());
+                .observeOn(AndroidSchedulers.mainThread()));
     }
 }

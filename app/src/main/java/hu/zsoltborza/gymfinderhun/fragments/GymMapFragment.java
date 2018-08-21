@@ -29,7 +29,7 @@ import java.util.List;
 
 import hu.zsoltborza.gymfinderhun.model.GymMarker;
 import hu.zsoltborza.gymfinderhun.R;
-import hu.zsoltborza.gymfinderhun.network.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.service.GymSearchService;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerResult;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerSearch;

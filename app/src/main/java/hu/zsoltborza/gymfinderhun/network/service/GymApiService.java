@@ -1,4 +1,4 @@
-package hu.zsoltborza.gymfinderhun.network;
+package hu.zsoltborza.gymfinderhun.network.service;
 
 import java.util.List;
 

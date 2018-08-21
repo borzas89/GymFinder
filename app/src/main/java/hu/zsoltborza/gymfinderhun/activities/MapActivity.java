@@ -13,7 +13,7 @@ import hu.zsoltborza.gymfinderhun.model.GymMarker;
 import hu.zsoltborza.gymfinderhun.utils.Utils;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
-import hu.zsoltborza.gymfinderhun.network.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.service.GymSearchService;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerResult;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerSearch;
 import retrofit2.Call;

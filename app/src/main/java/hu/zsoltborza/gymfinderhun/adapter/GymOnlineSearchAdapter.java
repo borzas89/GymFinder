@@ -14,6 +14,7 @@ import com.squareup.picasso.Picasso;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.ButterKnife;
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 
@@ -36,9 +37,6 @@ public class GymOnlineSearchAdapter extends RecyclerView.Adapter<GymOnlineSearch
         this.listener = listener;
     }
 
-
-
-
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View rootView = LayoutInflater.from(parent.getContext())
@@ -56,8 +54,6 @@ public class GymOnlineSearchAdapter extends RecyclerView.Adapter<GymOnlineSearch
         String imageUri =  "https://maps.googleapis.com/maps/api/place/photo?photoreference="+acutalPhoto+"&sensor=false&maxheight=200&maxwidth=300&key="+key;
 
         Picasso.with(context).load(imageUri).into(holder.image);
-
-
 
 //        holder.image.setImageDrawable();
         holder.titleTV.setText(item.getTitle());
@@ -91,9 +87,13 @@ public class GymOnlineSearchAdapter extends RecyclerView.Adapter<GymOnlineSearch
         public final TextView infoTV;
         public final FrameLayout frameLayout;
         public final ImageView image;
+        private final View mView;
 
         public ViewHolder(View itemView) {
             super(itemView);
+
+            ButterKnife.bind(this, itemView);
+            mView = itemView;
             frameLayout = itemView.findViewById(R.id.list_frame_item);
             titleTV= itemView.findViewById(R.id.titleTV);
             addressTV = itemView.findViewById(R.id.addressTV);
