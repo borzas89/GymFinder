@@ -40,7 +40,7 @@ public class LocationService extends Service  implements
                 .build();
         mLocationRequest = new LocationRequest()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY) //GPS quality location points
-                .setInterval(2000) //At least once every 2 seconds
+                .setInterval(5000) //At least once every 5 seconds
                 .setFastestInterval(1000); //At most once a second
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);

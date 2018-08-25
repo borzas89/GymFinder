@@ -17,6 +17,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,6 +58,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
 
     private double testLatitude = 47.4013408;
     private double testLongitude = 19.0990398;
+    boolean update = false;
 
 
     @Override
@@ -106,9 +109,9 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
 
         recyclerView.setAdapter(adapter);
 
-        DividerItemDecoration decoration = new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL);
+       /* DividerItemDecoration decoration = new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL);
         decoration.setDrawable(getResources().getDrawable(R.drawable.divider));
-        recyclerView.addItemDecoration(decoration);
+        recyclerView.addItemDecoration(decoration);*/
 
         if(!(getActivity() instanceof ListDetailInterface)) {
             throw new ClassCastException("Hosting activity must implement GreetingsInterface");
@@ -123,12 +126,14 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
             //refreshList(lat,lon);
         }
 
+        adapter.setActucalPosition(new LatLng(testLatitude,testLongitude));
+
         mSwipe.setOnRefreshListener(this::refreshList);
 
         // if the coordinates are changed refresh list, fetch data etc
-        if(gymList == null  ){
+      //  if(gymList == null  ){
             refreshList();
-        }
+       // }
 
     }
     private void refreshList() {
@@ -189,7 +194,7 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        final List<GymListItem> filteredModelList = filter(gymList, newText);
+        final List<GymListItem> filteredModelList = filter(adapter.getAdapterList(), newText);
         adapter.setFilter(filteredModelList);
         return true;
     }

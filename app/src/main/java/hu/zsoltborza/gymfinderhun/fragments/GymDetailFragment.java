@@ -37,6 +37,10 @@ public class GymDetailFragment extends DrawerItemBaseFragment {
     FloatingActionButton favorite;
     @BindView(R.id.tvGymTitle)
     TextView gymTitle;
+    @BindView(R.id.tvGymInfo)
+    TextView gymInfo;
+    @BindView(R.id.tvGymAddress)
+    TextView gymAddress;
 
     public static final String TAG = "GymDetail";
 
@@ -85,6 +89,8 @@ public class GymDetailFragment extends DrawerItemBaseFragment {
         if(getArguments() != null){
 
             gymTitle.setText(received.getTitle());
+            gymInfo.setText(received.getInfo());
+            gymAddress.setText(received.getAddress());
 //            String key = "AIzaSyCyk1W3jHXffYh7sXdSaoFJRmcTRcyk9sg";
 //            String acutalPhoto = received.getPhotoReference();
 //            String imageUri =  "https://maps.googleapis.com/maps/api/place/photo?photoreference="+acutalPhoto+"&sensor=false&maxheight=200&maxwidth=300&key="+key;

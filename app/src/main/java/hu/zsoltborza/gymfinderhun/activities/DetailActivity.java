@@ -35,6 +35,10 @@ public class DetailActivity extends AppCompatActivity {
     Toolbar toolbar;
     @BindView(R.id.tvGymTitle)
     TextView gymTitle;
+    @BindView(R.id.tvGymInfo)
+    TextView gymInfo;
+    @BindView(R.id.tvGymAddress)
+    TextView gymAddress;
 
 
     @Override
@@ -54,6 +58,9 @@ public class DetailActivity extends AppCompatActivity {
             String imageUri =  "https://maps.googleapis.com/maps/api/place/photo?photoreference="+acutalPhoto+"&sensor=false&maxheight=200&maxwidth=300&key="+key;
             Picasso.with(this).load(imageUri).into(gymPicture);
             setToolbar(received.getTitle());
+            gymInfo.setText(received.getInfo());
+            gymAddress.setText(received.getAddress());
+
         }
 
     }

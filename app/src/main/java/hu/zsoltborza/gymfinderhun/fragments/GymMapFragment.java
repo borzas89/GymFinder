@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,6 +146,26 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
 
         initMap();
 
+        mMap.setOnCameraMoveListener(new GoogleMap.OnCameraMoveListener() {
+            @Override
+            public void onCameraMove() {
+               // Log.d("Camera","moving lat: "+ mMap.getCameraPosition().target.latitude+ ", lon: " + mMap.getCameraPosition().target.latitude);
+            }
+        });
+
+        mMap.setOnCameraMoveStartedListener(new GoogleMap.OnCameraMoveStartedListener() {
+            @Override
+            public void onCameraMoveStarted(int i) {
+                Log.d("Camera","started lat: "+ mMap.getCameraPosition().target.latitude+ ", lon: " + mMap.getCameraPosition().target.latitude);
+            }
+        });
+
+        mMap.setOnCameraIdleListener(new GoogleMap.OnCameraIdleListener() {
+            @Override
+            public void onCameraIdle() {
+                Log.d("Camera","idle lat: "+ mMap.getCameraPosition().target.latitude+ ", lon: " + mMap.getCameraPosition().target.latitude);
+            }
+        });
 
     }
 
@@ -200,6 +221,8 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback ,
             }
         });
         thread.start();
+
+
 
     }
 
