@@ -82,8 +82,9 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
     }
 
     public void updatingList(List<Gym> fetchedGymList){
-        //gymList.clear();
+       // gymList.clear();
         List<GymListItem> reGymList = new ArrayList<>();
+        gymList = new ArrayList<>();
 
         for (Gym gymItem : fetchedGymList){
             GymListItem gymListItem = new GymListItem();
@@ -97,8 +98,7 @@ public class GymAdapter extends RecyclerView.Adapter<GymAdapter.ViewHolder>{
             gymListItem.setTitle(gymItem.getTitle());
             reGymList.add(gymListItem);
         }
-        gymList = reGymList;
-
+        //gymList = reGymList;
         gymList.addAll(reGymList);
         notifyDataSetChanged();
     }

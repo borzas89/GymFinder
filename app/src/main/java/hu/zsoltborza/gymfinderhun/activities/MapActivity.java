@@ -13,7 +13,7 @@ import hu.zsoltborza.gymfinderhun.model.GymMarker;
 import hu.zsoltborza.gymfinderhun.utils.Utils;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
-import hu.zsoltborza.gymfinderhun.network.service.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.service.GooglePlacesService;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerResult;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerSearch;
 import retrofit2.Call;
@@ -78,8 +78,8 @@ public class MapActivity extends BaseMapActivity implements ClusterManager.OnClu
     public synchronized void getMarkers() {
 
         Call<MarkerSearch> call;
-        GymSearchService apiService =
-                RetrofitServiceFactory.getClient().create(GymSearchService.class);
+        GooglePlacesService apiService =
+                RetrofitServiceFactory.getClient().create(GooglePlacesService.class);
 
         call = apiService.getGymMarkers();
         call.enqueue(new Callback<MarkerSearch>() {
@@ -116,8 +116,8 @@ public class MapActivity extends BaseMapActivity implements ClusterManager.OnClu
     public synchronized void getCurrentGyms(double lat, double lon) {
 
         Call<MarkerSearch> call;
-        GymSearchService apiService =
-                RetrofitServiceFactory.getClient().create(GymSearchService.class);
+        GooglePlacesService apiService =
+                RetrofitServiceFactory.getClient().create(GooglePlacesService.class);
 
        // call = apiService.getGymsByLocation("47.548, 19.0719793",5000);
         call = apiService.getGymsByLocation(String.valueOf(lat) + ", " +String.valueOf(lon),5000);

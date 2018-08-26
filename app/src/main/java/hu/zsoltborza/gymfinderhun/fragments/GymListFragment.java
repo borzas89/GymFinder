@@ -54,6 +54,8 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
     @BindView(R.id.so_swipe)
     SwipeRefreshLayout mSwipe;
 
+    private MenuItem searchIconMenuItem;
+
     private ApiManager apiManager;
 
     private double testLatitude = 47.4013408;
@@ -89,8 +91,9 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         inflater.inflate(R.menu.menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
 
-        MenuItem myActionMenuItem = menu.findItem( R.id.action_search);
-        final SearchView searchView = (SearchView) myActionMenuItem.getActionView();
+        searchIconMenuItem = menu.findItem( R.id.action_search);
+        showSearchIcon(false);
+        SearchView searchView = (SearchView) searchIconMenuItem.getActionView();
         searchView.setOnQueryTextListener(this);
     }
 
@@ -131,16 +134,17 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         mSwipe.setOnRefreshListener(this::refreshList);
 
         // if the coordinates are changed refresh list, fetch data etc
-      //  if(gymList == null  ){
+       //if(gymList == null  ){
             refreshList();
-       // }
+        //}
 
     }
     private void refreshList() {
+        showSearchIcon(false);
         showRefresh(true);
         CompositeDisposable compositeDisposable = new CompositeDisposable();
         compositeDisposable.add(
-                apiManager.getGymsByRadiusAndCoordinate(5000,getTestLatitude(),getTestLongitude())
+                apiManager.getGymsByRadiusAndCoordinate(5000,getTestLatitude(),getTestLongitude(),"q",false)
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribeWith(new DisposableObserver<List<Gym>>() {
 
@@ -149,12 +153,16 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
                                 Log.d(TAG,"coordinates are: " + getTestLatitude() + " , " + getTestLongitude());
                                 showRefresh(false);
                                 adapter.updatingList(gyms);
+                                Log.d(TAG,"gyms size: " + gyms.size());
+                                showSearchIcon(true);
+                               // Log.d(TAG,"gymList size: " + gymList.size());
                             }
 
                             @Override
                             public void onError(Throwable e) {
                                 // handle the error case
                                 showRefresh(false);
+                                showSearchIcon(false);
                                 Log.d(TAG,"failed to load");
 
                             }
@@ -221,6 +229,12 @@ public class GymListFragment extends DrawerItemBaseFragment implements GymAdapte
         mSwipe.setRefreshing(show);
         int visibility = show ? View.GONE : View.VISIBLE;
         recyclerView.setVisibility(visibility);
+    }
+
+    private void showSearchIcon(boolean show){
+        if(searchIconMenuItem != null){
+            searchIconMenuItem.setVisible(show);
+        }
     }
 
     public double getTestLatitude() {

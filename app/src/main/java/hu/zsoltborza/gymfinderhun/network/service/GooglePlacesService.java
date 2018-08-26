@@ -1,7 +1,13 @@
 package hu.zsoltborza.gymfinderhun.network.service;
 
+import java.util.List;
+import java.util.Observable;
+
 import hu.zsoltborza.gymfinderhun.network.domain.GymSearch;
+import hu.zsoltborza.gymfinderhun.network.domain.MarkerResult;
 import hu.zsoltborza.gymfinderhun.network.domain.MarkerSearch;
+import hu.zsoltborza.gymfinderhun.network.domain.Result;
+import io.reactivex.Single;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -11,7 +17,7 @@ import retrofit2.http.Query;
  * Google Places API calls service.
  */
 
-public interface GymSearchService {
+public interface GooglePlacesService {
 
     @GET("textsearch/json?query=edzőterem+budapest&key=AIzaSyCyk1W3jHXffYh7sXdSaoFJRmcTRcyk9sg")
     Call<GymSearch> getGymsatBudapest();
@@ -21,6 +27,11 @@ public interface GymSearchService {
 
     @GET("search/json?location=47.5350554,19.043856&radius=5000&type=gym&key=AIzaSyCyk1W3jHXffYh7sXdSaoFJRmcTRcyk9sg")
     Call<MarkerSearch> getGymMarkers();
+
+
+
+
+
 
 
 

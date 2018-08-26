@@ -15,6 +15,8 @@ import hu.zsoltborza.gymfinderhun.network.service.GymApiService;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+import io.rx_cache2.DynamicKey;
+import io.rx_cache2.EvictDynamicKey;
 import io.rx_cache2.internal.RxCache;
 import io.victoralbertos.jolyglot.GsonSpeaker;
 import okhttp3.OkHttpClient;
@@ -69,10 +71,10 @@ public class ApiManager {
 
     }
 
-    public Observable<List<Gym>> getGymsByRadiusAndCoordinate(int radius,double lat, double lon) {
+    public Observable<List<Gym>> getGymsByRadiusAndCoordinate(int radius, double lat, double lon, String query, boolean update) {
        return cacheProviders.getCachedGymsByRadiusAndCoordinates(gymApiService
                 .getGymsByRadiusAndCoordinate(radius,lat,lon)
                 .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread()));
+                .observeOn(AndroidSchedulers.mainThread()),new DynamicKey(query),new EvictDynamicKey(update));
     }
 }

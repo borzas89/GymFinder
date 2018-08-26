@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.google.maps.android.SphericalUtil;
 
 
 import java.text.DecimalFormat;
@@ -27,7 +26,8 @@ import hu.zsoltborza.gymfinderhun.model.GymItemDto;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.ListDetailInterface;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
-import hu.zsoltborza.gymfinderhun.network.service.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.domain.Result;
+import hu.zsoltborza.gymfinderhun.network.service.GooglePlacesService;
 import hu.zsoltborza.gymfinderhun.network.domain.GymSearch;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -35,31 +35,25 @@ import retrofit2.Response;
 
 /**
  * Created by Zsolt Borza on 2018.01.31..
+ *
+ * Google Places Api calls with RecyclerView
  */
 
 public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemClickListener, GymOnlineSearchAdapter.OnItemClickListener {
 
 
     public static final String TAG = "GymSearchOnline";
-
     ListDetailInterface listDetailInterface;
-
     private List<GymItemDto> gymList = new ArrayList<>();
     private GymOnlineSearchAdapter adapter;
-
-    RecyclerView recyclerView;
+    private RecyclerView recyclerView;
 
     DecimalFormat df = new DecimalFormat("#.00");
-
-    //List<Listable> onlineList = new ArrayList<>();
-
 
     @Override
     public String getTagText() {
         return TAG;
     }
-
-
 
     @Override
     public boolean onBackPressed() {
@@ -118,11 +112,12 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
 
 
+
     public void getGymsFromBudapest(final double lat, final double lon){
 
         Call<GymSearch> call;
-        final GymSearchService apiService =
-                RetrofitServiceFactory.getClient().create(GymSearchService.class);
+        final GooglePlacesService apiService =
+                RetrofitServiceFactory.getClient().create(GooglePlacesService.class);
 
         call = apiService.getGymsatBudapest();
         call.enqueue(new Callback<GymSearch>() {
@@ -135,14 +130,17 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                 if(response != null){
                     Log.d(TAG,response.message());
                     if(response.body() !=null){
-                        for(int i= 0; i<response.body().getResults().size();i++){
+                        List<Result> results = response.body().getResults();
+                        //GymItemDto item = new GymItemDto();
+
+                        for ( Result currentResult : results) {
                             GymItemDto item = new GymItemDto();
                             item.setFromOnline(true);
 //                    item.setId(response.body().getResults().get(i).getId());
-                            item.setTitle(response.body().getResults().get(i).getName());
-                            item.setAddress(response.body().getResults().get(i).getFormattedAddress());
-                            if(response.body().getResults().get(i).getPhotos() !=null){
-                                item.setPhotoReference(response.body().getResults().get(i).getPhotos().get(0).getPhotoReference());
+                            item.setTitle(currentResult.getName());
+                            item.setAddress(currentResult.getFormattedAddress());
+                            if(currentResult.getPhotos() !=null){
+                                item.setPhotoReference(currentResult.getPhotos().get(0).getPhotoReference());
                             }else{
                                 item.setPhotoReference("PHOTO_REFERENCE");
                             }
@@ -158,21 +156,36 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                                 item.setOpen(false);
                             }*/
 
-                            LatLng gymposition = new LatLng( response.body().getResults().get(i).getGeometry().getLocation().getLat()
-                                    , response.body().getResults().get(i).getGeometry().getLocation().getLng());
+                            LatLng gymposition = new LatLng( currentResult.getGeometry().getLocation().getLat()
+                                    , currentResult.getGeometry().getLocation().getLng());
 
                             //LatLng actucalPosition = new LatLng(47.5350554,19.043856);
                             LatLng actucalPosition = new LatLng(lat,lon);
                             //  if(currLoc !=null){
-                           // actucalPosition = new LatLng(lat,lon);
+                            // actucalPosition = new LatLng(lat,lon);
                             // }
                             // LatLng actucalPosition = new LatLng(47.5350554,19.043856);
 
 
-                            item.setRating( response.body().getResults().get(i).getRating());
+                            item.setRating( currentResult.getRating());
                             item.setLatitude(gymposition.latitude);
                             item.setLongitude(gymposition.longitude);
-                            item.setInfo(df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km");
+                            //df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km"
+                            String info = "Jelenleg nyitva";
+                           /* if(response.body().getResults().get(i).getOpeningHours()){
+                                info.concat("Jelenleg nyitva");
+                               // item.setInfo("Jelenleg nyitva");
+                            }else{
+                                item.setInfo("Jelenleg zárva");
+                              //  info.concat("Jelenleg zárva, ");
+                            }*/
+                            if(currentResult.getRating() !=null){
+                                info = info.concat('\n' + "Értékelés: " + currentResult.getRating().toString() );
+                            }
+
+                            item.setInfo(info);
+
+                            //  item.setInfo(response.body().getResults().get(i).getOpeningHours().getOpenNow());
 
 //                    item.setInfo("Értékelés: " + response.body().getResults().get(i).getRating().toString()+ '\n' + "Jelenleg nyitva: " + isOpen
 //                    +'\n' +  df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km-re");
@@ -180,6 +193,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
 
                             gymList.add(item);
                         }
+
 
                     }
 

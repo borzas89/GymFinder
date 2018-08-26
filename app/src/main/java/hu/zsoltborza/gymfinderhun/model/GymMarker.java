@@ -11,6 +11,7 @@ public class GymMarker implements ClusterItem {
 
     private final LatLng mPosition;
     private String mTitle;
+    private String mAddress;
 
     public GymMarker(LatLng mPosition, String mTitle) {
         this.mPosition = mPosition;
@@ -20,6 +21,12 @@ public class GymMarker implements ClusterItem {
     public GymMarker(double lat, double lng, String title) {
         mPosition = new LatLng(lat, lng);
         mTitle = title;
+    }
+
+    public GymMarker(LatLng mPosition, String mTitle, String mAddress) {
+        this.mPosition = mPosition;
+        this.mTitle = mTitle;
+        this.mAddress = mAddress;
     }
 
 
@@ -37,6 +44,14 @@ public class GymMarker implements ClusterItem {
         this.mTitle = mTitle;
     }
 
+
+    public String getAddress() {
+        return mAddress;
+    }
+
+    public void setAddress(String mAddress) {
+        this.mAddress = mAddress;
+    }
 
     @Override
     public LatLng getPosition() {

@@ -16,7 +16,7 @@ import hu.zsoltborza.gymfinderhun.adapter.GymAdapter;
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
 import hu.zsoltborza.gymfinderhun.network.RetrofitServiceFactory;
-import hu.zsoltborza.gymfinderhun.network.service.GymSearchService;
+import hu.zsoltborza.gymfinderhun.network.service.GooglePlacesService;
 import hu.zsoltborza.gymfinderhun.network.domain.GymSearch;
 import hu.zsoltborza.gymfinderhun.utils.Utils;
 import retrofit2.Call;
@@ -72,8 +72,8 @@ public class ListActivity extends AppCompatActivity implements GymAdapter.OnItem
     public void getGymsFromBudapest(){
 
         Call<GymSearch> call;
-        GymSearchService apiService =
-                RetrofitServiceFactory.getClient().create(GymSearchService.class);
+        GooglePlacesService apiService =
+                RetrofitServiceFactory.getClient().create(GooglePlacesService.class);
 
         call = apiService.getGymsatBudapest();
         call.enqueue(new Callback<GymSearch>() {
