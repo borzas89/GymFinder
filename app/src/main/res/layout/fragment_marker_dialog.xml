@@ -4,32 +4,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:minHeight="56dp"
     android:layout_height="match_parent">
 
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDialogTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tvDialogAddress"
-        android:layout_margin="8dp"
+
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginLeft="16dp"
+
         android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
         android:text="Title"
         android:textSize="@dimen/large_text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintEnd_toStartOf="@+id/tvDialogDistance"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDialogAddress"
-        android:layout_width="match_parent"
-        android:layout_height="37dp"
+        android:layout_width="278dp"
+        android:layout_height="64dp"
         android:layout_above="@+id/tvDialogTitle"
         android:layout_margin="8dp"
         android:layout_marginEnd="8dp"
@@ -39,8 +40,8 @@
         android:layout_marginTop="8dp"
         android:text="Address"
         android:textSize="@dimen/medium_text"
-        app:layout_constraintEnd_toStartOf="@+id/tvDialogDistance"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDialogTitle" />
 
@@ -49,14 +50,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
         android:layout_marginTop="16dp"
         android:text="Distance"
         android:textSize="@dimen/large_text"
         app:layout_constraintBottom_toTopOf="@+id/tvDialogAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
