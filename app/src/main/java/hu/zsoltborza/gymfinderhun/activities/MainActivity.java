@@ -1,6 +1,7 @@
 package hu.zsoltborza.gymfinderhun.activities;
 
 import android.Manifest;
+import android.arch.persistence.room.Room;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -18,6 +19,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,7 +32,12 @@ import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
+import java.util.List;
+
 import hu.zsoltborza.gymfinderhun.BuildConfig;
+import hu.zsoltborza.gymfinderhun.database.AppDatabase;
+import hu.zsoltborza.gymfinderhun.database.MarkerEntity;
+import hu.zsoltborza.gymfinderhun.database.MarkerEntityDAO;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
 import hu.zsoltborza.gymfinderhun.fragments.WebViewFragment;
 import hu.zsoltborza.gymfinderhun.location.InternalLocationReceiver;
@@ -45,6 +52,7 @@ import hu.zsoltborza.gymfinderhun.fragments.base.BaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 import hu.zsoltborza.gymfinderhun.fragments.base.HomeInterface;
 import hu.zsoltborza.gymfinderhun.model.GymListItem;
+import hu.zsoltborza.gymfinderhun.utils.Utils;
 
 
 public class MainActivity extends AppCompatActivity implements HomeInterface{
@@ -117,6 +125,38 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         requestLocationService();
 //        requestUpdates();
+
+        savingOfflineMarkersToDb();
+    }
+
+    private void savingOfflineMarkersToDb() {
+        AppDatabase database = Room.databaseBuilder(this, AppDatabase.class, "db-markers")
+                .allowMainThreadQueries()   //Allows room to do operation on main thread
+                .build();
+        MarkerEntityDAO markerEntityDAO = database.getMarkerEntityDAO();
+
+        // if database is empty, insert markers from file
+        if(markerEntityDAO.getMarkerEntitys().isEmpty()){
+            // reading from file..
+            List<GymListItem> gymListItemsFromFile = Utils.getDataFromFile(this);
+
+            for (GymListItem currentItem : gymListItemsFromFile) {
+                MarkerEntity markerEntity = new MarkerEntity();
+                markerEntity.setMarkerId(Long.parseLong(currentItem.getId()));
+                markerEntity.setTitle(currentItem.getTitle());
+                markerEntity.setInformation(currentItem.getInfo());
+                markerEntity.setAddress(currentItem.getAddress());
+                double lat = Double.parseDouble(currentItem.getLatitude().replace(",","."));
+                double lon = Double.parseDouble(currentItem.getLongitude().replace(",","."));
+                markerEntity.setLatitude(lat);
+                markerEntity.setLongitude(lon);
+                markerEntityDAO.insert(markerEntity);
+            }
+
+        }
+
+        Log.d(TAG,"fetched db markers size is " + markerEntityDAO.getMarkerEntitys().size());
+
     }
 
     private void requestLocationService(){

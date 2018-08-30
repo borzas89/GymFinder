@@ -1,15 +1,18 @@
 package hu.zsoltborza.gymfinderhun.fragments;
 
 import android.Manifest;
+import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +37,9 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import hu.zsoltborza.gymfinderhun.database.AppDatabase;
+import hu.zsoltborza.gymfinderhun.database.MarkerEntity;
+import hu.zsoltborza.gymfinderhun.database.MarkerEntityDAO;
 import hu.zsoltborza.gymfinderhun.model.GymMarker;
 import hu.zsoltborza.gymfinderhun.R;
 import hu.zsoltborza.gymfinderhun.network.service.GooglePlacesService;
@@ -158,8 +164,40 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback,
         return rootView;
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    public void openBottomSheetDialog(String title,String address, String distace) {
+        AppDatabase database = Room.databaseBuilder(getContext(), AppDatabase.class, "db-markers")
+                .allowMainThreadQueries()   //Allows room to do operation on main thread
+                .build();
+        MarkerEntityDAO markerEntityDAO = database.getMarkerEntityDAO();
+
+        if(!markerEntityDAO.getMarkerEntitys().isEmpty()){
+
+            List<MarkerEntity> markerEntityList = markerEntityDAO.getMarkerEntitys();
+            gymListNew = new ArrayList<>();
+            for (MarkerEntity currentItem : markerEntityList) {
+
+                GymListItem gymListItem = new GymListItem();
+                gymListItem.setId(String.valueOf(currentItem.getMarkerId()));
+                gymListItem.setTitle(currentItem.getTitle());
+                gymListItem.setLatitude(String.valueOf(currentItem.getLatitude()));
+                gymListItem.setLongitude(String.valueOf(currentItem.getLongitude()));
+                gymListItem.setAddress(currentItem.getAddress());
+
+                gymListNew.add(gymListItem);
+            }
+
+            Log.d("Map", "markers from db to map " + gymListNew.size() );
+
+        }else{
+            gymListNew = Utils.getDataFromFile(getContext());
+            Log.d("Map", "markers from file to map " + gymListNew.size() );
+        }
+    }
+
+    public void openBottomSheetDialog(String title, String address, String distace) {
         MarkerBottomSheetDialogFragment markerBottomSheetDialogFragment = new MarkerBottomSheetDialogFragment();
         markerBottomSheetDialogFragment.newInstance(title,address,distace);
         markerBottomSheetDialogFragment.setTitle(title);
@@ -243,7 +281,7 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback,
                 new TileOverlayOptions().tileProvider(mTileProvider)
                         .zIndex(-1));
 
-        gymListNew = Utils.getDataFromFile(getContext());
+       // gymListNew = Utils.getDataFromFile(getContext());
 
        // mClusterManager.setOnClusterItemInfoWindowClickListener(GymMapFragment.this);
         mMap.setOnInfoWindowClickListener(mClusterManager);
@@ -373,6 +411,8 @@ public class GymMapFragment extends Fragment implements OnMapReadyCallback,
         mClusterManager.addItems(gymsList);
         mClusterManager.cluster();
     }
+
+
 
     /*@Override
     public void onClusterItemInfoWindowClick(GymMarker gymMarker) {
