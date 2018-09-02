@@ -58,7 +58,7 @@ public class GymOnlineSearchAdapter extends RecyclerView.Adapter<GymOnlineSearch
 //        holder.image.setImageDrawable();
         holder.titleTV.setText(item.getTitle());
         holder.addressTV.setText(item.getAddress());
-        holder.infoTV.setText(item.getInfo());
+        holder.infoTV.setText(item.getDistance());
         holder.frameLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

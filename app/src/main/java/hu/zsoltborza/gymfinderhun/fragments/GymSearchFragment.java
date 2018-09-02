@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.google.android.gms.maps.model.LatLng;
+import com.google.maps.android.SphericalUtil;
 
 
 import java.text.DecimalFormat;
@@ -170,6 +171,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                             item.setRating( currentResult.getRating());
                             item.setLatitude(gymposition.latitude);
                             item.setLongitude(gymposition.longitude);
+                            item.setDistance(df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km");
                             //df.format(SphericalUtil.computeDistanceBetween(actucalPosition,gymposition)/1000) + " km"
                             String info = "Jelenleg nyitva";
                            /* if(response.body().getResults().get(i).getOpeningHours()){
@@ -182,6 +184,7 @@ public class GymSearchFragment extends DrawerItemBaseFragment implements OnItemC
                             if(currentResult.getRating() !=null){
                                 info = info.concat('\n' + "Értékelés: " + currentResult.getRating().toString() );
                             }
+
 
                             item.setInfo(info);
 

@@ -10,7 +10,7 @@
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDialogTitle"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvDialogAddress"
         android:layout_marginEnd="16dp"
@@ -22,45 +22,65 @@
         android:text="FI-SU Csepel SC Fittness [Budapest XXI.ker]"
         android:textSize="@dimen/medium_text"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tvDialogAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDialogAddress"
-        android:layout_width="242dp"
-        android:layout_height="91dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/tvDialogTitle"
-        android:layout_margin="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:maxLines="2"
         android:text="Magyarország 1212 Budapest Béke tér 1. (Csepeli Sport)"
         android:textSize="@dimen/medium_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvDialogTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
     <android.support.v7.widget.AppCompatTextView
         android:id="@+id/tvDialogDistance"
-        android:layout_width="104dp"
-        android:layout_height="66dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="88dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:maxLines="2"
-        android:text="122,89 km-re"
-        android:textSize="@dimen/large_text"
-        app:layout_constraintBottom_toBottomOf="@+id/tvDialogAddress"
+        android:layout_marginTop="8dp"
+        android:text="122 km"
+        android:textAlignment="center"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDialogAddress"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/tvDialogAddress" />
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:rating="4.4"
+        android:stepSize="0.1"
+        android:numStars="5"
+        style="@style/RatingBar"
+        app:layout_constraintEnd_toStartOf="@+id/tvDialogDistance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDialogTitle" />
 
 
 </android.support.constraint.ConstraintLayout>

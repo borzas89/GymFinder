@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/list_frame_item"
     android:foreground="?attr/selectableItemBackground"
     android:layout_height="@dimen/image_size">
 
-    <RelativeLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -14,51 +15,82 @@
             android:id="@+id/image"
             android:layout_width="@dimen/image_size"
             android:layout_height="match_parent"
-            android:src="@drawable/logo_green_big"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:scaleType="fitCenter"
-            android:transitionName="image" />
+            android:src="@drawable/logo_green_big"
+            android:transitionName="image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/infoTV"
             style="?android:textAppearanceSmallInverse"
             android:layout_width="@dimen/image_size"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/addressTV"
-            android:layout_alignBottom="@+id/addressTV"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:background="@color/text_background"
             android:gravity="center"
             android:padding="@dimen/tiny_margin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="Overlay" />
 
         <TextView
             android:id="@+id/titleTV"
             style="?android:textAppearanceMedium"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="231dp"
+            android:layout_height="104dp"
             android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_toEndOf="@+id/image"
             android:layout_toRightOf="@+id/image"
             android:ellipsize="end"
+            android:maxLines="3"
             android:paddingLeft="@dimen/small_margin"
             android:paddingRight="@dimen/small_margin"
             android:paddingTop="@dimen/small_margin"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.216"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
             tools:text="Title 1" />
 
         <TextView
             android:id="@+id/addressTV"
-            style="?android:textAppearanceSmall"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toEndOf="@+id/image"
-            android:layout_toRightOf="@+id/image"
-            android:ellipsize="end"
-            android:padding="@dimen/small_margin"
-            tools:text="Address" />
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintStart_toEndOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/titleTV"
+            app:layout_constraintVertical_bias="0.156" />
 
-    </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </FrameLayout>

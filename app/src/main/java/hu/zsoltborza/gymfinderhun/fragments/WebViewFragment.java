@@ -20,6 +20,7 @@ import hu.zsoltborza.gymfinderhun.fragments.base.DrawerItemBaseFragment;
 
 /**
  * Created by Zsolt Borza on 2018.08.16..
+ * Dashboard for GymFinder app..
  */
 public class WebViewFragment extends DrawerItemBaseFragment {
 
