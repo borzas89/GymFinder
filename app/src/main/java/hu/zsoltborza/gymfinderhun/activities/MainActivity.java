@@ -39,6 +39,7 @@ import hu.zsoltborza.gymfinderhun.database.AppDatabase;
 import hu.zsoltborza.gymfinderhun.database.MarkerEntity;
 import hu.zsoltborza.gymfinderhun.database.MarkerEntityDAO;
 import hu.zsoltborza.gymfinderhun.fragments.GymDashboardFragment;
+import hu.zsoltborza.gymfinderhun.fragments.OfflineMarkerListFragment;
 import hu.zsoltborza.gymfinderhun.fragments.WebViewFragment;
 import hu.zsoltborza.gymfinderhun.location.InternalLocationReceiver;
 import hu.zsoltborza.gymfinderhun.location.LocationService;
@@ -234,17 +235,21 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
                 toolbar.setTitle("Dashboard");;
                 fragmentClass = WebViewFragment.class;
                 break;
-            case R.id.nav_first_fragment:
+            case R.id.nav_map_fragment:
                 toolbar.setTitle("Map Search");
                 fragmentClass = GymMapFragment.class;
                 break;
-            case R.id.nav_second_fragment:
-                toolbar.setTitle("Offline list");
+            case R.id.nav_gymfinder_list_fragment:
+                toolbar.setTitle("GymFinder Online list");
                 fragmentClass = GymListFragment.class;
                 break;
-            case R.id.nav_third_fragment:
+            case R.id.nav_google_places_online_search_fragment:
                 toolbar.setTitle("Online Search");
                 fragmentClass = GymSearchFragment.class;
+                break;
+            case R.id.nav_offline_markers_fragment:
+                toolbar.setTitle("Offline markers");
+                fragmentClass = OfflineMarkerListFragment.class;
                 break;
             default:
                 fragmentClass = WebViewFragment.class;
@@ -501,6 +506,27 @@ public class MainActivity extends AppCompatActivity implements HomeInterface{
 
         gymDetailFragment.setArguments(bundle);
 
+        addFragment(gymDetailFragment,true);
+
+    }
+
+    @Override
+    public void showMarkerDetailItem(MarkerEntity markerEntity) {
+
+        // TODO conversion.... better way....
+        GymDetailFragment gymDetailFragment = new GymDetailFragment();
+        GymListItem item = new GymListItem();
+
+        item.setTitle(markerEntity.getTitle());
+        item.setInfo(markerEntity.getInformation());
+        item.setLongitude(String.valueOf(markerEntity.getLongitude()));
+        item.setLatitude(String.valueOf(markerEntity.getLatitude()));
+        item.setAddress(markerEntity.getAddress());
+
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("gymItem",item);
+
+        gymDetailFragment.setArguments(bundle);
         addFragment(gymDetailFragment,true);
 
     }
